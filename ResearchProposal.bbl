@@ -1,9 +1,36 @@
 \begin{thebibliography}{1}
 
+\bibitem{NumDetections}
+Jea Abadie, BP~Abbott, Richard Abbott, Matthew Abernathy, Timothee Accadia,
+  Fausto Acernese, Carl Adams, Rana Adhikari, Parameswaran Ajith, Bruce Allen,
+  et~al.
+\newblock Predictions for the rates of compact binary coalescences observable
+  by ground-based gravitational-wave detectors.
+\newblock {\em Classical and Quantum Gravity}, 27(17):173001, 2010.
+
 \bibitem{DetectionPaper}
 BP~Abbott, R~Abbott, TD~Abbott, MR~Abernathy, F~Acernese, K~Ackley, C~Adams,
   T~Adams, P~Addesso, RX~Adhikari, et~al.
 \newblock Observation of gravitational waves from a binary black hole merger.
 \newblock {\em Physical Review Letters}, 116(6), 2016.
+
+\bibitem{Enia}
+Jonah~B Kanner, Tyson~B Littenberg, Neil Cornish, Meg Millhouse, Enia Xhakaj,
+  Francesco Salemi, Marco Drago, Gabriele Vedovato, and Sergey Klimenko.
+\newblock Leveraging waveform complexity for confident detection of
+  gravitational waves.
+\newblock {\em Physical Review D}, 93(2):022002, 2016.
+
+\bibitem{RSmith}
+Rory James~Edwin Smith.
+\newblock {\em Gravitational-wave astronomy with coalescing compact binaries:
+  detection and parameter estimation with advanced detectors}.
+\newblock PhD thesis, University of Birmingham, 2013.
+
+\bibitem{BaeStats}
+John Veitch and Alberto Vecchio.
+\newblock Bayesian coherent analysis of in-spiral gravitational wave signals
+  with a detector network.
+\newblock {\em Physical Review D}, 81(6):062003, 2010.
 
 \end{thebibliography}
