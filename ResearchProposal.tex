@@ -48,12 +48,12 @@
 
 
 %Jonah B. Kanner
-			 
-\author[1]{Rory J. Smith \thanks{rsmith@caltech.edu}} 
-\author[1]{Jonah B. Kanner \thanks{jkanner@caltech.edu}}
-\author[2]{Avi Vajpeyi }
-\affil[1]{LIGO Laboratory, California Institute of Technology, Pasadena, CA 91125, USA}
-\affil[2]{The College of Wooster, Wooster, OH 44691, USA}
+\author[1]{Avi Vajpeyi }		 
+\author[2]{Rory J. Smith \thanks{smith\textunderscore r@ligo.caltech.edu}} 
+\author[2]{Jonah B. Kanner \thanks{jkanner@caltech.edu}}
+\affil[1]{The College of Wooster, Wooster, OH 44691, USA}
+\affil[2]{LIGO Laboratory, California Institute of Technology, Pasadena, CA 91125, USA}
+
 
 \renewcommand\Authands{ and }
 
@@ -116,7 +116,13 @@ On September 14th, 2015, the Advanced LIGO detected the first gravitational wave
     % Talk about Time-frequency morphology classes, and how certain classes can be discounted? That is more specific to Generic...
   
   % SNR as a detection statistic 
-  \indent The detection statistic currently being used to rank strains according to the maximum likelihood of it being due to a gravitational wave is the signal-to-noise ratio (SNR) detection technique \cite{Enia}. This method compares the power of the strain signal to the power of the remaining noise at a given point \cite{RSmith}. Although the power of the noise is difficult to calculate, we know that this ranking process can make some gravitational wave strains stand out, as seen from the Fig~\ref{Fig:Detection}.  However, we believe that this method lacks the sensitivity necessary to detect some gravitational waves that do not have SNR values as high as those of GW150914. Hence we would like to investigate an alternate detection statistic, specifically one that compares the relative probability that a data set contains a strain due to a gravitational wave to the probability that the data just contains noise. This ratio is known as the Bayes Factor. %Additionally, it is believed that this detection statistic might help increase the detection rate of gravitational waves by a factor of 10, as  [Not sure what to cite here - could not find mention of this in Enia's paper]. 
+  \indent The detection statistic currently being used to rank strains according to the maximum likelihood of it being due to a gravitational wave is the signal-to-noise ratio (SNR) detection technique \cite{Enia}. This method compares the power of the strain signal to the power of the remaining noise at a given point \cite{RSmith}. Although the power of the noise is difficult to calculate, we know that this ranking process can make some gravitational wave strains stand out, as seen from the Fig~\ref{Fig:Detection}.  However, we believe that this method lacks the sensitivity necessary to detect some gravitational waves that do not have SNR values as high as those of GW150914. Hence we would like to investigate an alternate detection statistic, specifically one that compares the relative probability that a data set contains a strain due to a gravitational wave to the probability that the data just contains noise. This ratio is known as the Bayes Factor.
+  
+  
+  Additionally, the templates that are used in the matched filtered searches account for only a small subset of the vast possibility of gravitational wave signals. This might result with some gravitational waves signals that do not have templates to be left undetected .  In contrast, the LALInference program, which is what will be used to implement the new detection statistic, uses templates that can describe a far bigger set of signals. Hence, the Bayes factor might prove to be more sensitive than SNR, as we will have more information about the signal.
+  %Additionally, it is believed that this detection statistic might help increase the detection rate of gravitational waves by a factor of 10, as  [Not sure what to cite here - could not find mention of this in Enia's paper]. 
+  
+  
   
 \begin{figure}[h]
 	\caption{Search results of the generic transit search in which the first gravitational wave signal, marked GW150914, was detected. The wave strain of GW150914 stands out as the strongest strain in the entire search. SNR was used in this search to calculate the background noise and the events. Figure taken from \cite{DetectionPaper}}
@@ -151,13 +157,13 @@ To compute the Bayes factor between two hypotheses, we need to first define the 
 We can compare these two models by calculating the relative probabilities in the form of the posterior odds ratio $O_{GW, null}$ between the two of them \cite{BaeStats}, 
   
   \begin{align} \label{eq:relProb}
-  O_{GW, null} &= \frac{P(d|  \mathcal{H}_{GW},I)}{P(d|  \mathcal{H}_{null},I)} \  \frac{P(\mathcal{H}_{GW}|I) }{P(\mathcal{H}_{null}|I)}  \nonumber\\
-  &= B_{GW, null} \ \frac{P( \mathcal{H}_{GW}|I) }{P( \mathcal{H}_{null}|I)},
+  O_{GW, null} &= \frac{P(d|  \mathcal{H}_{GW})}{P(d|  \mathcal{H}_{null})} \  \frac{P(\mathcal{H}_{GW}) }{P(\mathcal{H}_{null})}  \nonumber\\
+  &= B_{GW, null} \ \frac{P( \mathcal{H}_{GW}) }{P( \mathcal{H}_{null})},
   \end{align} 
   
    where $B_{GW, null}$ is the `Bayes' Factor,' which is equal to \cite{BaeStats}:\\
   \begin{equation} \label{eq:BayesFactorOrig}
-  B_{GW, null} = \frac{P(d|  \mathcal{H}_{GW},I)}{P(d|  \mathcal{H}_{null},I)} \ .
+  B_{GW, null} = \frac{P(d|  \mathcal{H}_{GW})}{P(d|  \mathcal{H}_{null})} \ .
   \end{equation}
  
 It should be noted that the relative probability, Eq~\ref{eq:relProb}, and the Bayes factor, Eq~\ref{eq:BayesFactorOrig}, contain no reference to the signal parameters $\vec{\theta}$. Hence, the Bayes factor $B_{GW, null}$ can be calculated from our hypothesis, for any values for the parameters $\vec{\theta}$.\\
@@ -169,7 +175,7 @@ To calculate $P(d|\mathcal{H_{GW}})$, first we need to determine the \textit{pos
 
 %equation of PDF\\
 \begin{equation} \label{eq:PDF}
-p(\vec{\theta}|d, \mathcal{H}_{GW}, I)  = \frac{p(\vec{\theta}| \mathcal{H}_{GW}, I) \ p(d|\vec{\theta},  \mathcal{H}_{GW}, I) }  { p(d|\mathcal{H}_{GW}, I)},
+p(\vec{\theta}|d, \mathcal{H}_{GW})  = \frac{p(\vec{\theta}| \mathcal{H}_{GW}) \ p(d|\vec{\theta},  \mathcal{H}_{GW}}  { p(d|\mathcal{H}_{GW})},
 \end{equation} 
 
 or in other terms, 
@@ -178,18 +184,18 @@ or in other terms,
 { Posterior \ Probability \ Density \ Function}  = \frac{ Prior  \times Likelihood}{Evidence}. \nonumber
 \end{equation} 
 
-In other words, in Eq~\ref{eq:PDF}, we have each model $ \mathcal{H}_{GW}$, to have a vector of parameters $\vec{\theta}$, with which we can calculate a `Prior' distribution of $P(\vec{\theta}| \mathcal{H}_{GW})$. This states what values the model $ \mathcal{H}_{GW}$ might be expected to take from the data set $d$. We also have $p(d|\vec{\theta},  \mathcal{H}, I)$, which is the `likelihood' of the data, given that the model $ \mathcal{H}_{GW}$ is true.\\
+In other words, in Eq~\ref{eq:PDF}, we have each model $ \mathcal{H}_{GW}$, to have a vector of parameters $\vec{\theta}$, with which we can calculate a `Prior' distribution of $P(\vec{\theta}| \mathcal{H}_{GW})$. This states what values the model $ \mathcal{H}_{GW}$ might be expected to take from the data set $d$. We also have $p(d|\vec{\theta},  \mathcal{H})$, which is the `likelihood' of the data, given that the model $ \mathcal{H}_{GW}$ is true.\\
 
-To finally solve for $p(d|\mathcal{H}_{GW}, I)$, we rearrange Eq~\ref{eq:PDF} and integrate over $\vec{\theta}$, to get 
+To finally solve for $p(d|\mathcal{H}_{GW})$, we rearrange Eq~\ref{eq:PDF} and integrate over $\vec{\theta}$, to get 
 
 \begin{equation} \label{eq:evidence}
- p(d|\mathcal{H}_{GW}, I)    = \int_{\Uptheta} p(\vec{\theta}| \mathcal{H}_{GW}, I) \ p(d|\vec{\theta},  \mathcal{H}_{GW}, I) d\vec{\theta},
+ p(d|\mathcal{H}_{GW})    = \int_{\Uptheta} p(\vec{\theta}| \mathcal{H}_{GW}) \ p(d|\vec{\theta},  \mathcal{H}_{GW}) d\vec{\theta},
 \end{equation}
 
 
-since the integral of the PDF, by definition of a probability density, is $$\int_{\Uptheta} p(\vec{\theta}|d, \mathcal{H}_{GW}, I)\ d\vec{\theta}  = 1 .$$ \\
+since the integral of the PDF, by definition of a probability density, is $$\int_{\Uptheta} p(\vec{\theta}|d, \mathcal{H}_{GW})\ d\vec{\theta}  = 1 .$$ \\
 
-We can now use the value for $p(d|\mathcal{H}_{GW}, I)$ from  Eq~\ref{eq:evidence}, and substitute it into our equation for the Bayes Factor, Eq~\ref{eq:BayesFactorOrig}. Using this Bayes' Factor, may be able to better highlight the strains due to gravitational waves in our data.\\
+We can now use the value for $p(d|\mathcal{H}_{GW})$ from  Eq~\ref{eq:evidence}, and substitute it into our equation for the Bayes Factor, Eq~\ref{eq:BayesFactorOrig}. Using this Bayes' Factor, may be able to better highlight the strains due to gravitational waves in our data.\\
 
 We will demonstrate the use of the Bayes factor by generating a figure, like Fig~\ref{Fig:Detection}. However, instead of using SNR to calculate the background noise and rank the cadidate events, the Bayes factor will be used. %This could raise the number of detections of gravitational waves generated by binary black hole systems. With more detections, we could have more data on the masses and spins of black holes in our Universe. With these results, we would be able to gain an estimate of the population of black holes in our Universe. [Not sure what to cite here - I got this from the project abstract]
  %----------------------------------------------------------------------------------------
@@ -198,9 +204,9 @@ We will demonstrate the use of the Bayes factor by generating a figure, like Fig
  
  
  \section{Approach}
- The main objective of this project will be to asses the sensitivity of the Bayes' Factor to rank gravitational waves that might have been missed using SNR as the detection-statistic. 
+ The main objective of this project will be to asses the sensitivity of the Bayes' Factor to rank gravitational waves that might have been missed using SNR as the detection-statistic. This will be done with a procedure that we will write, with the help of the LALInterference program.\\
  
- We will begin by establishing the search background of the noise, with the help of the Bayes factor. This search background is made after time-shifting the data, as discussed in Section\ref{section:intro}.  We will then inject gravitational wave signal into data sets, and use the new detection statistic to study if it can detect the waves. If the Bayes Factor is unable to detect the gravity wave signal, we will study the thresholds at which the the gravity wave signals can finally be detected with the Bayes factor. 
+ We will begin by establishing the search background of the noise, with the help of the Bayes factor. This search background is made after time-shifting the data, as discussed in Section\ref{section:intro}.  We will then inject gravitational wave signal into data sets, and use the new detection statistic to study if it can detect the waves. If the Bayes Factor is unable to detect the gravity wave signal, we will study the thresholds at which the the gravity wave signals can finally be detected with the Bayes factor. \\
  
  We will then try to study past data and see if the Bayes Factor detection statistic can help extract more gravitational waves signals from the noise in the various data sets. We will also like to study if it will be able to detect gravity waves from quieter events, that would appear on the background of SNR, as seen in Fig~\ref{Fig:Detection}.
  
@@ -218,7 +224,7 @@ We will demonstrate the use of the Bayes factor by generating a figure, like Fig
  \textbf{WEEK 2-3:} Analyse noise and injected gravity wave signals to determine sensitivity of the Bayes Factor.\\
  \textbf{WEEK 4:} Study the results in detail, and restructure the computer program. Test the thresholds and compare the Bayes Factor detection statistic to the SNR detection statistic. \\
   \textbf{WEEK 6-7:} Understand the results and collect more data. Begin compiling figures and writing to make the work more presentable. \\
-  \textbf{WEEK 9-10:} Further documentation of the lab notebook, and program, for future researchers. Begin retaking data if required for the final paper.\\
+  \textbf{WEEK 8-9:} Further documentation of the lab notebook, and program, for future researchers. Begin retaking data if required for the final paper.\\
  
  
  
