@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 MAY 2016 21:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  14 MAY 2016 02:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -589,6 +589,13 @@ LaTeX Info: Redefining \cite on input line 694.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/was/gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/was/upgreek.sty
+Package: upgreek 2003/02/12 v2.0 (WaS)
+Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
+\symugrf@m=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
+(Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
@@ -842,42 +849,54 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 142.
 )
-(./ResearchProposal.aux
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-LaTeX Warning: Label `eq:englishTheorem' multiply defined.
-
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/preprint/authblk.sty
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip73
+\@affilsep=\skip74
+\c@Maxaffil=\count206
+\c@authors=\count207
+\c@affil=\count208
 )
+(./ResearchProposal.aux)
 \openout1 = `ResearchProposal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 46.
+. Activating mapping `upgreek' on line 64.
 .................................................
- (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count206
+\scratchcounter=\count209
 \scratchdimen=\dimen169
 \scratchbox=\box52
-\nofMPsegments=\count207
-\nofMParguments=\count208
+\nofMPsegments=\count210
+\nofMParguments=\count211
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count209
+\MPscratchCnt=\count212
 \MPscratchDim=\dimen170
-\MPnumerator=\count210
-\makeMPintoPDFobject=\count211
+\MPnumerator=\count213
+\makeMPintoPDFobject=\count214
 \everyMPtoPDFconversion=\toks26
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -1009,103 +1028,138 @@ Dictionary: translator-basic-dictionary, Language: English
 (/usr/local/texlive/2015/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2015/01/21 v2.6e siunitx: Abbreviated units
 )
-LaTeX Info: Redefining \celsius on input line 46.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 46.
+LaTeX Info: Redefining \celsius on input line 64.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 64.
 
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 46.
-Package gensymb Info: Using \Omega for \ohm on input line 46.
+LaTeX Info: Redefining \ohm on input line 64.
+Package gensymb Info: Using \Omega for \ohm on input line 64.
 
 Package gensymb Warning: Not defining \micro.
 
-\c@lstlisting=\count212
-\c__siunitx_mathsf_int=\count213
-\c__siunitx_mathtt_int=\count214
+\c@lstlisting=\count215
+\c__siunitx_mathsf_int=\count216
+\c__siunitx_mathtt_int=\count217
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 66.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
-<DetectionInGenericTransientSearch.png, id=13, 377.41pt x 293.095pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+
+ []
+
+<DetectionInGenericTransientSearch.png, id=15, 377.41pt x 293.095pt>
 File: DetectionInGenericTransientSearch.png Graphic file (type png)
 
 <use DetectionInGenericTransientSearch.png>
 Package pdftex.def Info: DetectionInGenericTransientSearch.png used on input li
-ne 101.
+ne 124.
 (pdftex.def)             Requested size: 172.5pt x 133.96217pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
-
- []
-
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 145.
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--137
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
-[3 <./DetectionInGenericTransientSearch.png>] (./ResearchProposal.bbl [4])
-[5] (./ResearchProposal.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
- ) 
+ []
+
+[3 <./DetectionInGenericTransientSearch.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 217--222
+
+ []
+
+(./ResearchProposal.bbl [5]) [6] (./ResearchProposal.aux) ) 
 Here is how much of TeX's memory you used:
- 14683 strings out of 493089
- 299127 string characters out of 6134842
- 329300 words of memory out of 5000000
- 18026 multiletter control sequences out of 15000+600000
- 12483 words of font info for 47 fonts, out of 8000000 for 9000
+ 14828 strings out of 493089
+ 301201 string characters out of 6134842
+ 331756 words of memory out of 5000000
+ 18148 multiletter control sequences out of 15000+600000
+ 20394 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,41p,10444b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on ResearchProposal.pdf (5 pages, 235540 bytes).
+ 42i,9n,41p,10444b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/
+2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
+pe1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
+1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
+public/cm-super/sfrm1728.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
+blic/cm-super/sfti1000.pfb>
+Output written on ResearchProposal.pdf (6 pages, 345600 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 99 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
