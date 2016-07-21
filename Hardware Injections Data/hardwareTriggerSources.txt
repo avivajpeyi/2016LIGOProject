@@ -1,0 +1,86 @@
+
+
+
+
+
+OCT 2, 2015 - https://alog.ligo-wa.caltech.edu/aLOG/index.php?callRep=22170
+
+Test 1: 
+Originally we scheduled one hardware injection. It was successful:
+1127783813 1 1.0 coherentbbh0_1126259455_
+
+Test 3:
+We scheduled one last injection. It was successful:
+1127789367 1 1.0 coherentbbh6_1126259455_
+
+
+
+
+
+OCT 5, 2015 - https://alog.ligo-wa.caltech.edu/aLOG/index.php?callRep=22251
+
+performed 8 coherent H1L1 CBC hardware injections. They were all successful.
+
+
+The following was appended to the schedule:
+1128124325 1 1.0 coherentbbh1_1126259455_
+1128125225 1 1.0 coherentbbh2_1126259455_
+1128126125 1 1.0 coherentbbh3_1126259455_
+1128127025 1 1.0 coherentbbh4_1126259455_
+1128127925 1 1.0 coherentbbh5_1126259455_
+1128128825 1 1.0 coherentbbh7_1126259455_
+1128129725 1 1.0 coherentbbh8_1126259455_
+1128130625 1 1.0 coherentbbh9_1126259455_
+
+
+
+
+OCT 11, 2015 - https://alog.ligo-wa.caltech.edu/aLOG/index.php?callRep=22439
+
+
+The following injections were successful:
+1128657857 1 1.0 ringburstinj1a_1126259456_
+1128658217 1 1.0 ringburstinj2a_1126259456_
+1128658577 1 1.0 ringburstinj3a_1126259456_
+1128658937 1 1.0 ringburstinj4a_1126259456_
+1128659297 1 1.0 ringburstinj5a_1126259456_
+
+Note that the GPS time above (first column) is the time the injection began. The end times are ~6s after this time. The exact end time can be calculated from the parameter files.
+
+
+We continued the hardware injections later in the night after waiting so the external alert had a stretch of clean data. The injections were spaced 360s apart this time and there was no problem with tinj handling injections this frequent.
+
+The following injections were successful:
+1128666017 1 1.0 ringburstinj1b_1126259456_
+1128666377 1 1.0 ringburstinj2b_1126259456_
+1128666737 1 1.0 ringburstinj3b_1126259456_
+1128667097 1 1.0 ringburstinj4b_1126259456_
+1128667457 1 1.0 ringburstinj5b_1126259456_
+1128667817 1 1.0 ringburstinj6a_1126259456_
+1128668177 1 1.0 ringburstinj6b_1126259456_
+1128668537 1 1.0 ringburstinj7b_1126259456_
+1128668897 1 1.0 ringburstinj8a_1126259456_
+1128669257 1 1.0 ringburstinj7a_1126259456_
+1128669617 1 1.0 ringburstinj8b_1126259456_
+1128669977 1 1.0 ringburstinj9a_1126259456_
+1128670337 1 1.0 ringburstinj10a_1126259456_
+1128670697 1 1.0 ringburstinj11a_1126259456_
+1128671057 1 1.0 ringburstinj12a_1126259456_
+1128671417 1 1.0 ringburstinj13a_1126259456_
+1128671777 1 1.0 ringburstinj14a_1126259456_
+1128672497 1 1.0 ringburstinj15a_1126259456_
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

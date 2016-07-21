@@ -20,12 +20,21 @@ TO COPY FILE TO CLUSTER\
 \f1\fs22 \cf0 \cb1 gsiscp ExampleGwMassProblem.py avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:/home/avi.vajpeyi/\
 \
 \
+gsiscp hardwareInjectionGPStimes.txt avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:/home/avi.vajpeyi/
+\f0\fs24 \cf2 \cb0 hardwareInjections/
+\f1\fs22 \cf0 \cb1 \
+\
 gsiscp MultipleFilesAnalysis.py avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
 \f0\fs24 \cf2 \cb0 /home/avi.vajpeyi/backgroudAnalysisJuly8/results\
 \
 
 \f1\fs22 \cf0 \cb1 gsiscp HDF5test.py avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
-\f0\fs24 \cf2 \cb0 /home/avi.vajpeyi/backgroudAnalysisJuly8/results
+\f0\fs24 \cf2 \cb0 /home/avi.vajpeyi/backgroundAnalysis300July14/BayesFactorResults\
+\
+\
+
+\f1\fs22 \cf0 \cb1 gsiscp MultipleFilesAnalysis.py avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
+\f0\fs24 \cf2 \cb0 /home/avi.vajpeyi/backgroundAnalysis300July14/BayesFactorResults
 \f1\fs22 \cf0 \cb1 \
 \
 \
@@ -33,34 +42,9 @@ gsiscp MultipleFilesAnalysis.py avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
 TO COPY FILE FROM CLUSTER\
  gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:/home/avi.vajpeyi/LogPosteriorDistribution.txt /Users/Vajpeyi/Documents/LALsuite/Example\\ GWs/LogPosteriorDistribution.txt\
 \
-\
  gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
-\f0\fs24 \cf2 \cb0 /home/avi.vajpeyi/backgroundAnalysis300July14/BayesFactorResults/coherent_output.txt
-\f1\fs22 \cf0 \cb1  /Users/Vajpeyi/Documents/LALsuite/Example\\ GWs/
-\f0\fs24 \cf2 \cb0 coherent_output.txt
-\f1\fs22 \cf0 \cb1 \
-\
- gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
-\f0\fs24 \cf2 \cb0 /home/avi.vajpeyi/backgroundAnalysis300July14/BayesFactorResults/incoherent_output.txt
-\f1\fs22 \cf0 \cb1  /Users/Vajpeyi/Documents/LALsuite/Example\\ GWs/in
-\f0\fs24 \cf2 \cb0 coherent_output.txt
-\f1\fs22 \cf0 \cb1 \
-\
-\
-\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f0\fs24 \cf2 \cb0 coherent_output.txt\
-\
-incoherent_output.txt 
-\f1\fs22 \cf0 \cb1 \
-\
-\
-gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:/home/avi.vajpeyi/massPosteriors.txt /Users/Vajpeyi/Documents/LALsuite/Example\\ GWs/massPosteriors.txt\
-\
-gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:/home/avi.vajpeyi/LogPosteriorDistribution.txt /Users/Vajpeyi/Documents/LALsuite/Example\\ GWs/PosteriorDistribution.txt\
-\
-\
+\f0\fs24 \cf2 \cb0 /home/avi.vajpeyi/backgroundAnalysis300July14/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/posterior_samples/posterior_H1L1_1127027100.13-1321.hdf5
+\f1\fs22 \cf0 \cb1  /Users/Vajpeyi/Documents/LALsuite/\
 \
 -terminal\
 -talks and learning in those \
@@ -102,4 +86,21 @@ taken \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
 \f1\fs22 \cf0 \cb1 \
+\
+\
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb0 lalinference_pipe -r /home/avi.vajpeyi/hardwareInjections/ --daglog-path /usr1/avi.vajpeyi/ /home/avi.vajpeyi/hardwareInjections/analysisCode.ini -g hardwareInjectionGPStimes.txt\
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs22 \cf0 \cb1 \
+\
+\
+\
 }

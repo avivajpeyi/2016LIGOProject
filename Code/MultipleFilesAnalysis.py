@@ -1,18 +1,21 @@
-pwdimport os
 
+Folder = "backgroundAnalysis300July14"      # the folder in which the run was started
+numList = [8,16,32,64]                      # the list of durations
+
+
+import h5py
+import numpy as np
+from scipy import sparse as sp
+import os
+import fnmatch
 FILE_NAME = 1
 
-BASE_DIR ='/home/avi.vajpeyi/backgroundAnalysis300July14/lalinferencenest/IMRPhenomPv2pseudoFourPN/4s'
-MYCOMP_BASE_DIR = '/Users/Vajpeyi/Documents/LALsuite/lalinferenceData/IMRPhenomPv2pseudoFourPN/4s'
+def coherentData(BASE_DIR):
+    print(Number+ " file for coh")
 
-
-
-
-
-def coherentData():
-
+    fileName = "coh_Bayes_" + Number + ".txt"
     # File to output coherent data in
-    coherent_output_file = open('coherent_output.txt', 'w')
+    coherent_output_file = open(fileName, 'w')
     coherent_output = {}    # string that will contain the output
 
 
@@ -43,7 +46,6 @@ def coherentData():
 
     # Opening each file in order, storing GPS time and BayesFactor in output file
     for f in sorted_files:
-        print (f[FILE_NAME])
         txtfile = open(f[FILE_NAME], 'r')
         coherent_output[f[FILE_NAME]] = []
         for line in txtfile:
@@ -56,28 +58,30 @@ def coherentData():
 
             line = line.strip('\n')
             coherent_output_file.write(line + '\t' + GPStime + '\n')
+        txtfile.close()
 
+    coherent_output_file.close()
 #------------------------------------------------------------------------
 
 
-def incoherentData():
+def incoherentData(BASE_DIR):
+    print(Number+ " file for incoh")
+
+    fileName = "incoh_Bayes_" + Number + ".txt"
 
     # File to output coherent data in
-    incoherent_output_file = open('incoherent_output.txt', 'w')
+    incoherent_output_file = open(fileName, 'w')
     incoherent_output = {}    # string that will contain the output
 
     # Open the folder in the set dir, and load the names of the file names
     incoherent_DIR = BASE_DIR +'/posterior_samples/'
-    incoherent_files = os.listdir( incoherent_DIR )
 
-    # Getting the File Names in the coherent_DIR
-    file_list = []
-    for (dirpath, dirnames, filenames) in os.walk(incoherent_DIR):
-        for f in filenames:
-            if (('posterior_H1L1_'in str(f)) and ('.dat_B.txt'in str(f))):
-                e = os.path.join(str(dirpath), str(f))
-                file_list.append(e)
-    print (file_list)
+    # get the list of the HDF5 files with the Bayes Factor
+    file_list   = []
+    for root, dirnames, filenames in os.walk(incoherent_DIR):
+     for filename in fnmatch.filter(filenames, 'posterior_H1L1*.hdf5'):
+         file_list.append(os.path.join(root, filename))
+
 
     # extracting the needed files and sorting them
     unsorted_files = []
@@ -93,27 +97,32 @@ def incoherentData():
     sorted_files= sorted(unsorted_files,key=lambda x: x[0])
 
     # Opening each file in order, storing GPS time and BayesFactor in output file
-    for f in sorted_files:
-        print (f[FILE_NAME])
-        txtfile = open(f[FILE_NAME], 'r')
-        incoherent_output[f[FILE_NAME]] = []
-        for line in txtfile:
 
-            # getting the GPS time from file name
-            GPStime = f[FILE_NAME]
-            GPStime = GPStime[len(incoherent_DIR+"posterior_H1L1_"):]
-            dashIndex = GPStime.index("-")
-            GPStime = GPStime[:dashIndex]
+    for hdfFile in sorted_files:
 
-            firstSpace = line.index(' ')
-            line = line[:firstSpace]
-            #line = line.strip('\n')
+        the_file = h5py.File(hdfFile[FILE_NAME],"r")
+        bayesFactor = the_file["/lalinference/lalinference_nest/"].attrs.get('log_bayes_factor')
 
-            incoherent_output_file.write(line + '\t' + GPStime + '\n')
 
+        GPStime = hdfFile[FILE_NAME]
+        GPStime = GPStime[len(incoherent_DIR+"posterior_H1L1_"):]
+        dashIndex = GPStime.index("-")
+        GPStime = GPStime[:dashIndex]
+
+
+
+        outputStr = str(bayesFactor) + '\t' + GPStime + '\n'
+        incoherent_output_file.write(str(bayesFactor) + '\t' + GPStime + '\n')
+
+        the_file.close()
+
+    incoherent_output_file.close()
 #------------------------------------------------------------------------
 
-
-
-incoherentData()
-coherentData()
+# iterating through the list of durations
+for num in numList:
+    Number = str(num)
+    print ("Processing files for duration " + Number + "s...")
+    BASE_DIR ="/home/avi.vajpeyi/" + Folder + "/lalinferencenest/IMRPhenomPv2pseudoFourPN/"+Number+'s'
+    incoherentData(BASE_DIR)
+    coherentData(BASE_DIR)
