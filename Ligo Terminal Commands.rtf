@@ -1,7 +1,8 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
-{\fonttbl\f0\fnil\fcharset0 AndaleMono;\f1\fnil\fcharset0 Menlo-Regular;}
-{\colortbl;\red255\green255\blue255;\red47\green255\blue18;\red224\green228\blue9;\red180\green36\blue25;
+{\fonttbl\f0\fnil\fcharset0 AndaleMono;\f1\fnil\fcharset0 Menlo-Regular;\f2\fmodern\fcharset0 Courier;
 }
+{\colortbl;\red255\green255\blue255;\red47\green255\blue18;\red255\green238\blue149;\red21\green102\blue47;
+\red224\green228\blue9;\red180\green36\blue25;\red254\green244\blue139;}
 \margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
@@ -19,13 +20,26 @@ TO COPY FILE TO CLUSTER\
 
 \f1\fs22 \cf0 \cb1 gsiscp ExampleGwMassProblem.py avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:/home/avi.vajpeyi/\
 \
+gsiscp ROQf_halfer.py avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:/home/avi.vajpeyi/ROQfiles\
+\
 \
 gsiscp hardwareInjectionGPStimes.txt avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:/home/avi.vajpeyi/
 \f0\fs24 \cf2 \cb0 hardwareInjections/
 \f1\fs22 \cf0 \cb1 \
 \
-gsiscp MultipleFilesAnalysis.py avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
+gsiscp MultipleFilesAnalysis.py avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:/home/avi.vajpeyi/\
+\
+\
+gsiscp MultipleFilesAnalysis.py avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:/home/avi.vajpeyi/hardwareInjections/BayesResults
+\f0\fs24 \cf2 \cb0 \
+\
+\
+\
+
+\f1\fs22 \cf0 \cb1 gsiscp MultipleFilesAnalysis.py avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
 \f0\fs24 \cf2 \cb0 /home/avi.vajpeyi/backgroudAnalysisJuly8/results\
+\
+\
 \
 
 \f1\fs22 \cf0 \cb1 gsiscp HDF5test.py avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
@@ -43,8 +57,41 @@ TO COPY FILE FROM CLUSTER\
  gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:/home/avi.vajpeyi/LogPosteriorDistribution.txt /Users/Vajpeyi/Documents/LALsuite/Example\\ GWs/LogPosteriorDistribution.txt\
 \
  gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
-\f0\fs24 \cf2 \cb0 /home/avi.vajpeyi/backgroundAnalysis300July14/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/posterior_samples/posterior_H1L1_1127027100.13-1321.hdf5
-\f1\fs22 \cf0 \cb1  /Users/Vajpeyi/Documents/LALsuite/\
+\f0\fs24 \cf2 \cb0 /home/avi.vajpeyi/backgroundAnalysis300July14/BayesFactorResults/coh_Bayes_8.txt 
+\f1\fs22 \cf0 \cb1  
+\f2\fs24 \cf3 \cb4 .\
+\
+\
+
+\f1\fs22 \cf0 \cb1  gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
+\f0\fs24 \cf2 \cb0 /home/avi.vajpeyi/backgroundAnalysis300July14/extraSamplePoint/BayesResults/coh_Bayes_8.txt 
+\f1\fs22 \cf0 \cb1  
+\f2\fs24 \cf3 \cb4 .\
+\
+
+\f1\fs22 \cf0 \cb1  gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
+\f0\fs24 \cf2 \cb0 /home/avi.vajpeyi/backgroundAnalysis300July14/extraSamplePoint/BayesResults/coh_Bayes_16.txt 
+\f1\fs22 \cf0 \cb1  
+\f2\fs24 \cf3 \cb4 .\
+\
+
+\f1\fs22 \cf0 \cb1  gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
+\f0\fs24 \cf2 \cb0 /home/avi.vajpeyi/backgroundAnalysis300July14/extraSamplePoint/BayesResults/coh_Bayes_32.txt 
+\f1\fs22 \cf0 \cb1  
+\f2\fs24 \cf3 \cb4 .\
+\
+
+\f1\fs22 \cf0 \cb1  gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
+\f0\fs24 \cf2 \cb0 /home/avi.vajpeyi/backgroundAnalysis300July14/extraSamplePoint/BayesResults/coh_Bayes_64.txt 
+\f1\fs22 \cf0 \cb1  
+\f2\fs24 \cf3 \cb4 .\
+\
+\
+\
+
+\f1\fs22 \cf0 \cb1 \
+ gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:/home/avi.vajpeyi/LogPosteriorDistribution.txt /Users/Vajpeyi/Documents/LALsuite/Example\\ GWs/LogPosteriorDistribution.txt\
+\
 \
 -terminal\
 -talks and learning in those \
@@ -61,24 +108,26 @@ TO COPY FILE FROM CLUSTER\
 - write your first draft of your paper \
 \
 \
-taken \
-\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f0\fs38 \cf2 \cb0 gsiscp avi.vajpeyi@pcdev1.phys.uwm.edu:/home/surabhi.sachdev/projects/rory-jonah/coincs-time-slide/back-mod-230-247/new/H1.txt  /Users/Vajpeyi/Documents/LALsuite/H1surabhi.txt
-\f1\fs22 \cf0 \cb1 \
-\
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
 \f0\fs24 \cf2 \cb0 lalinference_pipe -r /home/avi.vajpeyi/backgroundAnalysis300July14/ --daglog-path /usr1/avi.vajpeyi/ /home/avi.vajpeyi/backgroundAnalysis300July14/analysisCode.ini -g noiseTrigger.txt \
+\
+\
+\
+lalinference_pipe -r /home/avi.vajpeyi/GwTriggerEvents/ --daglog-path /usr1/avi.vajpeyi/ /home/avi.vajpeyi/GwTriggerEvents/analysisCode.ini -g triggerGPS.txt \
+\
+\
+\
+lalinference_pipe -r /home/avi.vajpeyi/backgroundAnalysis300July14/extraSamplePoint --daglog-path /usr1/avi.vajpeyi/ /home/avi.vajpeyi/backgroundAnalysis300July14/extraSamplePoint/analysisCode.ini -g /home/avi.vajpeyi/backgroundAnalysis300July14/extraSamplePoint/noiseTrigger.txt \
+\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
 \f1\fs22 \cf0 \cb1 \
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf2 \cb0 s%\'92macroH\cb3 1imes\cb0 lide=\cf4 \'930\'94\'92\cf2 macroH\cb3 1imes\cb0 lide=\cf4 \'9325.1327412287\'94\'92
+\f0\fs24 \cf2 \cb0 s%\'92macroH\cb5 1imes\cb0 lide=\cf6 \'930\'94\'92\cf2 macroH\cb5 1imes\cb0 lide=\cf6 \'9325.1327412287\'94\'92
 \f1\fs22 \cf0 \cb1 \
 \
 
@@ -95,6 +144,21 @@ taken \
 
 \f0\fs24 \cf2 \cb0 lalinference_pipe -r /home/avi.vajpeyi/hardwareInjections/ --daglog-path /usr1/avi.vajpeyi/ /home/avi.vajpeyi/hardwareInjections/analysisCode.ini -g hardwareInjectionGPStimes.txt\
 \
+\
+\
+lalinference_pipe -r /home/avi.vajpeyi/hardwareInjectionsJuly27/ --daglog-path /usr1/avi.vajpeyi/ /home/avi.vajpeyi/hardwareInjectionsJuly27/analysisCode.ini -g /home/avi.vajpeyi/hardwareInjectionsJuly27/
+\f1\fs22 \cf0 \cb7 hardwareInjectionGPStimes2.txt
+\f0\fs24 \cf2 \cb0 \
+\
+\
+\
+\
+lalinference_pipe -r /home/avi.vajpeyi/softwareInjections/ --daglog-path /usr1/avi.vajpeyi/ /home/avi.vajpeyi/softwareInjections/analysisCode.ini -I /home/avi.vajpeyi/softwareInjections/BBHInjections.xml\
+\
+\
+\
+\
+h5dump -H -A posterior_H1L1_1127409058.94-1242.hdf5\
 \
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0

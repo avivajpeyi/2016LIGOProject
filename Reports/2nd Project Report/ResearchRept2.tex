@@ -80,7 +80,9 @@
 
 
  \begin{abstract}
-On September 14th, 2015, the Advanced LIGO detected the first gravitational wave \cite{DetectionPaper}. The detected wave had a very large Signal to Noise Ratio value, which made it stand out from the rest of the candidate events. This paper investigates an alternative detection statistic, involving the `Bayes Factor.' This detection statistic might prove to be more robust than SNR, as it may be able better to discern between strains due to gravitational waves, and strains due to noise. This study of the new detection statistic is focused on binary black hole systems. 
+
+On September 14th, 2015, aLIGO detected the first gravitational wave with a very large Signal-to-Noise Ratio (SNR). In contrast, there are several candidate events with low SNR values, which fall within the background distribution. This paper investigates an alternative detection statistic to SNR, known as the ‘Bayes Factor.'  The Bayes Factor is the ratio between the probability that the strain data contains a gravitational wave signal plus Gaussian noise, to the probability that strain data contains only Gaussian noise. In contrast the SNR is a maximum likelihood estimator, while the Bayes factor takes into consideration all possible binary configurations, including spin orientations and magnitudes. Hence the Bayes factor might prove to be more robust than SNR. This study focuses only on binary black hole systems.
+
 
 
 \end{abstract}  
@@ -91,7 +93,7 @@ On September 14th, 2015, the Advanced LIGO detected the first gravitational wave
 %----------------------------------------------------------------------------------------
 %	SECTION 1
 %----------------------------------------------------------------------------------------
-
+\newpage
 \section{Introduction}
 
 \indent The completion of the two Advanced Laser Interferometer Gravitational-Wave Observatories (aLIGO) has led to the discovery of a gravitational-wave signal \cite{DetectionPaper}. This paper deals with a new detection statistic, involving Bayesian statistics, to rank the different candidate events (the strains in the data sets that could be due to gravitational waves). The candidate events we focus on are from binary black hole systems as they are believed to be common in the Universe \cite{NumDetections}.\\
@@ -132,7 +134,7 @@ On September 14th, 2015, the Advanced LIGO detected the first gravitational wave
   
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.5\textwidth]{Figures/DetectionInGenericTransientSearch}
+	\includegraphics[width=0.8\textwidth]{Figures/DetectionInGenericTransientSearch}
 	\caption{Search results of the generic transit search in which the first gravitational wave signal, marked GW150914, was detected. The wave strain of GW150914 stands out as the strongest strain in the entire search. SNR was used in this search to calculate the background noise and the events. Figure taken from \cite{DetectionPaper}}
 	 \label{Fig:Detection}
 \end{figure}
@@ -156,12 +158,18 @@ On September 14th, 2015, the Advanced LIGO detected the first gravitational wave
  
 To compute the Bayes factor between two hypotheses, we need to first define the models we are comparing. The models are descriptions of the data $d(t)$, which contains either only noise, or noise along with a gravitational wave signal, parametrized by a certain vector $\vec{\theta}$. The data $d(t)$ is recorded in the time domain, but can be written in the frequency domain at the frequency $f$ of the detector as $\tilde{d}(f)= \tilde{h}(f)+\tilde{n}(f).$ The Fourier Transformed data $\tilde{d}(f)$ is at times easier to work with. \\
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.5\textwidth]{Figures/rawData.png}
-	\caption{Plot of the raw data that is used in this example question.}
-	\label{Fig:Detection}
-\end{figure}
+
+%%%%
+% 		INSERT IMAGE OF DETECTOR HERE!!!
+%%%%
+
+
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width=0.5\textwidth]{Figures/rawData.png}
+%	\caption{Plot of the raw data that %is used in this example question.}
+%	\label{Fig:Detection}
+%\end{figure}
 
 
 The parameter vector $\vec{\theta}$ contains information on several quantities describing the binary black hole system such as the masses of the black holes ($m_1, m_2$), their spin vectors, and the distance of the black holes from Earth \cite{BaeStats}. This vector also contains quantities such as the GPS time at the geocentre at which the gravitational wave passes the Earth ($t_0$), and the phase of the signal at this time ($\phi_0)$ \cite{BaeStats}. The observed signal is actually dependant on fifteen quantities \cite{BaeStats}:
@@ -249,17 +257,14 @@ We will demonstrate the use of the Bayes factor by generating a figure, like Fig
  We will then study past data and see if the Bayes Factor detection statistic can help extract more gravitational waves signals from the noise in the various data sets. We will also study whether the new detection statistic will be able to detect gravitational waves from quieter events, that would appear as the background of SNR, as seen in Fig~\ref{Fig:Detection}.
  
  
- \section{Progress Report}
  
- In this section, results from the work from weeks 1-3 will be discussed.
- 
- \subsection{A Simple Bayesian Statistics Calculation}
+ \section{A Simple Bayesian Statistics Calculation}
  
  Bayesian Statistics can get complicated to program. To understand programming techniques to compute the Bayes factor between two hypothesis and to evaluate the posterior densities for unknown parameters in models, we began the summer by studying a simple example. \\
  
  \begin{figure}[h]
  	\centering 	\includegraphics[width=0.7\textwidth]{Figures/rawData.png} 
- 	\caption{Plots of the Posteriors}
+ 	\caption{Plots of the raw data used in this example.}
  	\label{Fig:origData}
  \end{figure}
  
@@ -303,10 +308,10 @@ Modifying the equation for the calculation of the posterior density function, Eq
   Plots of the posterior densities for both the models can be seen in Figure~\ref{Fig:exampleMXplot}. Looking at the plot for the posterior distributions for the $\mathcal{H}_{m}$ model, we can see a peak at $7.6\pm 0.4$, which is what the most probable value for the slope of the line would be. Looking at the plots for the noise model, we see that the there is no regions of high probability, suggesting that the noise model does not fit the data well. \\
  
 
-To see how well the the model $\mathcal{H}_{m}$ fits the data compared to model $\mathcal{H}_{n}$, we can compute the Bayes factors of the models. From Eq~\ref{eq:BayesFactorOrig}, we know that the Bayes factor is the ratio of the marginal likelihoods for the two models. Hence, in this case, the Bayes factor between the $\mathcal{H}_{m}$ and $\mathcal{H}_{n}$ models is $$B_{m,n} = \frac{P(d|\mathcal{H}_{m})}{P(d|\mathcal{H}_{n})} = \text{exp}\ [233170].$$ This value is very high, and hence, this tells us that the model $\mathcal{H}_{m}$ is a much more likely model than $\mathcal{H}_{n}$. Hence, from this, we can conclude that the given data $d(x)$ contains a line that masses through the origin and has a slope of $7.6\pm 0.4$ with some noise. In the next section, we will discuss how we can use Bayesian Inference to study gravitational wave strain data.\\
+To see how well the the model $\mathcal{H}_{m}$ fits the data compared to model $\mathcal{H}_{n}$, we can compute the Bayes factors of the models. From Eq~\ref{eq:BayesFactorOrig}, we know that the Bayes factor is the ratio of the marginal likelihoods for the two models. Hence, in this case, the Bayes factor between the $\mathcal{H}_{m}$ and $\mathcal{H}_{n}$ models is $$B_{m,n} = \frac{P(d|\mathcal{H}_{m})}{P(d|\mathcal{H}_{n})} = \text{exp}\ [233170].$$ This value is very high, and hence, this demonstrates that the model $\mathcal{H}_{m}$ is a much more likely model than $\mathcal{H}_{n}$. Hence, from this, we can conclude that the given data $d(x)$ contains a line that masses through the origin and has a slope of $7.6\pm 0.4$ with some noise. In the next section, we will discuss how we can use Bayesian Inference to study gravitational wave strain data.\\
 
 
- \subsection{An Example of Bayesian Inference for Binary In-Spirals}
+ \section{An Example of Bayesian Inference for Binary In-Spirals}
  
  As seen in the previous example, Bayesian inference can provide efficient and powerful approaches to model selection and parameter estimation. In this section, we describe the computational processes and theory needed to analyse some aLIGO strain data. We discuss how Bayesian inference can be used to calculate both the Bayes factor of the signal and the parameters that generated the signal. Note that this example uses gravitational wave strain data that was injected into noise data collected from the detectors during the observing run of 2015.\\
  
@@ -321,7 +326,7 @@ After the data is filtered, it is run through a series of generic gravitational 
 
 % The starting point for the data analysis begins with the time series data as seen in Figure~\ref{Fig:strainData}. Here we have the strain data $h(t)$ that is recorded by aLIGO, after a band pass filter is applied to only allows signals between 35-350 Hz, as this is the range in which LIGO is sensitive to frequencies. This data has also been run through another filter to reject frequencies that are from known noise sources \cite{ligo2016properties}. After the data is filtered, it is run through a series of generic gravitational wave templates \cite{abbott2016observing}. If the data matches one of the generic templates, it is considered to be a candidate event, and is then looked at again more closely. \\
  
- \subsubsection{Model Selection}
+ \subsection{Model Selection}
 
    \begin{figure}[h]
    	\centering
@@ -355,13 +360,13 @@ After the data is filtered, it is run through a series of generic gravitational 
 &= 50,000,000.
  \end{align*}
  
-  This value suggests to us that there is a higher probability that the data contains a gravitational wave strain and some noise than just noise.\\ 
+  This value suggests that there is a higher probability that the data contains a gravitational wave strain and some noise than just noise.\\ 
  
  
     \begin{figure}[h]
     	\centering
-    	\includegraphics[width=1\textwidth]{Figures/NoiseHistogram.pdf} 
-    	\caption{A histogram of strain data that does not have any strain due to a gravitational wave. This shows us that the noise in the data is Gaussian with a zero mean.}
+    	\includegraphics[width=0.7\textwidth]{Figures/NoiseHistogram.pdf} 
+    	\caption{A histogram of strain data that does not have any strain due to a gravitational wave. This displays that noise in the data is Gaussian with a zero mean.}
     	\label{Fig:NoiseHist}
     \end{figure}
     
@@ -370,16 +375,16 @@ After the data is filtered, it is run through a series of generic gravitational 
   
  
  
- \subsubsection{Parameter Estimation}
+ \subsection{Parameter Estimation}
  
      \begin{figure}[h]
      	\centering
-     	\includegraphics[width=1\textwidth]{Figures/m1m2.pdf} 
+     	\includegraphics[width=0.7\textwidth]{Figures/m1m2.pdf} 
      	\caption{2D plot of the log of the posterior distribution for the masses of the black holes before the merger. We can see a high posterior region near the 30-38 solar mass range. The data for this was generated from an injected gravitational wave strain.}
      	\label{Fig:2Dmasses}
      \end{figure}
  
- Now that we know that the candidate event actually contains a signal, we can use the data for the posteriors we calculated when we were calculating the Marginal likelihood to calculate the posterior distribution for parameters. Here we calculate the posterior distributions for the masses of the merging binary black holes. Using Eq~\ref{eq:PDF} and \ref{eq:likelihood}, if we plot the likelihoods for the entire set of combinations of the masses, we can get a plot as seen in Figure~\ref{Fig:2Dmasses}. This tells us that the masses of the black holes are most likely to be in the range of 30 - 37 solar masses in size. Note that the plot does not include the posterior density for all the combination of masses. This is because after the diagonal, the combinations of the masses would be repeated. \\
+ Now that we know that the candidate event actually contains a signal, we can use the data for the posteriors we calculated when we were calculating the Marginal likelihood to calculate the posterior distribution for parameters. Here we calculate the posterior distributions for the masses of the merging binary black holes. Using Eq~\ref{eq:PDF} and \ref{eq:likelihood}, if we plot the likelihoods for the entire set of combinations of the masses, we can get a plot as seen in Figure~\ref{Fig:2Dmasses}. This indicates that the masses of the black holes are most likely to be in the range of 30 - 37 solar masses in size. Note that the plot does not include the posterior density for all the combination of masses. This is because after the diagonal, the combinations of the masses would be repeated. \\
  
      \begin{figure}[h]
      	\centering
@@ -392,7 +397,7 @@ After the data is filtered, it is run through a series of generic gravitational 
  To get a better estimation on what the mass for each black hole may be, we can integrate out the posterior for both masses, with the equation $$P(m_1|d)= \int_{m_2} {P(m_1, m_2 | d) dm_2}.$$ The plot of the posterior density of the masses can be studied in Figure~\ref{Fig:1Dmasses}. From this, we can conclude that the masses for the black holes are approximately $29.5\pm0.1 \text{ and } 36.4\pm0.2$ solar masses in size. This method is similar to how parameter estimation is done for all the parameters for a gravitational wave signal. A discussion on how a gravitational wave signal is analysed for all the parameters is done in the next section.\\
  
  
- \subsection{Running LALinference to Analyse A Candidate Event}
+ \section{Running LALinference to Analyse A Candidate Event}
  
  To analyse a candidate event, such as the one seen in Fig~\ref{Fig:DataLH}, there have been scripts written that use several computers to compare numerous waveform templates with the signal data. The templates are different for each parameter set, and once a certain number of templates are run for various parameters, numerous plots of posterior destinies for various parameters along with other information regarding the candidate event are displayed on a results page. \\
  
@@ -407,7 +412,7 @@ After the data is filtered, it is run through a series of generic gravitational 
  \end{figure}
  
  
- Depending on the initial parameters passed to the function to analyse the candidate event, the results page will include the log of the Bayes factor and the Bayes factor of the gravitational wave strain model against the noise model. This value helps us decided if the candidate event has information regarding a gravitational wave strain, or if it contains just noise. \\
+ Depending on the initial parameters passed to the function to analyse the candidate event, the results page will include the log of the Bayes factor and the Bayes factor of the gravitational wave strain model against the noise model. This value helps determine if the candidate event has information regarding a gravitational wave strain, or if it contains just noise. \\
  
  
  This sections discusses an analysis of the $GW150914$ gravitational wave, detected during the first observatory run of aLIGO. This analysis was conducted with the `lalinference$\_$nest' script, which uses a Nested Sampling algorithm to calculate the evidence. \\
@@ -425,65 +430,178 @@ After the data is filtered, it is run through a series of generic gravitational 
       \end{figure}
       
       
- As the data contains a gravitational wave, we were able to calculate various parameters such as the masses, spins and orientations of the black holes. Figure~\ref{Fig:LALinferenceMasses} contains plots of the masses of the black holes, which tell us that the masses of the black holes were $39.5\pm3.2 \text{ and } 32.4\pm2.7$ solar masses. Several plots similar to the one in Figure~\ref{Fig:LALinferenceMasses} were generated for the other parameters of the binary black hole system. These help us state what values we believe that the system has. \\
+ As the data contains a gravitational wave, we were able to calculate various parameters such as the masses, spins and orientations of the black holes. Figure~\ref{Fig:LALinferenceMasses} contains plots of the masses of the black holes, which informs us that the masses of the black holes are $39.5\pm3.2 \text{ and } 32.4\pm2.7$ solar masses. Several plots similar to the one in Figure~\ref{Fig:LALinferenceMasses} were generated for the other parameters of the binary black hole system. These help us state what values we believe that the system has. \\
  
  We will run this analysis for several sets of instances where no gravitational wave strain is present to calculate the Bayes factor for these instances. As no gravitational waves are present in this data, we can create a background distribution of the value that we expect the Bayes factor to be if no gravitational wave data is present in the strain data. We will then run this analysis for the several candidate events that we observed to see if they have higher Bayes factors than the background distribution. 
  
  
- \section{Bayes Factor as a Detection Statistic}
+ \section{Determining a New Detection Statistic}
  
  
  \subsection{Background Distribution}
  
- In order to create the background distribution for the new detection statistic, we need to calculate the Bayes Factor for several triggers due to noise (events in the strain data that have a likelihood above a threshold). We created several hundred triggers by introducing an artificial time off-set of $25.13$ ms between the Hanford and Livingston data stream.  Transient waveforms were then searched for in the time off-set data with a \textit{(not sure what search was used GST lal )} in the \textit{(10 - 1024 Hz)} band. We set a threshold for so that $likelihood > BLAH$ to be considered a back event, and with this, yielded $186,000$ background triggers. The data was time shifted so that we could be certain that it would contain no real gravitational wave signal that may have been present without the artificial time-shift, and hence we know that all of the events that caused the background triggers are due to just noise. 
+ 
+ \subsubsection{Preparing Sample Points}
+ In order to create the background distribution for the new detection statistic, we need to calculate the Bayes Factor for noise events. Noise events are events in the strain data created due to noise sources, like seismic activity, that have a likelihood or SNR above a certain threshold. To create a list of noise events, an artificial time off-set of $25.13$s between the Hanford and Livingston data streams was applied to generate a dataset. As no real gravitational wave signal would be coincident in both the data streams after this artificial time shift, we can be certain that this time-shifted data contains no coincident gravitational wave events. \\
+ 
+  
+  \begin{figure}[h]
+  	\centering
+  	\includegraphics[width=1\textwidth]{Figures/FAP_Count.pdf} 
+  	\caption{The False Alarm Rate (FAR) plotted against the number of prior False Alarm Rates. The lowest FAR value in this graph is $10^{-7}$. We see that there is a larger spread of the FAR values between each data point for the first thousand data points.}
+  	\label{Fig:FAR_Count}
+  \end{figure}
+
+ 
+ Finally, we generated a list of noise events by searching for transient waveforms, with a GSTLal search in the 17 highest GSTlal mass bins, in the time off-set data. The values of chirp masses, $\mathcal{M}$, which is defined as $$\mathcal{M} = \frac{(m_1 \ m_2)^{3/5}}{(m_1 + m_2)^{1/5}},$$ in the 17 highest GSTlal bins range from $6.1 - 39.8$. With a threshold of $\text{SNR} \geq 4.0$, we yielded $186,000$ noise events. \\ 
+ 
+
+ 
+ 
+   \begin{figure}[h]
+   	\centering
+   	\includegraphics[width=1\textwidth]{Figures/sampledPts.pdf} 
+   	\caption{The False Alarm Rate plotted against the log Likelihood. The green data points are those which we are using to generate the background distribution with the Bayes Factor. We see that for lower log Likelihood values, the FAR does not appear to be changing much. However, at higher values for the log Likelihood ($\sim3$), smaller changes cause a large variation in the value for the FAR. Additionally, we see that at higher log Likelihood values, the FAR is lower. This means that there is a smaller chance of having a noise event of high log Likelihoods.}
+   	\label{Fig:sampledPts}
+   \end{figure}
+   
+   
+ 
+ For each of the noise events, the GSTlal search calculated a False Alarm Rate (FAR), associated to it. FAR for an event is the count of noise events per year of the same likelihood. In other words, a low FAR value implies that there are fewer noise events of such likelihoods. A figure of the FAR for the entire set of triggers can be seen in Fig~\ref{Fig:FAR_Count}. We selected the lowest thousand FAR values, and used these as the sample points that we decided to calculate the Bayes Factor for. The lower thousand FAR values were chosen as they differ in their FAR values from $10^{-7} - 10^{-3}$ per year, while in higher FAR regions, the change in FAR is very small. A plot of the FAR values chosen against the likelihoods for the sampled noise event points can be seen in Fig~\ref{Fig:sampledPts}.  \\
+ 
+
+\subsubsection{Analysing with IMRPhenomPv2pseudoFourPN}
+As this is an initial study, when we analysed the noise events with IMRPhenomPv2pseudoFourPN, we used only the $\mathcal{M}$ bin of $24.6  - 45.9$. This produced several different useful Bayes Factor values: 
+
+\begin{itemize}
+	\item  $\mathcal{B}_{SN}$ - the signal to noise coherent log Bayes Factor.
+	\item  $\mathcal{B}_{SN}^{I(D)}$ - the incoherent log Bayes Factors at a detector `D.'
+	\item  $\mathcal{B}_{CV}$ - the coherent versus incoherent log Bayes Factor.
+\end{itemize}
+
+The signal to noise coherent log Bayes Factor is calculated as 
+\begin{align} \label{eq:logBayesFactor}
+\text{log }\mathcal{B}_{SN} =& \text{log }P(d_{HL} | \mathcal{H} : d_{HL} = h + n)  \nonumber\\ 
+&\ - \text{log }P(d_{HL} | \mathcal{H} : d_{HL} =  n) .
+\end{align}
+Here, $d_{HL}$ is the time from both the data sets in Hanford and Livingston. \\
+
+The incoherent log Bayes Factor is what the Bayes Factor is calculated to be using only one detector's data set. \\ 
+
+Finally, the coherent versus incoherent log Bayes Factor, also known as the log Bayes Coherence ratio, is calculated as 
+ \begin{equation}\label{eq:BCR}
+ \mathcal{B}_{CV} = \frac{\mathcal{B}_{SN}}{\mathcal{B}_{SN}^{I(H)}+\mathcal{B}_{SN}^{I(L)}}.
+ \end{equation}
+This is a ratio of the coherent Bayes Factor and the sum of the incoherent Bayes Factors of the separate observatory's data sets.\\
+
+We can now try to compare these different Bayes factors for the noise events to the SNR, to understand how they can be used as a detection statistic. \\
+
+
+
+        
+ \subsubsection{Bayes Factors for Sampled Noise Events}
+ 
+          \begin{figure}[h]
+          	\centering
+          	\includegraphics[width=1\textwidth]{Figures/DetectionStatVSfar_bF.pdf} 
+          	\caption{The SNR (yellow diamonds) and Log Bayes factor (cyan squares) plotted against FAR. The Data points are coloured and sized according to their Ln Likelihoods (dark end $\sim4.6 $ to the white end $\sim10.3$).}
+          	\label{Fig:BayesVSFAR}
+          \end{figure}
+         
+ 
+ After analysing the sample points, we were able to compare the Bayes Factor for the noise events to the SNR of the noise events. A plot of the SNR and the Bayes Factor against the FAR can be seen in Fig~\ref{Fig:BayesVSFAR}. From this plot, we can observe that for some of the sampled points, the Bayes Factor is very high. For example, the noise event which occurred at the GPS time of $1127409058.94$s has a log Bayes Factor of $142.82$. On checking the incoherent log Bayes Factors obtained from the Hanford and Livingston data sets, we noted that they are $152.58$ and $0.91$. The fact that the large log Bayes Factor was present only in the Hanford data set suggests that the large value was most likely due to a glitch. The large value could also be due to the fact that the data does not fit the noise model too well. This could happen if the noise is not Gaussian, as expected by the model. \\ 
+ 
+ 
+ The reason why the Hanford data set's incoherent log Bayes Factor affects the final log Bayes factor, is because of the way the log Bayes Factor is calculated. Eq~\ref{eq:logBayesFactor} for the log Bayes Factor shows us that it is calculated using the data from both the observatories,$d_{HL}$ (the time-shifted data). Because both data sets are used, the glitch in the Hanford data causes the coherent log Bayes factor to be higher than it should be. We would like the Bayes factor to be high only if the incoherent Bayes Factor is high at both data sets. Thus, instead of using the coherent Bayes Factor, we can use $\mathcal{B}_{CV}$ - the Bayes Coherence Ratio.\\
+ 
+  As the Bayes Coherence Ratio is the ratio of the coherent Bayes Factor and the sum of the incoherent Bayes Factors of the separate observatory's data sets, its value is high only only if the Bayes Factor is high at both the observatories. The previously mentioned noise event with a log Bayes Factor of $142.82$ has a log Bayes Coherence ratio of $-10.62$, a low value as we would expect for noise events. This illustrates how the Bayes Coherence Ratio may be a better detection statistic than the Bayes Factor, as sometimes the Bayes Factor may be large for noise events.\\
+ 
+ 
+ 
+ \subsubsection{Bayes Coherence Ratio for Sampled Noise Events}
+ 
+ As discussed in the previous section, we believe that using the Bayes Coherence Ratio may be more useful as a detection statistic than the Bayes Factor. Hence, we calculated the Bayes Coherence Ratio for the sampled noise events. To compare the Bayes Coherence Ratio to the SNR of the noise events, we can study the plot in Fig~\ref{Fig:BcrVSFAR}.\\
+ 
+
+          
+          
+                   \begin{figure}[h]
+                   	\centering
+                   	\includegraphics[width=1\textwidth]{Figures/detectionStatVSfar8s.pdf} 
+                   	\caption{The SNR (yellow diamonds) and Log Bayes factor (cyan squares) plotted against FAR. The data points are coloured and sized according to their Ln Likelihoods (dark end $\sim4.6$ to the white end $\sim10.3$). }
+                   	\label{Fig:BcrVSFAR}
+                   \end{figure}
+                   
+ 
+ From the plot in Fig~\ref{Fig:BcrVSFAR}, we see that at higher FAR values, while the SNR fluctuates around its average value $8.2\pm0.5$, the Bayes Coherence Ratio appears to fluctuate more around its average, $-0.23\pm1.2$. It is important to note these values mean greatly different things. The Bayes Coherence Ratio informs us how well the model that the data contains noise and a gravitational wave signal compares against the model that the data contains only noise. As it compares models, to compute it, all possible configurations of templates and parameters must be considered. If the Bayes Coherence Ratio is low, this means that the noise event has a low probability of being due to a gravitational wave signal, as we would expect.\\
+ 
+ 
+ Unlike the Bayes Coherence Ratio, the SNR value does not consider all the possible templates and possible parameter values. It instead demonstrates how likely it is for a specific template to match the given data. Hence we can conclude that the Bayes Coherence Ratio is more generic than the SNR of a noise event, as it is calculated using all possible templates and parameters, rather than just a singular template. To get a better understanding of how the detection statistics differ, we can compare their values to the Likelihood of the noise events.\\
+       
+       
+       \begin{figure}[h]
+       	\centering
+       	\includegraphics[width=0.6\textwidth]{Figures/DetectionStatisticComparison.pdf} 
+       	\caption{Plots of the various detection statistics against the Log Likelihood of the noise events. There appears to be a correlation between the SNR and the log Likelihood, as seen by the slope of the fitted line equal to $0.25\pm0.02$. The correlation between the log Bayes Coherent Ratio and log Likelihood appears to be less, given that the slope of the fitted line for this is equal $0.05\pm0.04$. The plot of the Log Bayes Factor demonstrates that it may not be useful as a detection statistic.}
+       	\label{Fig:SeparateDetectionStatisticVSlnL}
+       \end{figure}
+                
+                
+                
+     Studying the graphs in Fig~\ref{Fig:SeparateDetectionStatisticVSlnL}, we observe a correlation between the SNR and the log likelihood, as the slope of its fitted line is $0.25\pm0.02$. In comparison, the correlation between the log Bayes Coherence Ratio and the log likelihood appears to be much weaker, given the slope of its fitted line is equal to $0.05\pm0.04$. If we extrapolate for what the data might be at higher likelihoods, we can hypothesize that at higher likelihoods, we may get higher SNR values, while the log Bayes Coherence Ratios may not increase as much. This is because of the weaker correlation between log Bayes Coherence Ratio and the log likelihood of the noise events. This indicates that at higher likelihood noise events, an SNR value might have a higher value than the log Bayes Coherence Ratio which is hypothesised to still be near zero in value. This makes sense since the log Bayes Coherence Ratio looks at the probability that the model fits the data, and since for noise events, the model should not fit the data, the log Bayes Coherence Ratio should be low.  \\ 
+     
+     
+     %%%    NOT USEDDD!!! THE LINE PLOT WITH THE FAR AGAINST THE LIKELIHOOD
+%         
+%         \begin{figure}[h]
+%         	\centering
+%         	\includegraphics[width=1\textwidth]{Figures/LineColoredBF8s.pdf} 
+%         	\caption{FAR plotted against the Ln Likelihood, with the data points coloured according to the log Bayes Coherent Ratio.}
+%         	\label{Fig:FARvsLnLBF}
+%         \end{figure}
+%         
+ 
+
+
+
+
+
+ 
+ 
+ \subsection{Studying Real Events with the Bayes Coherence Ratio}
+ 
+ 
+ 
+ To compare the Bayes Coherence Ratios obtained with noise, and those that can be obtained with real signal data, we analysed some gravitational wave strain data that had been manually injected into the data stream being recorded by aLIGO. These artificial gravitational wave signals were generated by manually shaking the mirrors in the apparatus with the static electric driver that is used to control the motion of the mirrors. The hardware injections were taken from \cite{hardwareInj}, and only those injections which were successful and coherent at both aLIGO observatories (Livingston and Hanford) were considered. Additionally, we decided to look at how the ratio's from the noise events compare against those of the events during the O1 run of aLIGO.\\
  
  
  \begin{figure}[h]
  	\centering
- 	\includegraphics[width=1\textwidth]{Figures/FAP_Count.pdf} 
- 	\caption{Posteriors for the black hole masses before the merger, created with the LALinference script. The masses are $39.5\pm3.2 \text{ and } 32.4\pm2.7$ solar masses in size. The data used for this was the same as the data from the $GW150914$ detection.}
- 	\label{Fig:FAP_Count}
+ 	\includegraphics[width=0.7\textwidth]{Figures/eventsOnBackground.pdf} 
+ 	\caption{Plots of the FAR against the log Bayes Coherent Ratio, and the SNR. The red data points are that of the sampled noise events, while the blue ones are those of the three events in the O1 aLIGO run. We can see from the plots that an event that falls in the same SNR range as the noise events, falls outside the Bayes Coherence Ratio range for the noise events.}
+ 	\label{Fig:eventsOnBackground}
  \end{figure}
  
  
- With these triggered events, we calculated the False Alarm Probability (FAP), which is the probability \textit{???}. A figure of the FAP for the entire set of triggers can be seen in Fig~\ref{Fig:FAP_Count}. We selected every third triggered event from the lowest FAP value to the first 1000th FAP value, and used these as the sample points that we decided to calculate the Bayes Factor for. The likelihoods for these sampled points can be seen in Fig~\ref{Fig:sampledPts}.
-
-       \begin{figure}[h]
-       	\centering
-       	\includegraphics[width=1\textwidth]{Figures/sampledPts.pdf} 
-       	\caption{Posteriors for the black hole masses before the merger, created with the LALinference script. The masses are $39.5\pm3.2 \text{ and } 32.4\pm2.7$ solar masses in size. The data used for this was the same as the data from the $GW150914$ detection.}
-       	\label{Fig:sampledPts}
-       \end{figure}
-       
-       
-       
+  Fig~\ref{Fig:eventsOnBackground} contains a plot of the FAR of the noise events and the events of O1, against the log Bayes Coherent Ratio, and the SNR. Studying the plots, it is evident that one event falls in the band of values that the noise events achieve when using SNR as a detection statistic. However, when using the log Bayes Coherent Ratio, this event does not fall into the band of values of the noise events. This illustrates to us that the Bayes Coherent Ratio may be a better detection statistic than SNR, and the Bayes Factor. However, we still need to calculate and generate a larger list of Bayes Coherent Ratios that we can compare with the gravitational wave events, to learn the thresholds of this statistic.
  
  
- \subsection{Gravitational Wave Injections }
- To test the 
- 
-\section{Other things to write about}
- 
- \begin{itemize}
- 	\item nested sampling 
- 	\item a basis vector to calculate the hOfF faster
- 	\item  Lit review and the VV paper, Text, Param estimation paper, Basics physics of Binary Black Hole Mergers Paper.
-	\item  talk about False alarma events, corellated and realated
- \end{itemize}
- 
-
  
  
-% % Figure for example m
-% \begin{figure}[h]
-% 	\centering
-% 	
+ 
+ 
 % 
- % Figure for Example G search 
- %- Strain
- % Whitened Data
- % Mass vs mass
- % mass prob
+%\section{Other things to write about}
+% 
+% \begin{itemize}
+% 	\item nested sampling 
+% 	\item a basis vector to calculate the hOfF faster
+% 	\item  Lit review and the VV paper, Text, Param estimation paper, Basics physics of Binary Black Hole Mergers Paper.
+%	\item  talk about False alarma events, corellated and realated
+% \end{itemize}
+% 
+
+ 
  
  
  %----------------------------------------------------------------------------------------

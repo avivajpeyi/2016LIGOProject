@@ -1,0 +1,66 @@
+
+\documentclass{article}
+
+\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
+\usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
+\usepackage{graphicx} % Required for the inclusion of images
+\usepackage{natbib} % Required to change bibliography style to APA
+\usepackage{amsmath} % Required for some math elements 
+\usepackage{gensymb}
+\usepackage{ upgreek }
+
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
+
+%\usepackage{times} % Uncomment to use the Times New Roman font
+
+
+%Code packages
+\usepackage{indentfirst}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{color}
+% Code packages end
+
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{authblk}
+
+
+\makeatletter 
+\newcommand\mynobreakpar{\par\nobreak\@afterheading} 
+\makeatother
+
+%opening
+\title{Use of the Bayes Factor to Improve the Detection of Binary Black Hole Systems} % Title
+
+
+%Jonah B. Kanner
+\author[1]{Avi Vajpeyi }		 
+\author[2]{Rory J. Smith \thanks{smith\textunderscore r@ligo.caltech.edu}} 
+\author[2]{Jonah B. Kanner \thanks{jkanner@caltech.edu}}
+\affil[1]{The College of Wooster, Wooster, OH 44691, USA}
+\affil[2]{LIGO Laboratory, California Institute of Technology, Pasadena, CA 91125, USA}
+\begin{document}
+
+\maketitle
+
+ \begin{abstract}
+  %	On September 14th, 2015, aLIGO detected the first gravitational wave \cite{DetectionPaper}. The detected wave had a very large Signal-to-Noise Ratio (SNR), which made it stand out from the other candidate events. This paper investigates an alternative detection statistic to SNR. In particular, the new detection statistic involves the `Bayes Factor,' and as this is an initial study, only models of binary black hole systems are analysed. Additionally, the Bayes Factor in this case is the ratio between the marginal likelihood of the strain data given that the data contains a gravitational wave signal and some noise, and the marginal likelihood of the strain data given that the data contains only noise. In contrast the SNR is a maximum likelihood estimator, and so the Bayes factor might prove to be more robust than SNR, as it may be able to better discern between strains due to gravitational waves, and strains due to noise. The new detection statistic might even be able to identify the third possible signal of the first observing run, LVT151012,  with a higher significance than before.  %This study of the new detection statistic is focused on binary black hole systems.  %This study of the new detection statistic is focused on binary black hole systems. 
+ 	
+ 	On September 14th, 2015, aLIGO detected the first gravitational wave with a very large Signal-to-Noise Ratio (SNR). In contrast, there are several candidate events with low SNR values, which fall within the background distribution. This paper investigates an alternative detection statistic to SNR, known as the ‘Bayes Factor.'  The Bayes Factor is the ratio between the probability that the strain data contains a gravitational wave signal plus Gaussian noise, to the probability that strain data contains only Gaussian noise. In contrast the SNR is a maximum likelihood estimator, while the Bayes factor takes into consideration all possible binary configurations, including spin orientations and magnitudes. Hence the Bayes factor might prove to be more robust than SNR. This study focuses only on binary black hole systems.
+ 	
+ 	  	
+ 	
+ 	
+ 	
+ 	
+ \end{abstract}  
+ 
+
+ 
+\end{document}
+

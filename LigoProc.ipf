@@ -1,11 +1,138 @@
 #pragma rtGlobals=3		// Use modern global access method and strict wave access.
 
 Menu "Stuff"
+	"SNR combine", SNRcombine(snrL1, snrH1)
 	"NumBeforeEachFAP" , NumPointsBeforeFAP(FAP)
 	"sampling Of GPS timess",  samplingOfGPStimes(realGPS, lnL, far, snr)
-	"Matching the coherent GPS times with the Likelihoods", matchingData(realGPS_sampled, lnL_sampled, GPStimeBayes, coherentBayes, far_sampled, snr_sampled)
+	"Matching the coherent GPS times with the Likelihoods", matchingData(realGPS_sampled, lnL_sampled, far_sampled, snr_sampled)
+	"test",  PromptTest()
 End
 
+
+Function PromptTest()
+	String BCRstring
+	Prompt BCRstring, "Example:", popup Wavelist("BCR*", ";", "")
+	DoPrompt "Select waves", BCRstring
+	If (v_flag)
+		return -1
+	endif
+	 
+	Wave BayesCoherentRatio = $BCRstring
+	print BCRstring
+	print BayesCoherentRatio
+End
+
+		
+Function matchingData(realGPS_sampled, lnL_sampled, far_sampled, snr_sampled) 
+
+Wave realGPS_sampled, lnL_sampled, far_sampled, snr_sampled
+
+
+	String GPStimeBayesString
+	Prompt GPStimeBayesString, "Example:", popup Wavelist("GPStimeBayes*", ";", "")
+	DoPrompt "Select waves", GPStimeBayesString
+	If (v_flag)
+		return -1
+	endif
+	Wave GPStimeBayes = $GPStimeBayesString
+
+
+	String BCRstring
+	Prompt BCRstring, "Example:", popup Wavelist("BCR*", ";", "")
+	DoPrompt "Select waves", BCRstring
+	If (v_flag)
+		return -1
+	endif
+	Wave BayesCoherentRatio = $BCRstring
+	
+	
+	
+
+
+	// ROUNDING of real GPS to match the BPStimeBayes
+	string realGPSroundedName = "realGPS_rounded"
+	duplicate/O realGPS_sampled $realGPSroundedName
+	Wave realGPSrounded=$realGPSroundedName
+	Variable targetDP
+	targetDP = round(2) // the DP that my number will be 
+	realGPSrounded = round( realGPSrounded * (10^targetDP)) / (10^targetDP)
+
+	//Store the name of the wave plus the string "_OneThird" into newWaveName
+	string GPSName=NameOfWave(GPStimeBayes)+"_srt"
+	string lnLName="lnL_srt"
+	string farName="far_srt"
+	string snrName="snr_srt"
+	string coherentBayesName =  NameOfWave(BayesCoherentRatio)+"_srt"
+
+	
+	//Duplicate fluorescence as a wave named fluorescence_OneThird
+	duplicate/O  GPStimeBayes $GPSName
+	duplicate/O GPStimeBayes $lnLName
+	duplicate/O GPStimeBayes $farName
+	duplicate/O GPStimeBayes $snrName
+	duplicate/O GPStimeBayes $coherentBayesName
+	//Reference fluorescence_OneThird so that you can use it
+	Wave GPSsort=$GPSName
+	Wave lnLsort=$lnLName
+	Wave farsort=$farName
+	Wave SNRsort=$snrName
+	Wave bayesSort = $coherentBayesName
+	
+	variable i
+	variable  x
+		
+	for( i = 0; i < numpnts(GPStimeBayes); i += 1)
+		//GPSsort[i] = 0
+		lnLsort[i] = 0
+		farsort[i] = 0
+		bayesSort[i] = 0
+		SNRsort[i]= 0
+	endFor
+		
+	i = 0
+	 
+	 variable numMatches =0
+	 
+	for( i = 0; i < numpnts(GPStimeBayes); i += 1)
+		for (x = 0; x < numpnts(realGPSrounded); x += 1)
+			if  (GPStimeBayes[i] == realGPSrounded[x])
+				numMatches +=1
+				GPSsort[i] = GPStimeBayes[i]
+				lnLsort[i] = lnL_sampled[x]
+				farsort[i] = far_sampled[x]
+				bayesSort[i] =  BayesCoherentRatio[i]
+				SNRsort[i]= snr_sampled[x]
+			endif
+		endFor
+	endFor  
+	
+	string outputStatment = "Number of Matches = "  + num2str(numMatches)
+	print(outputStatment)
+	
+	
+End
+
+
+
+Function SNRcombine(snrL1, snrH1)
+	
+	Wave snrL1, snrH1
+
+	//Create wave of size SNR L1
+	string snrName="snr"
+	duplicate/O snrL1 $snrName
+	Wave SNR=$snrName
+	variable i =0
+	for( i = 0; i < numpnts(SNR); i += 1)
+		SNR[i]= 0
+	endFor
+	for( i = 0; i < numpnts(snrL1); i += 1)
+		SNR[i]= sqrt((snrL1[i]*snrL1[i])+(snrH1[i]*snrH1[i]))
+	endFor
+
+end
+	
+	 
 
 
 Function NumPointsBeforeFAP(FAP)
@@ -106,69 +233,6 @@ End
 
 	
 	
-		
-Function matchingData(realGPS_sampled, lnL_sampled, GPStimeBayes, coherentBayes, far_sampled, snr_sampled) 
-
-Wave realGPS_sampled, lnL_sampled, GPStimeBayes, coherentBayes, far_sampled, snr_sampled
-
-
-	// ROUNDING!!!!
-	string realGPSroundedName = "realGPS_rounded"
-	duplicate/O realGPS_sampled $realGPSroundedName
-	Wave realGPSrounded=$realGPSroundedName
-	Variable targetDP
-	targetDP = round(2) // the DP that my number will be 
-	 realGPSrounded = round( realGPSrounded * (10^targetDP)) / (10^targetDP)
-
-	//Store the name of the wave plus the string "_OneThird" into newWaveName
-	string GPSName="GPS_srt"
-	string lnLName="lnL_srt"
-	string farName="far_srt"
-	string snrName="snr_srt"
-	string coherentBayesName = "coherBayes_srt"
-	//Duplicate fluorescence as a wave named fluorescence_OneThird
-	duplicate/O  GPStimeBayes $GPSName
-	duplicate/O GPStimeBayes $lnLName
-	duplicate/O GPStimeBayes $farName
-	duplicate/O GPStimeBayes $snrName
-	duplicate/O GPStimeBayes $coherentBayesName
-	//Reference fluorescence_OneThird so that you can use it
-	Wave GPSsort=$GPSName
-	Wave lnLsort=$lnLName
-	Wave farsort=$farName
-	Wave SNRsort=$snrName
-	Wave bayesSort = $coherentBayesName
-	
-	variable i
-	variable  x
-		
-	for( i = 0; i < numpnts(GPStimeBayes); i += 1)
-		//GPSsort[i] = 0
-		lnLsort[i] = 0
-		farsort[i] = 0
-		bayesSort[i] = 0
-		SNRsort[i]= 0
-	endFor
-		
-	i = 0
-	 
-	for( i = 0; i < numpnts(GPStimeBayes); i += 1)
-		for (x = 0; x < numpnts(realGPSrounded); x += 1)
-			if  (GPStimeBayes[i] == realGPSrounded[x])
-				print("YES")
-				GPSsort[i] = GPStimeBayes[i]
-				lnLsort[i] = lnL_sampled[x]
-				farsort[i] = far_sampled[x]
-				bayesSort[i] =  coherentBayes[i]
-				SNRsort[i]= snr_sampled[x]
-			endif
-		endFor
-	endFor  
-	
-	
-	
-End
-
 	
 	
 

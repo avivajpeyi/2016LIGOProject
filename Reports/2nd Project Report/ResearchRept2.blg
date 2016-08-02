@@ -3,44 +3,47 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ResearchRept2.aux
 The style file: plain.bst
 Database file #1: ProjectProposalRefrences.bib
-You've used 8 entries,
+Warning--entry type for "hardwareInj" isn't style-file defined
+--line 12 of file ProjectProposalRefrences.bib
+You've used 10 entries,
             2118 wiz_defined-function locations,
-            549 strings with 5734 characters,
-and the built_in function-call counts, 3365 in all, are:
-= -- 290
-> -- 278
+            556 strings with 5918 characters,
+and the built_in function-call counts, 3828 in all, are:
+= -- 331
+> -- 303
 < -- 0
-+ -- 110
-- -- 102
-* -- 305
-:= -- 621
-add.period$ -- 24
-call.type$ -- 8
-change.case$ -- 70
++ -- 120
+- -- 110
+* -- 326
+:= -- 705
+add.period$ -- 29
+call.type$ -- 10
+change.case$ -- 79
 chr.to.int$ -- 0
-cite$ -- 8
-duplicate$ -- 84
-empty$ -- 180
-format.name$ -- 102
-if$ -- 637
+cite$ -- 10
+duplicate$ -- 101
+empty$ -- 219
+format.name$ -- 110
+if$ -- 732
 int.to.chr$ -- 0
-int.to.str$ -- 8
-missing$ -- 7
-newline$ -- 43
-num.names$ -- 16
-pop$ -- 58
+int.to.str$ -- 10
+missing$ -- 8
+newline$ -- 52
+num.names$ -- 20
+pop$ -- 71
 preamble$ -- 1
-purify$ -- 63
+purify$ -- 70
 quote$ -- 0
-skip$ -- 61
+skip$ -- 78
 stack$ -- 0
-substring$ -- 130
-swap$ -- 8
+substring$ -- 140
+swap$ -- 10
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 32
+type$ -- 40
 warning$ -- 0
-while$ -- 21
-width$ -- 9
-write$ -- 89
+while$ -- 25
+width$ -- 12
+write$ -- 106
+(There was 1 warning)
