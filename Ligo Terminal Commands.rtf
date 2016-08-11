@@ -1,12 +1,28 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
 {\fonttbl\f0\fnil\fcharset0 AndaleMono;\f1\fmodern\fcharset0 Courier;\f2\fnil\fcharset0 Menlo-Regular;
-}
+\f3\fnil\fcharset0 Monaco;}
 {\colortbl;\red255\green255\blue255;\red47\green255\blue18;\red255\green238\blue149;\red21\green102\blue47;
-\red47\green180\blue29;\red224\green228\blue9;\red180\green36\blue25;}
+\red47\green180\blue29;\red242\green242\blue242;\red47\green189\blue29;\red224\green228\blue9;\red180\green36\blue25;
+}
 \margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf2 \cb0 \CocoaLigature0 ENTERING CLUSTER:\
+\f0\fs24 \cf2 \cb0 \CocoaLigature0 \
+NOTES:\
+\
+{\field{\*\fldinst{HYPERLINK "https://geo2.arcca.cf.ac.uk/~spxjdv1/O1/HWinjections_1024Hz/1127175854.0-0/H1L1/posplots.html"}}{\fldrslt https://geo2.arcca.cf.ac.uk/~spxjdv1/O1/HWinjections_1024Hz/1127175854.0-0/H1L1/posplots.html}}\
+I have the BCR but where do I get the FAR\
+\
+I have created the Folders for the PSD \
+\
+\
+\
+\
+\
+\
+\
+\
+ENTERING CLUSTER:\
 \
 ligo-proxy-init avi.vajpeyi\
 gsissh -X ldas-pcdev3.ligo.caltech.edu\
@@ -16,13 +32,19 @@ gsissh -X ldas-pcdev3.ligo.caltech.edu\
 \
 \
 TO COPY FILE TO CLUSTER\
+\
+\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
 \f1 \cf3 \cb4 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f2\fs22 \cf0 \cb1 gsiscp ./noiseTrigs.txt  avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
-\f1\fs24 \cf3 \cb4 /home/avi.vajpeyi/pycbcBackgroundTriggers\
+\f2\fs22 \cf0 \cb1 gsiscp 
+\f1\fs24 \cf3 \cb4 PSDtimeShifts.py
+\f2\fs22 \cf0 \cb1   avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
+\f0\fs24 \cf2 \cb0 /home/avi.vajpeyi/pycbcBackgroundTriggers/
+\f3\fs26 \cf5 PSDtimeShifts
+\f0\fs24 \cf2 \
 \
 
 \f2\fs22 \cf0 \cb1 \
@@ -30,11 +52,37 @@ TO COPY FILE TO CLUSTER\
 \
 TO COPY FILE FROM CLUSTER\
 \
- gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
-\f0\fs24 \cf2 \cb0 /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/lalinference_1126074549-1129348536.dag 
-\f2\fs22 \cf0 \cb1  
-\f1\fs24 \cf3 \cb4 .\
 \
+\
+\
+gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
+\f3\fs26 \cf6 \cb0 /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/\cf7 lalinference_1126074549-1129348536.sh\cf6  . 
+\f2\fs22 \cf0 \cb1 \
+\
+\
+ gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
+\f3\fs26 \cf6 \cb0 /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/1016/data-dumpH1-freqData.dat .\
+\
+\
+\
+\
+
+\f2\fs22 \cf0 \cb1  gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
+\f3\fs26 \cf6 \cb0 /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/1016/data-dumpL1-freqData.dat .\
+\
+\
+
+\f2\fs22 \cf0 \cb1  gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
+\f3\fs26 \cf6 \cb0 /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/1016/data-dumpH1-PSD.dat .\
+\
+
+\f2\fs22 \cf0 \cb1  gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
+\f3\fs26 \cf6 \cb0 /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/1016/data-dumpL1-PSD.dat .\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf3 \cb4 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
 \f2\fs22 \cf0 \cb1 \
 \
@@ -62,7 +110,7 @@ TO COPY FILE FROM CLUSTER\
 \f2\fs22 \cf0 \cb1 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf2 \cb0 s%\'92macroH\cb6 1imes\cb0 lide=\cf7 \'930\'94\'92\cf2 macroH\cb6 1imes\cb0 lide=\cf7 \'9325.1327412287\'94\'92
+\f0\fs24 \cf2 \cb0 s%\'92macroH\cb8 1imes\cb0 lide=\cf9 \'930\'94\'92\cf2 macroH\cb8 1imes\cb0 lide=\cf9 \'9325.1327412287\'94\'92
 \f2\fs22 \cf0 \cb1 \
 
 \f0\fs24 \cf2 \cb0 \
@@ -74,6 +122,82 @@ h5dump -H -A posterior_H1L1_1127409058.94-1242.hdf5\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
 \f2\fs22 \cf0 \cb1 \
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\fs26 \cf6 \cb0 lalinference_pipe -r /home/avi.vajpeyi/softwareInjections/ --daglog-path /usr1/avi.vajpeyi/ /home/avi.vajpeyi/softwareInjections/inj.ini -I /home/avi.vajpeyi/softwareInjections/BBH.xml.gz\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf0 \cb1 \
+\
+\
+\
+\
+\
+\
+\
+\
+''' \
+/home/avi.vajpeyi/local/bin/lalinference_datadump --L1-flow 10 --psdlength 1024 \
+\
+\
+\
+\
+--randomseed 1268060671 --seglen 8 --L1-channel L1:DCS-CALIB_STRAIN_C01 --L1-timeslide 0 \
+\
+\
+--H1-flow 10 --H1-timeslide 0 \
+\
+\
+--trigtime 1127002734.67 \
+\
+\
+--psdstart 1127001781.0 \
+\
+\
+--H1-cache /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/H-H1_HOFT_C01_CACHE-1126074549-3273987.lcf \
+\
+\
+--L1-cache /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/L-L1_HOFT_C01_CACHE-1126074549-3273987.lcf \
+\
+\
+\
+--srate 1024 \
+\
+\
+--H1-channel H1:DCS-CALIB_STRAIN_C01 \
+\
+\
+--outfile /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/1018/data-dump  \
+\
+--data-dump  \
+\
+--ifo H1  \
+\
+--ifo L1\
+\
+\
+\
+\
+////////\
+\
+/home/avi.vajpeyi/local/bin/lalinference_datadump --L1-flow 10 --psdlength 1024 \
+\
+\
+\
+--randomseed 1671023922 --seglen 8 --L1-channel L1:DCS-CALIB_STRAIN_C01 --L1-timeslide 0 \
+\
+\
+\
+--H1-flow 10 --H1-timeslide 0 --trigtime 1126257549.25 --psdstart 1126256821.0 --H1-cache /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/H-H1_HOFT_C01_CACHE-1126074549-3273987.lcf --L1-cache /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/L-L1_HOFT_C01_CACHE-1126074549-3273987.lcf --srate 1024 --H1-channel H1:DCS-CALIB_STRAIN_C01 --outfile /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/973/data-dump  --data-dump  --ifo H1  --ifo L1\
+\
+'''\
+\
+\
+\
+\
 \
 \
 \

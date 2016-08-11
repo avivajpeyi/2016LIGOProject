@@ -4,7 +4,7 @@ Menu "Stuff"
 	"SNR combine", SNRcombine(snrL1, snrH1)
 	"NumBeforeEachFAP" , NumPointsBeforeFAP(FAP)
 	"sampling Of GPS timess",  samplingOfGPStimes(realGPS, lnL, far, snr)
-	"Matching the coherent GPS times with the Likelihoods", matchingData(realGPS_sampled, lnL_sampled, far_sampled, snr_sampled)
+	"Matching the coherent GPS times with the Likelihoods", matchingData(realGPS_sampled, far_sampled, snr_sampled)//, lnL_sampled, )
 	"test",  PromptTest()
 End
 
@@ -23,13 +23,24 @@ Function PromptTest()
 End
 
 		
-Function matchingData(realGPS_sampled, lnL_sampled, far_sampled, snr_sampled) 
+		
+		
+		
+	
+Function matchingData(realGPS_sampled, far_sampled, snr_sampled) // , lnL_sampled)
 
-Wave realGPS_sampled, lnL_sampled, far_sampled, snr_sampled
+Wave realGPS_sampled, far_sampled, snr_sampled //,  lnL_sampled
+
+
+
+//Duplicate/O  Htime realGPS_sampled
+//Duplicate/O  FAR far_sampled
+//Duplicate/O   SNR snr_sampled
+
 
 
 	String GPStimeBayesString
-	Prompt GPStimeBayesString, "Example:", popup Wavelist("GPStimeBayes*", ";", "")
+	Prompt GPStimeBayesString, "GPS Bayes:", popup Wavelist("*GPS*", ";", "")
 	DoPrompt "Select waves", GPStimeBayesString
 	If (v_flag)
 		return -1
@@ -59,7 +70,7 @@ Wave realGPS_sampled, lnL_sampled, far_sampled, snr_sampled
 
 	//Store the name of the wave plus the string "_OneThird" into newWaveName
 	string GPSName=NameOfWave(GPStimeBayes)+"_srt"
-	string lnLName="lnL_srt"
+	//string lnLName="lnL_srt"
 	string farName="far_srt"
 	string snrName="snr_srt"
 	string coherentBayesName =  NameOfWave(BayesCoherentRatio)+"_srt"
@@ -67,13 +78,13 @@ Wave realGPS_sampled, lnL_sampled, far_sampled, snr_sampled
 	
 	//Duplicate fluorescence as a wave named fluorescence_OneThird
 	duplicate/O  GPStimeBayes $GPSName
-	duplicate/O GPStimeBayes $lnLName
+	//duplicate/O GPStimeBayes $lnLName
 	duplicate/O GPStimeBayes $farName
 	duplicate/O GPStimeBayes $snrName
 	duplicate/O GPStimeBayes $coherentBayesName
 	//Reference fluorescence_OneThird so that you can use it
 	Wave GPSsort=$GPSName
-	Wave lnLsort=$lnLName
+	//Wave lnLsort=$lnLName
 	Wave farsort=$farName
 	Wave SNRsort=$snrName
 	Wave bayesSort = $coherentBayesName
@@ -83,7 +94,7 @@ Wave realGPS_sampled, lnL_sampled, far_sampled, snr_sampled
 		
 	for( i = 0; i < numpnts(GPStimeBayes); i += 1)
 		//GPSsort[i] = 0
-		lnLsort[i] = 0
+		//lnLsort[i] = 0
 		farsort[i] = 0
 		bayesSort[i] = 0
 		SNRsort[i]= 0
@@ -98,7 +109,7 @@ Wave realGPS_sampled, lnL_sampled, far_sampled, snr_sampled
 			if  (GPStimeBayes[i] == realGPSrounded[x])
 				numMatches +=1
 				GPSsort[i] = GPStimeBayes[i]
-				lnLsort[i] = lnL_sampled[x]
+				//lnLsort[i] = lnL_sampled[x]
 				farsort[i] = far_sampled[x]
 				bayesSort[i] =  BayesCoherentRatio[i]
 				SNRsort[i]= snr_sampled[x]

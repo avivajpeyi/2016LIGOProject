@@ -1,16 +1,30 @@
-#!/usr/bin/python
-
 import numpy as np
-#import matplotlib.pyplot as plt
 import lal
 import lalsimulation
 
-# ha / sqrt of noise var    plot against frq as a histogram
-#
 print("running...")
 
 
-
+#######################################################
+#  hOfF  (m1, m2)
+#
+#	Generates a template in strain data 
+#	for a given set of parameters. 
+# 	In this current case, m1 and m2 
+#	are the parameters with which 
+#	the template's strain data is 
+#	generated.
+#
+#     Parameters Passed:
+#        m1       --> Guess for mass of the larger BH
+#        m2       --> Guess for mass of the smaller BH
+#
+#     Return Value:
+#       Given parameters (in this case m1, m2), 
+#	the template's strain data is calculated 
+# 	and returned.
+#
+######################################################
 def hOfF(m1, m2):
 
 	m1 *= lal.lal.MSUN_SI
@@ -26,26 +40,40 @@ def hOfF(m1, m2):
 	return H[0].data.data + H[1].data.data
 
 #######################################################
-#  lnLikelihood (m1, m2)
+#  lnLikelihood (m1, m2, Lcomplex, LNoise, Hcomplex, HNoise)
 #
 #     Calculates the log of the Likihood, the
 #     log P( d1,d2 | theta).
 #
+# 	[Check paper :				]
+#	[ http://arxiv.org/pdf/0911.3820v2.pdf  ]
+#	[ appendix eq A19 and A20		]
+#
 #
 #     Parameters Passed:
-#        m1  --> Guess for mass of the larger BH
-#        m2  --> Guess for mass of the smaller BH
+#        m1 	  --> Guess for mass of the larger BH
+#        m2 	  --> Guess for mass of the smaller BH
+#	 Lcomplex --> Livingston's Strain real+img part
+#	 LNoise	  --> Livingston's Noise Varience 	
+#        Hcomplex --> Hanford's Strain real+img part
+#        HNoise   --> Hanford's Noise Varience  
 #
 #     Return Value:
-#       Given m1, m2, the likilihood for the
-#       frequencies to contain the data for the
-#       masses is calculated and returned
+#       Given parameters (in this case m1, m2), 
+#	the likilihood for the strain data 
+#       to match the template h is returned 
 #
 ######################################################
 def logLikelihood (m1, m2, Lcomplex, LNoise, Hcomplex, HNoise):
 
-	#Return value of the hOfF function
-	hOfF_value = hOfF(m1,m2)
+
+''' OLD VERSION TO CALCULATE LnL --- depricated 
+
+        # hOfF generates the template in strain 
+        #Return value of the hOfF function
+        hOfF_value = hOfF(m1,m2)
+
+
 
 	lnLikelihoodConstant = 1.0 # should be np.log(......)
 
@@ -77,36 +105,50 @@ def logLikelihood (m1, m2, Lcomplex, LNoise, Hcomplex, HNoise):
 	lnLikelihoodExp = lnLikelihoodExp_H+lnLikelihoodExp_L
 	lnLikelihood =  lnLikelihoodExp #+ lnLikelihoodConstant
 
+'''
+	
+	# hOfF generates the template in strain 
+        hOfF_value = hOfF(m1,m2)
 
-	# Hf_hofF and Lf_hofF are the  |data-h|^2   /  Variance
-
-
+	# Hf_hofF and Lf_hofF are the  |data-h|^2   /  noise 
+	# Calculating the (data - template) for H and L 
 	Hf_hofF= np.zeros(len(hOfF_value))
 	Hf_hofF = Hcomplex - hOfF_value
-
 
 	Lf_hofF= np.zeros(len(hOfF_value))
 	Lf_hofF = Lcomplex - hOfF_value
 
-	#vdot-> dot prod that takes the
+	#vdot-> dot prod that takes the The vdot(a, b) function handles complex numbers differently than dot(a, b).
+	#	 If the first argument is complex the complex conjugate of the first argument is used for the calculation of the dot product.
+
+	# Calculating the (data - template)^2 / Noise 
 	lnLikelihoodExp_Ha = (-2.0/T) * np.absolute(np.vdot(Hf_hofF,Hf_hofF/ HNoise['noiseVar']))
+	
 	# print ( lnLikelihoodExp_Ha)
 	# print ( np.absolute(np.vdot(Hcomplex,Hcomplex)) )
 	#print("without subtraction %f" %lnLikelihoodExp_Ha)
+
+	
 	lnLikelihoodExp_Ha = lnLikelihoodExp_Ha + (2.0/T)*np.absolute(np.vdot(Hcomplex,Hcomplex/ HNoise['noiseVar']))
+	
 	#print("after subtraction %f" %lnLikelihoodExp_Ha)
 	#print("the constant:")
-	x = ( np.absolute(np.vdot(Hcomplex,Hcomplex/ HNoise['noiseVar'])))
+	
+	# x is just a test variable 
+	#x = ( np.absolute(np.vdot(Hcomplex,Hcomplex/ HNoise['noiseVar'])))
 	#print (x)
-
-
-
 
 	lnLikelihoodExp_La = (-2.0/T) * np.absolute(np.vdot(Lf_hofF,Lf_hofF/ LNoise['noiseVar']))
 
+
+	# Only calculated for Hanford Data set 
 	lnLikelihood_new = lnLikelihoodExp_Ha#+lnLikelihoodExp_La
 
 	return lnLikelihood_new
+
+
+
+
 
 #######################################################
 #  Importing the raw data files into numpy arrays
@@ -123,6 +165,10 @@ Hcomplex = HFreq['real'] + 1j*HFreq['imag']
 Lcomplex = LFreq['real'] + 1j*LFreq['imag']
 
 #print(HFreq['f'][1])
+
+
+
+
 #######################################################
 
 # List of Solar Masses (20~50 solar masses)
