@@ -7,7 +7,7 @@ from shutil import move
 from os import remove, close
 
 
-fileName = "testReplace.txt"
+fileName = "/home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/lalinference_1126074549-1129348536.dag"
 
 def removeHashLine(fileToSearch):
     f = open(fileToSearch,"r")
@@ -16,12 +16,9 @@ def removeHashLine(fileToSearch):
     f = open(fileToSearch, 'w')
     f.writelines([item for item in lines if '##' not in item])
     f.close()
+####################################
 
-
-
-
-
-def replace2(file_path, pattern, subst):
+def replace(file_path, pattern, subst):
     #Create temp file
     fh, abs_path = mkstemp()
     with open(abs_path,'w') as new_file:
@@ -33,52 +30,84 @@ def replace2(file_path, pattern, subst):
     remove(file_path)
     #Move new file
     move(abs_path, file_path)
+####################################
 
+def addArgumentForReadingNewASD(dagToEdit):
 
-
-def replace(textToReplace, textToSearch, fileToSearch):
-    print("Text being searched: " + textToSearch)
-    print("Text to replace: " + textToReplace)
-
-
-
-    f = open(fileToSearch,"r")
+    # get all lines in file
+    f = open(dagToEdit,"r")
     lines = f.readlines()
     f.close()
 
+    for i,line in enumerate(lines):
 
-    f = open(fileToSearch, 'w')
-    for line in lines:
-        f.writelines([item for item in lines if '##' not in item])
-    f.close()
+        if "engine_H1L1.sub" in line: # then we need to add an arg
 
+            # Need to match the VARstring with its appropriate ASD file
+            VARstring = lines[i+2]
 
+            # Breaking the string where ever a space is present
+            VARstringBreakup = VARstring.split()
 
-    '''
-    tempFile = open (fileToSearch, 'r+')
-    print("Text being searched: " + textToSearch)
-    print("Text to replace: " + textToReplace)
+            # getting a segment of the path that we need
+            pathSegmentIndex = VARstringBreakup.index('macroargument5="--roq-times') + 1
+            pathSegment = VARstringBreakup[pathSegmentIndex]
 
-    count = 0
-    for line in fileinput.input( fileToSearch):
-        if textToSearch in line :
-            count +=1
-        tempFile.write(line.replace( textToSearch, textToReplace, 3 ) )
-    print (str(count) + " matches \n\n")
-    tempFile.close()
+            #splitting the path where ever '/' present
+            pathSegmentBreakup = pathSegment.split('/')
 
+            #getting the ROQ number from the path
+            ROQnumIndex = pathSegmentBreakup.index("ROQdata") + 1
+            ROQnum = pathSegmentBreakup[ROQnumIndex]
 
-    '''
+            #getting rid of the end portion of the path
+            endString = ROQnum +'/tcs.dat'
+            endIndex = pathSegment.index(endString)
+            ASDfilePath = pathSegment[:endIndex]+"timeshiftedROQfiles/"+ROQnum+"/data-dumpL1-ASD.dat"
 
+            # Adding the ASD file path the to VAR string
+            newVARstring = VARstring+ ' macroargument10="--L1-psd '+ ASDfilePath+'"'
 
-def dagFile():
+            replace(dagToEdit, VARstring, newVARstring)
+
+        else if "engine_L1.sub" in line: # then we need to add an arg
+
+            # Need to match the VARstring with its appropriate ASD file
+            VARstring = lines[i+2]
+
+            # Breaking the string where ever a space is present
+            VARstringBreakup = VARstring.split()
+
+            # getting a segment of the path that we need
+            pathSegmentIndex = VARstringBreakup.index('macroargument3="--roq-times') + 1
+            pathSegment = VARstringBreakup[pathSegmentIndex]
+
+            #splitting the path where ever '/' present
+            pathSegmentBreakup = pathSegment.split('/')
+
+            #getting the ROQ number from the path
+            ROQnumIndex = pathSegmentBreakup.index("ROQdata") + 1
+            ROQnum = pathSegmentBreakup[ROQnumIndex]
+
+            #getting rid of the end portion of the path
+            endString = ROQnum +'/tcs.dat'
+            endIndex = pathSegment.index(endString)
+            ASDfilePath = pathSegment[:endIndex]+"timeshiftedROQfiles/"+ROQnum+"/data-dumpL1-ASD.dat"
+
+            # Adding the ASD file path the to VAR string
+            newVARstring = VARstring+ ' macroargument7="--L1-psd '+ ASDfilePath+'"'
+
+            replace(dagToEdit, VARstring, newVARstring)
+    # Else, the line doesnt change
+####################################
+
+def applyTimeSlideToDagFile(dagToEdit):
+
 
     # WE HAE USED H TIME AS THE NOISE TRIGS!!
     ## THUS WE NEED TO TIME SHIFT L!
 
-
-    fileToSearch = 'lalinference_1126074549-1129348536.dag' #
-    removeHashLine(fileToSearch)
+    removeHashLine(dagToEdit)
 
     # takes the data for the FAR, SNR, HTime, LTime and Time Slide val
     dataMatrix = np.loadtxt('allTrigsandData_unique.txt',skiprows=1)
@@ -91,7 +120,7 @@ def dagFile():
 
     for i in range(len(dataMatrix)):
 
-        print ("Checking "+str(dataMatrix[i][H_TIME]))
+        print ("Adjusting the dag for "+str(dataMatrix[i][H_TIME]))
 
         #TimeBeingSearched ='1128755932.49'
         TimeBeingSearched = dataMatrix[i][H_TIME]
@@ -101,12 +130,12 @@ def dagFile():
         textToReplace = 'macroL1timeslide="'+str(TimeSlideVal)+'" macrotrigtime="'+str(TimeBeingSearched)+''
         textToSearch = 'macroL1timeslide="0" macrotrigtime="'+str(TimeBeingSearched)+''
 
-        replace2("/Users/Vajpeyi/Documents/Ligo Summer Research /2016LIGOProjectProposal/dataResults/pycbcTrigs_gps_times/lalinference_1126074549-1129348536.dag", textToSearch,textToReplace)
+        offlineDir = "/Users/Vajpeyi/Documents/Ligo Summer Research /2016LIGOProjectProposal/dataResults/pycbcTrigs_gps_times/lalinference_1126074549-1129348536.dag"
+        onlineDir  = "/home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/lalinference_1126074549-1129348536.dag"
+        replace(dagToEdit, textToSearch,textToReplace)
+####################################
 
-        #replace(textToReplace,textToSearch, fileToSearch)
 
-#removeHashLine(fileName)
-#replace("Bye", "hi", fileName)
 
-#removeHashLine("lalinference_1126074549-1129348536.dag")
-dagFile()
+applyTimeSlideToDagFile(fileName)
+addArgumentForReadingNewASD(fileName)
