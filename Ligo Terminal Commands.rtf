@@ -1,10 +1,12 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
 {\fonttbl\f0\fnil\fcharset0 AndaleMono;\f1\fmodern\fcharset0 Courier;\f2\fnil\fcharset0 Menlo-Regular;
-\f3\fnil\fcharset0 Monaco;}
+\f3\fnil\fcharset0 Monaco;\f4\fnil\fcharset0 HelveticaNeue;}
 {\colortbl;\red255\green255\blue255;\red47\green255\blue18;\red255\green238\blue149;\red21\green102\blue47;
-\red242\green242\blue242;\red47\green189\blue29;\red47\green180\blue29;\red224\green228\blue9;\red180\green36\blue25;
-}
-\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\red242\green242\blue242;\red60\green95\blue255;\red80\green219\blue57;\red122\green37\blue30;\red224\green228\blue9;
+\red47\green180\blue29;\red180\green36\blue25;\red47\green189\blue29;\red158\green76\blue4;\red200\green20\blue201;
+\red193\green101\blue28;\red64\green11\blue217;\red0\green0\blue163;\red0\green0\blue143;\red205\green190\blue151;
+\red246\green141\blue58;\red252\green74\blue255;\red86\green0\blue1;}
+\margl1440\margr1440\vieww19660\viewh8640\viewkind0
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
 \f0\fs24 \cf2 \cb0 \CocoaLigature0 \
@@ -33,51 +35,57 @@ gsissh -X ldas-pcdev3.ligo.caltech.edu\
 \
 TO COPY FILE TO CLUSTER\
 \
-\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
 \f1 \cf3 \cb4 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
 \f2\fs22 \cf0 \cb1 gsiscp 
-\f1\fs24 \cf3 \cb4 timeSlide_replacement.py
-\f2\fs22 \cf0 \cb1   avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
-\f0\fs24 \cf2 \cb0 /home/avi.vajpeyi/pycbcBackgroundTriggers/
-\f3\fs26 \cf5 lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/
-\f0\fs24 \cf2 \
-\
+\f3\fs26 \cf5 \cb0 ASDgenerator.py
+\f2\fs22 \cf0 \cb1  avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
+\f0\fs24 \cf2 \cb0 /home/avi.vajpeyi/
+\f2\fs22 \cf0 \cb1 pycbcBackgroundTriggers/\cf6 PSDtimeShifts
+\f0\fs24 \cf2 \cb0 \
 
 \f2\fs22 \cf0 \cb1 \
+\
 \
 \
 TO COPY FILE FROM CLUSTER\
 \
-\
-\
-\
-\
-\
-gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
-\f3\fs26 \cf5 \cb0 /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/\cf6 lalinference_1126074549-1129348536.sh\cf5  . \
-\
-\
 
-\f2\fs22 \cf0 \cb1 \
+\f3\fs26 \cf5 \cb0 \
 \
-\
-\
-\
- gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
-\f3\fs26 \cf5 \cb0 /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/1016/data-dumpH1-freqData.dat .\
-\
-\
-\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf0 \cb1  gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
+\f3\fs26 \cf5 \cb0 /home/avi.vajpeyi/pycbcBackgroundTriggers/
+\f0\fs24 \cf2 BayesResults/BF_32.txt .\
+
+\f2\fs22 \cf0 \cb1  gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
+\f3\fs26 \cf5 \cb0 /home/avi.vajpeyi/pycbcBackgroundTriggers/
+\f0\fs24 \cf2 BayesResults/BF_64.txt .\
 \
 
 \f2\fs22 \cf0 \cb1  gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
-\f3\fs26 \cf5 \cb0 /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/1016/data-dumpL1-freqData.dat .\
+\f3\fs26 \cf5 \cb0 /home/avi.vajpeyi/pycbcBackgroundTriggers/
+\f0\fs24 \cf2 BayesResults/BCR_16.txt .\
+
+\f2\fs22 \cf0 \cb1  gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
+\f3\fs26 \cf5 \cb0 /home/avi.vajpeyi/pycbcBackgroundTriggers/
+\f0\fs24 \cf2 BayesResults/BCR_32.txt .\
+
+\f2\fs22 \cf0 \cb1  gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
+\f3\fs26 \cf5 \cb0 /home/avi.vajpeyi/pycbcBackgroundTriggers/
+\f0\fs24 \cf2 BayesResults/BCR_64.txt .\
 \
 \
+
+\f3\fs26 \cf5 \
+ .\
 
 \f2\fs22 \cf0 \cb1  gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
 \f3\fs26 \cf5 \cb0 /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/1016/data-dumpH1-PSD.dat .\
@@ -92,6 +100,25 @@ gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
 \f2\fs22 \cf0 \cb1 \
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb0 lalinference_pipe -r /home/avi.vajpeyi/
+\f2\fs22 \cf7 \cb8 pycbcOUTLIER
+\f0\fs24 \cf2 \cb0 / --daglog-path /usr1/avi.vajpeyi/ /home/avi.vajpeyi/
+\f2\fs22 \cf7 \cb8 pycbcOUTLIER
+\f0\fs24 \cf2 \cb0 /analysisCode.ini -g noiseTrigs.txt\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf0 \cb1 \
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb0 4.23e-12        10.84   \cb9 1128688216.65\cb0    1129341285.56   -653000
+\f2\fs22 \cf0 \cb1 \
+\
 \
 -terminal\
 -talks and learning in those \
@@ -109,15 +136,14 @@ gsiscp avi.vajpeyi@ldas-pcdev3.ligo.caltech.edu:
 \
 \
 \
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf2 \cb0 lalinference_pipe -r /home/avi.vajpeyi/\cf7 pycbcBackgroundTriggers\cf2 / --daglog-path /usr1/avi.vajpeyi/ /home/avi.vajpeyi/\cf7 pycbcBackgroundTriggers\cf2 /analysisCode.ini -g noiseTrigs.txt \
+\f0\fs24 \cf2 \cb0 lalinference_pipe -r /home/avi.vajpeyi/\cf10 testPyCBCtirg\cf2 / --daglog-path /usr1/avi.vajpeyi/ /home/avi.vajpeyi/\cf10 testPyCBCtirg\cf2 /analysisCode.ini -g noiseTrigs.txt \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
 \f2\fs22 \cf0 \cb1 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf2 \cb0 s%\'92macroH\cb8 1imes\cb0 lide=\cf9 \'930\'94\'92\cf2 macroH\cb8 1imes\cb0 lide=\cf9 \'9325.1327412287\'94\'92
+\f0\fs24 \cf2 \cb0 s%\'92macroH\cb9 1imes\cb0 lide=\cf11 \'930\'94\'92\cf2 macroH\cb9 1imes\cb0 lide=\cf11 \'9325.1327412287\'94\'92
 \f2\fs22 \cf0 \cb1 \
 
 \f0\fs24 \cf2 \cb0 \
@@ -140,7 +166,10 @@ h5dump -H -A posterior_H1L1_1127409058.94-1242.hdf5\
 \
 \
 \
-\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf12 \cb0 lalinference_1128910595-1128910892.sh
+\f2\fs22 \cf0 \cb1 \
 \
 \
 \
@@ -196,14 +225,209 @@ h5dump -H -A posterior_H1L1_1127409058.94-1242.hdf5\
 \
 \
 \
---H1-flow 10 --H1-timeslide 0 --trigtime 1126257549.25 --psdstart 1126256821.0 --H1-cache /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/H-H1_HOFT_C01_CACHE-1126074549-3273987.lcf --L1-cache /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/L-L1_HOFT_C01_CACHE-1126074549-3273987.lcf --srate 1024 --H1-channel H1:DCS-CALIB_STRAIN_C01 --outfile /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/973/data-dump  --data-dump  --ifo H1  --ifo L1\
+--H1-flow 10 --H1-timeslide 0 --trigtime 1126257549.25 --psdstart 1126256821.0 --H1-cache /home/avi.vajpeyi/
+\f0\fs24 \cf6 \cb0 testPyCBCtirg
+\f2\fs22 \cf0 \cb1 /lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/H-H1_HOFT_C01_CACHE-1126074549-3273987.lcf --L1-cache /home/avi.vajpeyi/
+\f0\fs24 \cf6 \cb0 testPyCBCtirg
+\f2\fs22 \cf0 \cb1 /lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/L-L1_HOFT_C01_CACHE-1126074549-3273987.lcf --srate 1024 --H1-channel H1:DCS-CALIB_STRAIN_C01 --outfile /home/avi.vajpeyi/
+\f0\fs24 \cf6 \cb0 testPyCBCtirg
+\f2\fs22 \cf0 \cb1 /lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/973/data-dump  --data-dump  --ifo H1  --ifo L1\
+\
+\
+\
+\
+\
+\
+\
+\
 \
 '''\
 \
 \
+lalinference_pipe -r /home/avi.vajpeyi/
+\f0\fs24 \cf10 \cb0 testPyCBCtirg
+\f2\fs22 \cf0 \cb1  --daglog-path /usr1/avi.vajpeyi/ /home/avi.vajpeyi/
+\f0\fs24 \cf10 \cb0 testPyCBCtirg
+\f2\fs22 \cf0 \cb1 /analysisCode.ini -I /home/avi.vajpeyi/softwareInjections/BBH.xml.gz\
+\
+THIS IS THE ONE: \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb0 /home/avi.vajpeyi/local/bin/lalinference_datadump --L1-flow 10 --psdlength 1024 --randomseed 1032112871 --seglen 8 --L1-channel L1:DCS-CALIB_STRAIN_C01 --L1-timeslide 0 --trigtime 1128667067.95 --psdstart 1128666527.85 --L1-cache /home/avi.vajpeyi/\cf6 testPyCBCtirg\cf2 /lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/L-L1_HOFT_C01_CACHE-1126074549-3273987.lcf --srate 1024 --outfile /home/avi.vajpeyi/\cf6 testPyCBCtirg\cf2 /lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/timeshiftedROQfiles/1108/data-dump --data-dump --ifo L1\
 \
 \
 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf0 \cb1 \
+\
+ORIG:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \cb0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 /home/avi.vajpeyi/\cf13 local\cf2 /bin/lalinference_datadump \cf14 --L1-flow\cf2  \cf11 10\cf2  \cf14 --psdlength\cf2  \cf11 256\cf2  \cf14 --randomseed\cf2  \cf11 693987853\cf2  \cf14 --seglen\cf2  \cf11 8\cf2  \cf14 --L1-channel\cf2  L1:DCS-CALIB_STRAIN_C01 \cf14 --L1-timeslide\cf2  \cf11 0\cf2  \cf14 --H1-flow\cf2  \cf11 10\cf2  \cf14 --H1-timeslide\cf2  \cf11 0\cf2  \cf14 --trigtime\cf2  1128910873.35 \cf14 --psdstart\cf2  \cf11 1128910595\cf2  \cf14 --H1-cache\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/H-H1_HOFT_C01_CACHE\cf11 -1128910595\cf2 -297.lcf \cf14 --L1-cache\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/L-L1_HOFT_C01_CACHE\cf11 -1128910595\cf2 -297.lcf \cf14 --srate\cf2  \cf11 1024\cf2  \cf14 --H1-channel\cf2  H1:DCS-CALIB_STRAIN_C01 \cf14 --outfile\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/\cf11 3\cf2 /data-dump  \cf14 --data-dump\cf2   \cf14 --ifo\cf2  H1  \cf14 --ifo\cf2  L1\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs28 \cf0 \cb1 \CocoaLigature1 \
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb0 \CocoaLigature0 /home/avi.vajpeyi/\cf15 local\cf2 /bin/lalinference_datadump \cf14 --L1-flow\cf2  \cf11 10\cf2  \cf14 --psdlength\cf2  730.0 \cf14 --randomseed\cf2  \cf11 307883685\cf2  \cf14 --seglen\cf2  \cf11 8\cf2  \cf14 --L1-channel\cf2  L1:DCS-CALIB_STRAIN_C01 \cf14 --L1-timeslide\cf2  \cf11 0\cf2  \cf14 --H1-flow\cf2  \cf11 10\cf2  \cf14 --H1-timeslide\cf2  \cf11 0\cf2  \cf14 --trigtime\cf2  1128657039.39 \cf14 --psdstart\cf2  1128656287.0 \cf14 --H1-cache\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/H-H1_HOFT_C01_CACHE\cf11 -1126573983\cf2 -2083075.lcf \cf14 --L1-cache\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/L-L1_HOFT_C01_CACHE\cf11 -1126573983\cf2 -2083075.lcf \cf14 --srate\cf2  \cf11 1024\cf2  \cf14 --H1-channel\cf2  H1:DCS-CALIB_STRAIN_C01 \cf14 --outfile\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/\cf11 12\cf2 /data-dump  \cf14 --data-dump\cf2   \cf14 --ifo\cf2  H1  \cf14 --ifo\cf2  L1\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs28 \cf0 \cb1 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb0 \CocoaLigature0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf16 # Job a4ae4dd20e093c04c218e3ddfe9c05b1\cf2 \
+/home/avi.vajpeyi/\cf15 local\cf2 /bin/\cb9 lalinference_datadump \cf14 \cb0 --L1-flow\cf2  \cf11 10\cf2  \cf14 --psdlength\cf2  \cf11 1024\cf2  \cf14 --randomseed\cf2  \cf11 717678203\cf2  \cf14 --seglen\cf2  \cf11 8\cf2  \cf14 --L1-channel\cf2  L1:DCS-CALIB_STRAIN_C01 \cf14 --L1-timeslide\cf2  \cf11 0\cf2  \cf14 --H1-flow\cf2  \cf11 10\cf2  \cf14 --H1-timeslide\cf2  \cf11 0\cf2  \cf14 --trigtime\cf2  1128171518.67 \cf14 --psdstart\cf2  1128170911.0 \cf14 --H1-cache\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/H-H1_HOFT_C01_CACHE\cf11 -1126573983\cf2 -2083075.lcf \cf14 --L1-cache\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/L-L1_HOFT_C01_CACHE\cf11 -1126573983\cf2 -2083075.lcf \cf14 --srate\cf2  \cf11 1024\cf2  \cf14 --H1-channel\cf2  H1:DCS-CALIB_STRAIN_C01 \cf14 --outfile\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/\cf11 15\cf2 /data-dump  \cf14 --data-dump\cf2   \cf14 --ifo\cf2  H1  \cf14 --ifo\cf2  L1
+\f4\fs28 \cf0 \cb1 \CocoaLigature1 \
+\
+\
+
+\f0\fs24 \cf16 \cb0 \CocoaLigature0 # Job 0e1ccd5e932d0f935b2b4b3ca11f4daf\cf2 \
+/home/avi.vajpeyi/\cf15 local\cf2 /bin/\cb9 lalinference_datadump \cf14 \cb0 --L1-flow\cf2  \cf11 10\cf2  \cf14 --psdlength\cf2  \cf11 1024\cf2  \cf14 --randomseed\cf2  \cf11 1253709840\cf2  \cf14 --seglen\cf2  \cf11 8\cf2  \cf14 --L1-channel\cf2  L1:DCS-CALIB_STRAIN_C01 \cf14 --L1-timeslide\cf2  \cf11 0\cf2  \cf14 --H1-flow\cf2  \cf11 10\cf2  \cf14 --H1-timeslide\cf2  \cf11 0\cf2  \cf14 --trigtime\cf2  1126574261.37 \cf14 --psdstart\cf2  \cf11 1126573983\cf2  \cf14 --H1-cache\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/H-H1_HOFT_C01_CACHE\cf11 -1126573983\cf2 -2083075.lcf \cf14 --L1-cache\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/L-L1_HOFT_C01_CACHE\cf11 -1126573983\cf2 -2083075.lcf \cf14 --srate\cf2  \cf11 1024\cf2  \cf14 --H1-channel\cf2  H1:DCS-CALIB_STRAIN_C01 \cf14 --outfile\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/\cf11 14\cf2 /data-dump  \cf14 --data-dump\cf2   \cf14 --ifo\cf2  H1  \cf14 --ifo\cf2  L1\
+\
+\
+\cf16 # Job 12c27a054471b84ad611fd77b7b059df\cf2 \
+/home/avi.vajpeyi/\cf15 local\cf2 /bin/\cb9 lalinference_datadump \cf14 \cb0 --L1-flow\cf2  \cf11 10\cf2  \cf14 --psdlength\cf2  \cf11 1024\cf2  \cf14 --randomseed\cf2  \cf11 1929291222\cf2  \cf14 --seglen\cf2  \cf11 8\cf2  \cf14 --L1-channel\cf2  L1:DCS-CALIB_STRAIN_C01 \cf14 --L1-timeslide\cf2  \cf11 0\cf2  \cf14 --H1-flow\cf2  \cf11 10\cf2  \cf14 --H1-timeslide\cf2  \cf11 0\cf2  \cf14 --trigtime\cf2  1127627590.64 \cf14 --psdstart\cf2  1127626655.0 \cf14 --H1-cache\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/H-H1_HOFT_C01_CACHE\cf11 -1126573983\cf2 -2083075.lcf \cf14 --L1-cache\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/L-L1_HOFT_C01_CACHE\cf11 -1126573983\cf2 -2083075.lcf \cf14 --srate\cf2  \cf11 1024\cf2  \cf14 --H1-channel\cf2  H1:DCS-CALIB_STRAIN_C01 \cf14 --outfile\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/\cf11 13\cf2 /data-dump  \cf14 --data-dump\cf2   \cf14 --ifo\cf2  H1  \cf14 --ifo\cf2  L1\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs28 \cf0 \cb1 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf16 \cb0 \CocoaLigature0 # Job b5200ef1baade7c8f09336855395767c\cf2 \
+/home/avi.vajpeyi/\cf15 local\cf2 /bin/\cb9 lalinference_datadump \cf14 \cb0 --L1-flow\cf2  \cf11 10\cf2  \cf14 --psdlength\cf2  730.0 \cf14 --randomseed\cf2  \cf11 307883685\cf2  \cf14 --seglen\cf2  \cf11 8\cf2  \cf14 --L1-channel\cf2  L1:DCS-CALIB_STRAIN_C01 \cf14 --L1-timeslide\cf2  \cf11 0\cf2  \cf14 --H1-flow\cf2  \cf11 10\cf2  \cf14 --H1-timeslide\cf2  \cf11 0\cf2  \cf14 --trigtime\cf2  1128657039.39 \cf14 --psdstart\cf2  1128656287.0 \cf14 --H1-cache\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/H-H1_HOFT_C01_CACHE\cf11 -1126573983\cf2 -2083075.lcf \cf14 --L1-cache\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/L-L1_HOFT_C01_CACHE\cf11 -1126573983\cf2 -2083075.lcf \cf14 --srate\cf2  \cf11 1024\cf2  \cf14 --H1-channel\cf2  H1:DCS-CALIB_STRAIN_C01 \cf14 --outfile\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/\cf11 12\cf2 /data-dump  \cf14 --data-dump\cf2   \cf14 --ifo\cf2  H1  \cf14 --ifo\cf2  L1
+\f4\fs28 \cf0 \cb1 \CocoaLigature1 \
+\
+
+\f0\fs24 \cf16 \cb0 \CocoaLigature0 # Job a4ae4dd20e093c04c218e3ddfe9c05b1\cf2 \
+/home/avi.vajpeyi/\cf15 local\cf2 /bin/\cb9 lalinference_datadump \cf14 \cb0 --L1-flow\cf2  \cf11 10\cf2  \cf14 --psdlength\cf2  \cf11 1024\cf2  \cf14 --randomseed\cf2  \cf11 717678203\cf2  \cf14 --seglen\cf2  \cf11 8\cf2  \cf14 --L1-channel\cf2  L1:DCS-CALIB_STRAIN_C01 \cf14 --L1-timeslide\cf2  \cf11 0\cf2  \cf14 --H1-flow\cf2  \cf11 10\cf2  \cf14 --H1-timeslide\cf2  \cf11 0\cf2  \cf14 --trigtime\cf2  1128171518.67 \cf14 --psdstart\cf2  1128170911.0 \cf14 --H1-cache\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/H-H1_HOFT_C01_CACHE\cf11 -1126573983\cf2 -2083075.lcf \cf14 --L1-cache\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/L-L1_HOFT_C01_CACHE\cf11 -1126573983\cf2 -2083075.lcf \cf14 --srate\cf2  \cf11 1024\cf2  \cf14 --H1-channel\cf2  H1:DCS-CALIB_STRAIN_C01 \cf14 --outfile\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/\cf11 15\cf2 /data-dump  \cf14 --data-dump\cf2   \cf14 --ifo\cf2  H1  \cf14 --ifo\cf2  L1\
+\
+\cf16 # Job 0e1ccd5e932d0f935b2b4b3ca11f4daf\cf2 \
+/home/avi.vajpeyi/\cf15 local\cf2 /bin/\cb9 lalinference_datadump \cf14 \cb0 --L1-flow\cf2  \cf11 10\cf2  \cf14 --psdlength\cf2  \cf11 1024\cf2  \cf14 --randomseed\cf2  \cf11 1253709840\cf2  \cf14 --seglen\cf2  \cf11 8\cf2  \cf14 --L1-channel\cf2  L1:DCS-CALIB_STRAIN_C01 \cf14 --L1-timeslide\cf2  \cf11 0\cf2  \cf14 --H1-flow\cf2  \cf11 10\cf2  \cf14 --H1-timeslide\cf2  \cf11 0\cf2  \cf14 --trigtime\cf2  1126574261.37 \cf14 --psdstart\cf2  \cf11 1126573983\cf2  \cf14 --H1-cache\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/H-H1_HOFT_C01_CACHE\cf11 -1126573983\cf2 -2083075.lcf \cf14 --L1-cache\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/L-L1_HOFT_C01_CACHE\cf11 -1126573983\cf2 -2083075.lcf \cf14 --srate\cf2  \cf11 1024\cf2  \cf14 --H1-channel\cf2  H1:DCS-CALIB_STRAIN_C01 \cf14 --outfile\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/\cf11 14\cf2 /data-dump  \cf14 --data-dump\cf2   \cf14 --ifo\cf2  H1  \cf14 --ifo\cf2  L1\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs28 \cf0 \cb1 \CocoaLigature1 \
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb0 \CocoaLigature0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf0 \cb1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf16 # \cf17 \cb9 Job\cf16 \cb0  ab32608f270fd227dc7abb34c2693aeb\cf2 \
+/home/avi.vajpeyi/\cf15 local\cf2 /bin/gw_data_find \cf14 --observatory\cf2  H \cf14 --url-type\cf2  file \cf14 --gps-start-time\cf2  \cf11 1126573983\cf2  \cf14 --gps-end-time\cf2  \cf11 1128657058\cf2  \cf14 --output\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/H-H1_HOFT_C01_CACHE\cf11 -1126573983\cf2 -2083075.lcf \cf14 --lal-cache\cf2   \cf14 --type\cf2  H1_HOFT_C01\
+\
+\cf16 # \cf17 \cb9 Job\cf16 \cb0  1cdcc588abf86b2d0c2aa7489b895876\cf2 \
+/home/avi.vajpeyi/\cf15 local\cf2 /bin/gw_data_find \cf14 --observatory\cf2  L \cf14 --url-type\cf2  file \cf14 --gps-start-time\cf2  \cf11 1126573983\cf2  \cf14 --gps-end-time\cf2  \cf11 1128657058\cf2  \cf14 --output\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/L-L1_HOFT_C01_CACHE\cf11 -1126573983\cf2 -2083075.lcf \cf14 --lal-cache\cf2   \cf14 --type\cf2  L1_HOFT_C01\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf0 \cb1 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf16 \cb0 # Job ab32608f270fd227dc7abb34c2693aeb\cf2 \
+/home/avi.vajpeyi/\cf15 local\cf2 /bin/gw_data_find \cf14 --observatory\cf2  H \cf14 --url-type\cf2  file \cf14 --gps-start-time\cf2  \cf11 1126573983\cf2  \cf14 --gps-end-time\cf2  \cf11 1128657058\cf2  \cf14 --output\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/H-\cb9 H1_HOFT_C01\cb0 _CACHE\cf11 -1126573983\cf2 -2083075.lcf \cf14 --lal-cache\cf2   \cf14 --type\cf2  \cb9 H1_HOFT_C01\cb0 \
+\
+\cf16 # Job 1cdcc588abf86b2d0c2aa7489b895876\cf2 \
+/home/avi.vajpeyi/\cf15 local\cf2 /bin/gw_data_find \cf14 --observatory\cf2  L \cf14 --url-type\cf2  file \cf14 --gps-start-time\cf2  \cf11 1126573983\cf2  \cf14 --gps-end-time\cf2  \cf11 1128657058\cf2  \cf14 --output\cf2  /home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/L-L1_HOFT_C01_CACHE\cf11 -1126573983\cf2 -2083075.lcf \cf14 --lal-cache\cf2   \cf14 --type\cf2  L1_HOFT_C01\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf0 \cb1 \
+\
+\
+\
+\
+\
+\
+\
+8s:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf18 \cb8 # Job c1ab46ee9859e39b2e47959ba4225b7c\cf19 \
+/home/avi.vajpeyi/\cf20 local\cf19 /bin/lalinference_datadump \cf21 --L1-flow\cf19  \cf22 10\cf19  \cf21 --psdlength\cf19  \cf22 256\cf19  \cf21 --randomseed\cf19  \cf22 107485028\cf19  \cf21 --seglen\cf19  \cf22 8\cf19  \cf21 --L1-channel\cf19  L1:DCS-CALIB_STRAIN_C01 \cf21 --L1-timeslide\cf19  \cf22 0\cf19  \cf21 --H1-flow\cf19  \cf22 10\cf19  \cf21 --H1-timeslide\cf19  \cf22 0\cf19  \cf21 --trigtime\cf19  1128443202.05 \cf21 --psdstart\cf19  \cf22 1128442924\cf19  \cf21 --H1-cache\cf19  /home/avi.vajpeyi/pycbcOUTLIER/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/H-H1_HOFT_C01_CACHE\cf22 -1128442924\cf19 -297.lcf \cf21 --L1-cache\cf19  /home/avi.vajpeyi/pycbcOUTLIER/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/L-L1_HOFT_C01_CACHE\cf22 -1128442924\cf19 -297.lcf \cf21 --srate\cf19  \cf22 1024\cf19  \cf21 --H1-channel\cf19  H1:DCS-CALIB_STRAIN_C01 \cf21 --outfile\cf19  /home/avi.vajpeyi/pycbcOUTLIER/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/\cf22 3\cf19 /data-dump  \cf21 --data-dump\cf19   \cf21 --ifo\cf19  H1  \cf21 --ifo\cf19  L1\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \cb1 \
+16s:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf18 \cb8 # Job 22e1b19cfdc6ba91c73b7cf7efb10be1\cf19 \
+/home/avi.vajpeyi/\cf20 local\cf19 /bin/lalinference_datadump \cf21 --L1-flow\cf19  \cf22 10\cf19  \cf21 --psdlength\cf19  \cf22 512\cf19  \cf21 --randomseed\cf19  \cf22 1928983732\cf19  \cf21 --seglen\cf19  \cf22 16\cf19  \cf21 --L1-channel\cf19  L1:DCS-CALIB_STRAIN_C01 \cf21 --L1-timeslide\cf19  \cf22 0\cf19  \cf21 --H1-flow\cf19  \cf22 10\cf19  \cf21 --H1-timeslide\cf19  \cf22 0\cf19  \cf21 --trigtime\cf19  1128443202.05 \cf21 --psdstart\cf19  \cf22 1128442660\cf19  \cf21 --H1-cache\cf19  /home/avi.vajpeyi/pycbcOUTLIER/lalinferencenest/IMRPhenomPv2pseudoFourPN/16s/caches/H-H1_HOFT_C01_CACHE\cf22 -1128442660\cf19 -561.lcf \cf21 --L1-cache\cf19  /home/avi.vajpeyi/pycbcOUTLIER/lalinferencenest/IMRPhenomPv2pseudoFourPN/16s/caches/L-L1_HOFT_C01_CACHE\cf22 -1128442660\cf19 -561.lcf \cf21 --srate\cf19  \cf22 1024\cf19  \cf21 --H1-channel\cf19  H1:DCS-CALIB_STRAIN_C01 \cf21 --outfile\cf19  /home/avi.vajpeyi/pycbcOUTLIER/lalinferencenest/IMRPhenomPv2pseudoFourPN/16s/ROQdata/\cf22 0\cf19 /data-dump  \cf21 --data-dump\cf19   \cf21 --ifo\cf19  H1  \cf21 --ifo\cf19  L1\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \cb1 \
+32s:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf18 \cb8 # Job c515a318e3e4fb3484a1aff0a7bfae74\cf19 \
+/home/avi.vajpeyi/\cf20 local\cf19 /bin/lalinference_datadump \cf21 --L1-flow\cf19  \cf22 10\cf19  \cf21 --psdlength\cf19  512.0 \cf21 --randomseed\cf19  \cf22 1066396378\cf19  \cf21 --seglen\cf19  \cf22 32\cf19  \cf21 --L1-channel\cf19  L1:DCS-CALIB_STRAIN_C01 \cf21 --L1-timeslide\cf19  \cf22 0\cf19  \cf21 --H1-flow\cf19  \cf22 10\cf19  \cf21 --H1-timeslide\cf19  \cf22 0\cf19  \cf21 --trigtime\cf19  1128443202.05 \cf21 --psdstart\cf19  1128442644.0 \cf21 --H1-cache\cf19  /home/avi.vajpeyi/pycbcOUTLIER/lalinferencenest/IMRPhenomPv2pseudoFourPN/32s/caches/H-H1_HOFT_C01_CACHE\cf22 -1128442132\cf19 -1089.lcf \cf21 --L1-cache\cf19  /home/avi.vajpeyi/pycbcOUTLIER/lalinferencenest/IMRPhenomPv2pseudoFourPN/32s/caches/L-L1_HOFT_C01_CACHE\cf22 -1128442132\cf19 -1089.lcf \cf21 --srate\cf19  \cf22 2048\cf19  \cf21 --H1-channel\cf19  H1:DCS-CALIB_STRAIN_C01 \cf21 --outfile\cf19  /home/avi.vajpeyi/pycbcOUTLIER/lalinferencenest/IMRPhenomPv2pseudoFourPN/32s/ROQdata/\cf22 1\cf19 /data-dump  \cf21 --data-dump\cf19   \cf21 --ifo\cf19  H1  \cf21 --ifo\cf19  L1\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \cb1 64:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf18 \cb8 # Job 727a56b7e857ea6836d043fffadd7e91\cf19 \
+/home/avi.vajpeyi/\cf20 local\cf19 /bin/lalinference_datadump \cf21 --L1-flow\cf19  \cf22 10\cf19  \cf21 --psdlength\cf19  512.0 \cf21 --randomseed\cf19  \cf22 1528810557\cf19  \cf21 --seglen\cf19  \cf22 64\cf19  \cf21 --L1-channel\cf19  L1:DCS-CALIB_STRAIN_C01 \cf21 --L1-timeslide\cf19  \cf22 0\cf19  \cf21 --H1-flow\cf19  \cf22 10\cf19  \cf21 --H1-timeslide\cf19  \cf22 0\cf19  \cf21 --trigtime\cf19  1128443202.05 \cf21 --psdstart\cf19  1128442612.0 \cf21 --H1-cache\cf19  /home/avi.vajpeyi/pycbcOUTLIER/lalinferencenest/IMRPhenomPv2pseudoFourPN/64s/caches/H-H1_HOFT_C01_CACHE\cf22 -1128441076\cf19 -2145.lcf \cf21 --L1-cache\cf19  /home/avi.vajpeyi/pycbcOUTLIER/lalinferencenest/IMRPhenomPv2pseudoFourPN/64s/caches/L-L1_HOFT_C01_CACHE\cf22 -1128441076\cf19 -2145.lcf \cf21 --srate\cf19  \cf22 2048\cf19  \cf21 --H1-channel\cf19  H1:DCS-CALIB_STRAIN_C01 \cf21 --outfile\cf19  /home/avi.vajpeyi/pycbcOUTLIER/lalinferencenest/IMRPhenomPv2pseudoFourPN/64s/ROQdata/\cf22 2\cf19 /data-dump  \cf21 --data-dump\cf19   \cf21 --ifo\cf19  H1  \cf21 --ifo\cf19  L1\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \cb1 \
+\
+EDITED:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf18 \cb8 # Job c1ab46ee9859e39b2e47959ba4225b7c\cf19 \
+/home/avi.vajpeyi/\cf20 local\cf19 /bin/lalinference_datadump \cf21 --L1-flow\cf19  \cf22 10\cf19  \cf21 --psdlength\cf19  \cf22 256\cf19  \cf21 --randomseed\cf19  \cf22 107485028\cf19  \cf21 --seglen\cf19  \cf22 8\cf19  \cf21 --L1-channel\cf19  L1:DCS-CALIB_STRAIN_C01 \cf21 --L1-timeslide\cf19  \cf22 0\cf19  \cf21 --trigtime 1129334376.06\cf19  \cf21 --psdstart\cf19  \cf21 1129333836.06\cf19  \cf21 --L1-cache\cf19  /home/avi.vajpeyi/pycbcOUTLIER/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/L-L1_HOFT_C01_CACHE\cf22 -1128442924\cf19 -297.lcf \cf21 --srate\cf19  \cf22 1024\cf19  \cf21 --outfile\cf19  /home/avi.vajpeyi/pycbcOUTLIER/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/timeshiftedROQdata/\cf22 3\cf19 /data-dump  \cf21 --data-dump\cf19   \cf21 --ifo\cf19  L1\
+\
+\cf18 # Job 22e1b19cfdc6ba91c73b7cf7efb10be1\cf19 \
+/home/avi.vajpeyi/\cf20 local\cf19 /bin/lalinference_datadump \cf21 --L1-flow\cf19  \cf22 10\cf19  \cf21 --psdlength\cf19  \cf22 512\cf19  \cf21 --randomseed\cf19  \cf22 1928983732\cf19  \cf21 --seglen\cf19  \cf22 16\cf19  \cf21 --L1-channel\cf19  L1:DCS-CALIB_STRAIN_C01 \cf21 --L1-timeslide\cf19  \cf22 0\cf19  \cf21 --trigtime 1129334376.06\cf19  \cf21 --psdstart\cf19  \cf21 1129333836.06\cf19  \cf21 --L1-cache\cf19  /home/avi.vajpeyi/pycbcOUTLIER/lalinferencenest/IMRPhenomPv2pseudoFourPN/16s/caches/L-L1_HOFT_C01_CACHE\cf22 -1128442660\cf19 -561.lcf \cf21 --srate\cf19  \cf22 1024\cf19  \cf21 --outfile\cf19  /home/avi.vajpeyi/pycbcOUTLIER/lalinferencenest/IMRPhenomPv2pseudoFourPN/16s/ROQdata/timeshiftedROQdata/\cf22 0\cf19 /data-dump  \cf21 --data-dump\cf19   \cf21 --ifo\cf19  L1\
+\
+\cf18 # Job c515a318e3e4fb3484a1aff0a7bfae74\cf19 \
+/home/avi.vajpeyi/\cf20 local\cf19 /bin/lalinference_datadump \cf21 --L1-flow\cf19  \cf22 10\cf19  \cf21 --psdlength\cf19  512.0 \cf21 --randomseed\cf19  \cf22 1066396378\cf19  \cf21 --seglen\cf19  \cf22 32\cf19  \cf21 --L1-channel\cf19  L1:DCS-CALIB_STRAIN_C01 \cf21 --L1-timeslide\cf19  \cf22 0\cf19  \cf21 --trigtime 1129334376.06\cf19  \cf21 --psdstart\cf19  \cf21 1129333836.06\cf19  \cf21 --L1-cache\cf19  /home/avi.vajpeyi/pycbcOUTLIER/lalinferencenest/IMRPhenomPv2pseudoFourPN/32s/caches/L-L1_HOFT_C01_CACHE\cf22 -1128442132\cf19 -1089.lcf \cf21 --srate\cf19  \cf22 2048\cf19  \cf21 --outfile\cf19  /home/avi.vajpeyi/pycbcOUTLIER/lalinferencenest/IMRPhenomPv2pseudoFourPN/32s/ROQdata/timeshiftedROQdata/\cf22 1\cf19 /data-dump  \cf21 --data-dump\cf19   \cf21 --ifo\cf19  L1\
+\
+\cf18 # Job 727a56b7e857ea6836d043fffadd7e91\cf19 \
+/home/avi.vajpeyi/\cf20 local\cf19 /bin/lalinference_datadump \cf21 --L1-flow\cf19  \cf22 10\cf19  \cf21 --psdlength\cf19  512.0 \cf21 --randomseed\cf19  \cf22 1528810557\cf19  \cf21 --seglen\cf19  \cf22 64\cf19  \cf21 --L1-channel\cf19  L1:DCS-CALIB_STRAIN_C01 \cf21 --L1-timeslide\cf19  \cf22 0\cf19  \cf21 --trigtime 1129334376.06\cf19  \cf21 --psdstart\cf19  \cf21 1129333836.06\cf19  \cf21 --L1-cache\cf19  /home/avi.vajpeyi/pycbcOUTLIER/lalinferencenest/IMRPhenomPv2pseudoFourPN/64s/caches/L-L1_HOFT_C01_CACHE\cf22 -1128441076\cf19 -2145.lcf \cf21 --srate\cf19  \cf22 2048\cf19  \cf21 --outfile\cf19  /home/avi.vajpeyi/pycbcOUTLIER/lalinferencenest/IMRPhenomPv2pseudoFourPN/64s/ROQdata/timeshiftedROQdata/\cf22 2\cf19 /data-dump  \cf21 --data-dump\cf19   \cf21 --ifo\cf19  L1\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \cb1 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf21 \cb8 1129333836.06\cf0 \cb1 \
+\
+6.31e-12        10.8    \cb9 1128657039.39\cb1    1129379017.11   -721977.71\
+1.57e-11        10.69   \cb9 1127627590.64\cb1    1127978059.83   -350469.19\
+1.67e-11        10.68   \cb9 1126574261.37\cb1    1129341285.56   -2767024.19\
+6.31e-12        10.8    \cb9 1128657039.39\cb1    1129379017.11   -721977.71\
+6.31e-12        10.8    \cb9 1128657039.39\cb1    1129379017.11   -721977.71\
+1.99e-11        10.66   \cb9 1128171518.67\cb1    1127527884.49   644000\
+\
+\
+\
+OUTLIER ASD FILE LOCATIONS::\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\fs26 \cf5 \cb0 /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/timeshiftedROQfiles/997/data-dumpL1-ASD.dat\
+\
+/home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/16s/ROQdata/timeshiftedROQfiles/61/data-dumpL1-ASD.dat\
+
+\f2\fs22 \cf0 \cb1 \
+\
+
+\f3\fs26 \cf5 \cb0 /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/32s/ROQdata/timeshiftedROQfiles/373/data-dumpL1-ASD.dat\
+\
+/home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/64s/ROQdata/timeshiftedROQfiles/685/data-dumpL1-ASD.dat\
+
+\f2\fs22 \cf0 \cb1 \
 \
 \
 }

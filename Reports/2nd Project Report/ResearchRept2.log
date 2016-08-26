@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  8 AUG 2016 15:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  17 AUG 2016 14:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1129,37 +1129,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 229--230
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--256
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
  []
 
 <Figures/rawData.png, id=45, 578.16pt x 433.62pt>
 File: Figures/rawData.png Graphic file (type png)
  <use Figures/rawData.png>
-Package pdftex.def Info: Figures/rawData.png used on input line 266.
+Package pdftex.def Info: Figures/rawData.png used on input line 270.
 (pdftex.def)             Requested size: 241.49895pt x 181.12006pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
  []
 
@@ -1168,35 +1168,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 272--273
 File: Figures/exampleMXplot.pdf Graphic file (type pdf)
 
 <use Figures/exampleMXplot.pdf>
-Package pdftex.def Info: Figures/exampleMXplot.pdf used on input line 288.
+Package pdftex.def Info: Figures/exampleMXplot.pdf used on input line 292.
 (pdftex.def)             Requested size: 345.0pt x 136.77803pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--309
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
 
  []
 
 [8 <./Figures/exampleMXplot.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--317
+Underfull \hbox (badness 10000) in paragraph at lines 320--321
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 321--322
+Underfull \hbox (badness 10000) in paragraph at lines 325--326
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--325
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
 
  []
 
@@ -1204,20 +1204,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--325
 File: Figures/strainData.pdf Graphic file (type pdf)
 
 <use Figures/strainData.pdf>
-Package pdftex.def Info: Figures/strainData.pdf used on input line 333.
+Package pdftex.def Info: Figures/strainData.pdf used on input line 337.
 (pdftex.def)             Requested size: 276.00105pt x 116.80725pt.
  [9]
-Underfull \hbox (badness 10000) in paragraph at lines 339--340
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--355
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
  []
 
 [10 <./Figures/strainData.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 363--364
+Underfull \hbox (badness 10000) in paragraph at lines 367--368
 
  []
 
@@ -1225,24 +1225,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 363--364
 File: Figures/NoiseHistogram.pdf Graphic file (type pdf)
 
 <use Figures/NoiseHistogram.pdf>
-Package pdftex.def Info: Figures/NoiseHistogram.pdf used on input line 368.
+Package pdftex.def Info: Figures/NoiseHistogram.pdf used on input line 372.
 (pdftex.def)             Requested size: 241.49895pt x 120.74922pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 374--375
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
 
  []
 
 <Figures/m1m2.pdf, id=99, 922.44624pt x 562.1pt>
 File: Figures/m1m2.pdf Graphic file (type pdf)
  <use Figures/m1m2.pdf>
-Package pdftex.def Info: Figures/m1m2.pdf used on input line 382.
+Package pdftex.def Info: Figures/m1m2.pdf used on input line 386.
 (pdftex.def)             Requested size: 241.49895pt x 147.15463pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--388
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
 
  []
 
@@ -1250,19 +1250,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 387--388
 File: Figures/MassPost.pdf Graphic file (type pdf)
 
 <use Figures/MassPost.pdf>
-Package pdftex.def Info: Figures/MassPost.pdf used on input line 391.
+Package pdftex.def Info: Figures/MassPost.pdf used on input line 395.
 (pdftex.def)             Requested size: 345.0pt x 198.38564pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [11 <./Figures/NoiseHistogram.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 397--398
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--403
+Underfull \hbox (badness 10000) in paragraph at lines 406--407
 
  []
 
@@ -1270,29 +1270,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 402--403
 File: Figures/DataLH.png Graphic file (type png)
 
 <use Figures/DataLH.png>
-Package pdftex.def Info: Figures/DataLH.png used on input line 408.
+Package pdftex.def Info: Figures/DataLH.png used on input line 412.
 (pdftex.def)             Requested size: 241.49895pt x 127.1048pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--416
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
 
  []
 
 [12 <./Figures/m1m2.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 418--419
+Underfull \hbox (badness 10000) in paragraph at lines 422--423
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--421
+Underfull \hbox (badness 10000) in paragraph at lines 424--425
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 423--424
+Underfull \hbox (badness 10000) in paragraph at lines 427--428
 
  []
 
@@ -1300,7 +1300,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 423--424
 File: Figures/LALinferenceMasses.png Graphic file (type png)
 
 <use Figures/LALinferenceMasses.png>
-Package pdftex.def Info: Figures/LALinferenceMasses.png used on input line 427.
+Package pdftex.def Info: Figures/LALinferenceMasses.png used on input line 431.
 
 (pdftex.def)             Requested size: 345.0pt x 205.59976pt.
  [13 <./Figures/MassPost.pdf>]
@@ -1308,12 +1308,12 @@ Package pdftex.def Info: Figures/LALinferenceMasses.png used on input line 427.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--434
+Underfull \hbox (badness 10000) in paragraph at lines 437--438
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 445--446
+Underfull \hbox (badness 10000) in paragraph at lines 449--450
 
  []
 
@@ -1322,14 +1322,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 445--446
 File: Figures/FAP_Count.pdf Graphic file (type pdf)
 
 <use Figures/FAP_Count.pdf>
-Package pdftex.def Info: Figures/FAP_Count.pdf used on input line 450.
+Package pdftex.def Info: Figures/FAP_Count.pdf used on input line 454.
 (pdftex.def)             Requested size: 345.0pt x 172.82893pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 456--457
+Underfull \hbox (badness 10000) in paragraph at lines 460--461
 
  []
 
@@ -1337,34 +1337,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 456--457
 File: Figures/sampledPts.pdf Graphic file (type pdf)
 
 <use Figures/sampledPts.pdf>
-Package pdftex.def Info: Figures/sampledPts.pdf used on input line 463.
+Package pdftex.def Info: Figures/sampledPts.pdf used on input line 467.
 (pdftex.def)             Requested size: 345.0pt x 157.16428pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 470--471
+Underfull \hbox (badness 10000) in paragraph at lines 474--475
 
  []
 
 [15 <./Figures/LALinferenceMasses.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 486--488
+Underfull \hbox (badness 10000) in paragraph at lines 490--492
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--490
+Underfull \hbox (badness 10000) in paragraph at lines 493--494
 
  []
 
 [16 <./Figures/FAP_Count.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 494--496
+Underfull \hbox (badness 10000) in paragraph at lines 498--500
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--498
+Underfull \hbox (badness 10000) in paragraph at lines 501--502
 
  []
 
@@ -1373,29 +1373,29 @@ File: Figures/DetectionStatVSfar_bF.pdf Graphic file (type pdf)
 
 <use Figures/DetectionStatVSfar_bF.pdf>
 Package pdftex.def Info: Figures/DetectionStatVSfar_bF.pdf used on input line 5
-06.
+10.
 (pdftex.def)             Requested size: 345.0pt x 115.10504pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 512--513
+Underfull \hbox (badness 10000) in paragraph at lines 516--517
 
  []
 
 [17 <./Figures/sampledPts.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 515--516
+Underfull \hbox (badness 10000) in paragraph at lines 519--520
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 517--518
+Underfull \hbox (badness 10000) in paragraph at lines 521--522
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 523--524
+Underfull \hbox (badness 10000) in paragraph at lines 527--528
 
  []
 
@@ -1404,15 +1404,15 @@ File: Figures/detectionStatVSfar8s.pdf Graphic file (type pdf)
 
 <use Figures/detectionStatVSfar8s.pdf>
 Package pdftex.def Info: Figures/detectionStatVSfar8s.pdf used on input line 53
-0.
+4.
 (pdftex.def)             Requested size: 345.0pt x 114.89551pt.
  [18 <./Figures/DetectionStatVSfar_bF.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 536--537
+Underfull \hbox (badness 10000) in paragraph at lines 540--541
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 539--540
+Underfull \hbox (badness 10000) in paragraph at lines 543--544
 
  []
 
@@ -1421,19 +1421,19 @@ File: Figures/DetectionStatisticComparison.pdf Graphic file (type pdf)
 
 <use Figures/DetectionStatisticComparison.pdf>
 Package pdftex.def Info: Figures/DetectionStatisticComparison.pdf used on input
- line 544.
+ line 548.
 (pdftex.def)             Requested size: 207.0021pt x 289.06859pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--552
+Underfull \hbox (badness 10000) in paragraph at lines 555--556
 
  []
 
 [19 <./Figures/detectionStatVSfar8s.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 575--576
+Underfull \hbox (badness 10000) in paragraph at lines 579--580
 
  []
 
@@ -1442,21 +1442,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 575--576
 File: Figures/eventsOnBackground.pdf Graphic file (type pdf)
 
 <use Figures/eventsOnBackground.pdf>
-Package pdftex.def Info: Figures/eventsOnBackground.pdf used on input line 580.
+Package pdftex.def Info: Figures/eventsOnBackground.pdf used on input line 584.
 
 (pdftex.def)             Requested size: 241.49895pt x 238.51746pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 615--620
+Underfull \hbox (badness 10000) in paragraph at lines 619--624
 
  []
 
 [21 <./Figures/eventsOnBackground.pdf>] (./ResearchRept2.bbl [22]) [23]
 (./ResearchRept2.aux) ) 
 Here is how much of TeX's memory you used:
- 14943 strings out of 493089
- 303930 string characters out of 6134842
- 333170 words of memory out of 5000000
- 18245 multiletter control sequences out of 15000+600000
+ 14944 strings out of 493089
+ 303950 string characters out of 6134842
+ 333179 words of memory out of 5000000
+ 18246 multiletter control sequences out of 15000+600000
  22704 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,12n,41p,10441b,504s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1483,7 +1483,7 @@ al/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local
 exlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on ResearchRept2.pdf (23 pages, 4676166 bytes).
+Output written on ResearchRept2.pdf (23 pages, 4676228 bytes).
 PDF statistics:
  326 PDF objects out of 1000 (max. 8388607)
  225 compressed objects within 3 object streams

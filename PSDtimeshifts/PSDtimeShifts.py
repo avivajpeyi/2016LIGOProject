@@ -5,17 +5,19 @@ import fileinput
 from tempfile import mkstemp
 from shutil import move
 from os import remove, close
+import h5py
+from scipy import sparse as sp
+import fnmatch
 
 
 
-
-
-fileToSearch = 'lalinference_1126074549-1129348536.sh' #
+Folder = "pycbcBackgroundTriggers"      # the folder in which the run was started
+numList = [8,16,32,64]                      # the list of durations (the )
 
 
 # takes the data for the FAR, SNR, HTime, LTime and Time Slide val
 dataMatrix = np.loadtxt('AllTrigsAndData_unique.txt',skiprows=1)
-# some constants
+# some constants to help access dataMatrix
 FAR = 0
 SNR = 1
 H_TIME = 2
@@ -24,32 +26,33 @@ TIME_SLIDE = 4 # h - l
 
 
 
-onlinePath = '/home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/timeshiftedROQfiles'
-directoryToCreate = '/Users/Vajpeyi/Documents/Ligo Summer Research /2016LIGOProjectProposal/PSDtimeshifts/timeshiftedROQfiles'
-if not os.path.exists(onlinePath):
-    os.makedirs(onlinePath)
-
-
 '''
+Examples of original command:
 /home/avi.vajpeyi/local/bin/lalinference_datadump --L1-flow 10 --psdlength 1024 --randomseed 1268060671 --seglen 8 --L1-channel L1:DCS-CALIB_STRAIN_C01 --L1-timeslide 0 --H1-flow 10 --H1-timeslide 0 --trigtime 1127002734.67 --psdstart 1127001781.0 --H1-cache /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/H-H1_HOFT_C01_CACHE-1126074549-3273987.lcf --L1-cache /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/L-L1_HOFT_C01_CACHE-1126074549-3273987.lcf --srate 1024 --H1-channel H1:DCS-CALIB_STRAIN_C01 --outfile /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/1018/data-dump  --data-dump  --ifo H1  --ifo L1
 /home/avi.vajpeyi/local/bin/lalinference_datadump --L1-flow 10 --psdlength 1024 --randomseed 1671023922 --seglen 8 --L1-channel L1:DCS-CALIB_STRAIN_C01 --L1-timeslide 0 --H1-flow 10 --H1-timeslide 0 --trigtime 1126257549.25 --psdstart 1126256821.0 --H1-cache /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/H-H1_HOFT_C01_CACHE-1126074549-3273987.lcf --L1-cache /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/L-L1_HOFT_C01_CACHE-1126074549-3273987.lcf --srate 1024 --H1-channel H1:DCS-CALIB_STRAIN_C01 --outfile /home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/973/data-dump  --data-dump  --ifo H1  --ifo L1
 '''
 
 
-###
-#   generateDataDumpList(fileToSearch)
+#########################################################
+#   generateDataDumpList(shCommandFile)
 #
-#   Opens the sh file and extracts the data dump commands
+#   Parameters:
+#       shCommandFile - the input file containing commands
+#
+#   Purpose:
+#       Opens the sh file and extracts the data dump commands
 #
 #   Return value:
-#       A list with the data-dump command for each instance
-###
-def generateDataDumpList(fileToSearch):
-    f = open(fileToSearch,"r")
+#       A list with the data-dump command for each line
+#       with the PSD Generating command
+#########################################################
+def generateDataDumpList(shCommandFile):
+    f = open(shCommandFile,"r")
     lines = f.readlines()
     f.close()
+    print("Successfully opened, copied data, and closed file: "+shCommandFile+'\n')
 
-    sub = "/home/avi.vajpeyi/local/bin/lalinference_datadump --L1-flow 10 --psdlength 1024"
+    sub = "/home/avi.vajpeyi/local/bin/lalinference_datadump --L1-flow 10 --psdlength"
     dataDumpList =[]
 
     for string in lines:
@@ -57,14 +60,30 @@ def generateDataDumpList(fileToSearch):
             dataDumpList.append(string)
     return dataDumpList
 
-
+#########################################################
+#   adjustDataDumpCommand(commandBreakup, L_shiftedTime):
+#
+#   Parameters:
+#       commandBreakup - the PSD command broken at each ' '
+#                        into a list
+#       L_shiftedTime  - the shifted L time taken from the
+#                        dataMatrix
+#
+#   Purpose:
+#       Edits the command to generate a PSD for the L data
+#       at the L_shiftedTime. The trigger time is set to
+#       the L time, and the PSD start time is set at
+#       the L time - 540. The new command has nothing
+#       to do with H data.
+#
+#   Return value:
+#       A string containing the new command.
+#
+#########################################################
 def adjustDataDumpCommand(commandBreakup, L_shiftedTime):
-
     # note commandBreakup = origCommand.split()
-
     timsshifted_L1trigTime = L_shiftedTime
     adjustedPSDtime = timsshifted_L1trigTime - 540.1
-
 
     '''
     An exmaple of the result of splitting the command:
@@ -113,7 +132,10 @@ def adjustDataDumpCommand(commandBreakup, L_shiftedTime):
 
 
     # sameStartPortion consists of commandBreakup[0] to commandBreakup[4]
-    sameStartPortion = "/home/avi.vajpeyi/local/bin/lalinference_datadump --L1-flow 10 --psdlength 1024 "
+    psdLenIndex = commandBreakup.index("--psdlength") + 1
+    psdLenVal   = commandBreakup[psdLenIndex]
+
+    sameStartPortion = "/home/avi.vajpeyi/local/bin/lalinference_datadump --L1-flow 10 --psdlength "+ psdLenVal +" "
     newString = newString + sameStartPortion
 
 
@@ -170,7 +192,7 @@ def adjustDataDumpCommand(commandBreakup, L_shiftedTime):
     # adding the commandBreakup[23] to commandBreakup[26]
     '''
     23  '--L1-cache',
-    24  '/home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/L-L1_HOFT_C01_CACHE-1126074549-3273987.lcf',
+    24  '/home/avi.vajpeyi/testPyCBCtirg/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/caches/L-L1_HOFT_C01_CACHE-1126074549-3273987.lcf',
     25  '--srate',
     26  '1024',
     '''
@@ -191,13 +213,21 @@ def adjustDataDumpCommand(commandBreakup, L_shiftedTime):
     29  '--outfile',
     30  '/home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/936/data-dump',
     '''
-    pathSections = commandBreakup[30].split('/')
+    outfilePathIndex = commandBreakup.index("--outfile") + 1
+    pathSections = commandBreakup[outfilePathIndex].split('/')
+
+    # Which mass duration bin eg 8s, 16s etc
+    MassDurationIndex =  pathSections.index("IMRPhenomPv2pseudoFourPN") + 1
+    MassDuration = pathSections[MassDurationIndex]
+
+    # Which ROQ folder, eg ROQdata/936, etc
     ROQfileNumIndex =  pathSections.index("ROQdata") + 1
-    offlinePath = '/Users/Vajpeyi/Documents/Ligo Summer Research /2016LIGOProjectProposal/PSDtimeshifts/timeshiftedROQfiles/'+ pathSections[ROQfileNumIndex]+"/"
-    onlinePath = '/home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/ROQdata/timeshiftedROQfiles/'+ pathSections[ROQfileNumIndex]+"/"
+    ROQnum = pathSections[ROQfileNumIndex]
+
+    # Folder, mass duration, ROQdata/timeshiftedROQfiles/ROQnum are appended
+    onlinePath = '/home/avi.vajpeyi/'+Folder+'/lalinferencenest/IMRPhenomPv2pseudoFourPN/'+MassDuration+'/ROQdata/timeshiftedROQfiles/'+ ROQnum +"/"
     if not os.path.exists(onlinePath):
         os.makedirs(onlinePath)
-
 
     newString = newString + "--outfile "+onlinePath +"/data-dump "
 
@@ -209,17 +239,40 @@ def adjustDataDumpCommand(commandBreakup, L_shiftedTime):
     34  '--ifo',
     35  'L1'
     '''
-    newString = newString + "--data-dump --ifo L1"
+    newString = newString + "--data-dump --ifo L1\n"
 
     return newString
 
-def generateNewCommandList(dataMatrix):
+
+#########################################################
+#   generateNewCommandList(dataMatrix, shCommandFile):
+#
+#   Parameters:
+#       dataMatrix - a double dimensional matrix containing
+#                   data FAR = 0, SNR = 1, H_TIME = 2,
+#                   L_TIME = 3, H-L_time = 4
+#       shCommandFile  - The orignal command file with the
+#                       commands to generate the PSD.
+#
+#   Purpose:
+#       Edits the command to generate a PSD for the L data
+#       at the L_shiftedTime. The trigger time is set to
+#       the L time, and the PSD start time is set at
+#       the L time - 540. The new command has nothing
+#       to do with H data.
+#
+#   Return value:
+#       A string containing the entire string of the
+#       commands required to generate the shifted PSDs
+#
+#########################################################
+def generateNewCommandList(dataMatrix, shCommandFile):
 
     # NewCommandString will store the string with the new adjusted commands to generate the PSDs
     NewCommandString = ""
 
     # OriginalCommandList is a list of all the commands as strings
-    OriginalCommandList = generateDataDumpList(fileToSearch)
+    OriginalCommandList = generateDataDumpList(shCommandFile)
 
     # OriginalCommandListBreakup is a list of the list of the different commands, broken into seperate words
     OriginalCommandListBreakup = []
@@ -232,7 +285,6 @@ def generateNewCommandList(dataMatrix):
 
         HOrigTime = dataMatrix[i][H_TIME]
         LOrigTime = dataMatrix[i][L_TIME]
-        TimeSlideVal = (-1.0) * dataMatrix[i][TIME_SLIDE]
         L_timeshifted = LOrigTime
 
         print ("Editing command for "+str(HOrigTime)+"...\n\n")
@@ -263,7 +315,48 @@ def generateNewCommandList(dataMatrix):
     return (NewCommandString+'\n')
 
 
-outputString = generateNewCommandList(dataMatrix)
-text_file = open("PSD_commands.txt", "w")
-text_file.write(outputString)
-text_file.close()
+#########################################################
+#   PSD_commandFileGenerator():
+#
+#   Purpose:
+#       Generates the text files with the new PSD generation
+#       commands for the different mass duratons as \
+#       specified in the numList
+#
+#   Return value:
+#       none. Text files with the new psd commands will
+#       have been generated.
+#
+#########################################################
+def PSD_commandFileGenerator():
+    for num in numList:
+        Number = str(num)
+        print ("Getting the .sh file path from " + Number + "s...")
+        BASE_DIR ="/home/avi.vajpeyi/" + Folder + "/lalinferencenest/IMRPhenomPv2pseudoFourPN/"+Number+'s/'
+
+        # getting the path to the .sh file
+        shFileName = ""
+        for (dirpath, dirnames, filenames) in os.walk(BASE_DIR):
+            for f in filenames:
+                if 'lalinference' and '.sh' in f:
+                    shFileName= f
+        shFilePath = BASE_DIR+'/'+shFileName
+
+        # Creating the timeshifted ROQ directory
+        timeshiftedROQfilesDIR = BASE_DIR + "/ROQdata/timeshiftedROQfiles"
+        if not os.path.exists(timeshiftedROQfilesDIR):
+            os.makedirs(timeshiftedROQfilesDIR)
+            print("Generated the dir:" + timeshiftedROQfilesDIR +'\n')
+
+        #Generating the Output Commands
+        outputString = generateNewCommandList(dataMatrix, shFilePath)
+
+        # Saving the Output commands in a text file
+        textFileName = "PSD_commands"+Number+"s.txt"
+        text_file = open(textFileName,"w")
+        text_file.write(outputString)
+        text_file.close()
+    ####
+
+
+PSD_commandFileGenerator()

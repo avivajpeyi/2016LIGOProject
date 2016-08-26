@@ -49,7 +49,7 @@ Wave realGPS_sampled, far_sampled, snr_sampled //,  lnL_sampled
 
 
 	String BCRstring
-	Prompt BCRstring, "Example:", popup Wavelist("BCR*", ";", "")
+	Prompt BCRstring, "Example:", popup Wavelist("*", ";", "")
 	DoPrompt "Select waves", BCRstring
 	If (v_flag)
 		return -1
@@ -192,8 +192,6 @@ End
 Function samplingOfGPStimes(realGPS, lnL, far, snr)
 
 Wave realGPS, lnL, far, snr
-
-
 
 	//Store the name of the wave plus the string "_OneThird" into newWaveName
 	string GPSName=NameOfWave(realGPS)+"_sampled"

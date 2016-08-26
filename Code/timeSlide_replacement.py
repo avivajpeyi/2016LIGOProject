@@ -6,8 +6,10 @@ from tempfile import mkstemp
 from shutil import move
 from os import remove, close
 
+# The paths of the dags that need to be eddited! Provide initially
+fileName = ["/home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/16s/lalinference_1126074285-1129348536.dag", "/home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/32s/lalinference_1126073757-1129348536.dag", "/home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/64s/lalinference_1126072701-1129348536.dag" ]
+# not including the first path as we have already eddited that dag --> "/home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/lalinference_1126074549-1129348536.dag",
 
-fileName = "/home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/lalinference_1126074549-1129348536.dag"
 
 def removeHashLine(fileToSearch):
     f = open(fileToSearch,"r")
@@ -126,18 +128,26 @@ def applyTimeSlideToDagFile(dagToEdit):
 
         #TimeBeingSearched ='1128755932.49'
         TimeBeingSearched = dataMatrix[i][H_TIME]
-        TimeSlideVal = (-1.0) * dataMatrix[i][TIME_SLIDE]
+        # IMPORTANT NOTE ON TIME-SLIDES:
+        #   Time_H - Time_L = TimeSlideVal
+        #   If L is ahead in time, we need to give it a negative value to shift it back
+        #   If L is back in time, we need to give it a positive value to shift it ahead
+        #
+        # HOWEVER,
+        #   L_slide is the value that has been already applied to get L1 in its current position.
+        #
+        TimeSlideVal =  dataMatrix[i][TIME_SLIDE]
 
         # Save the string in this format: macroL1timeslide="TIME_SLIDE" macrotrigtime="1129097542.84"
         textToReplace = 'macroL1timeslide="'+str(TimeSlideVal)+'" macrotrigtime="'+str(TimeBeingSearched)+''
         textToSearch = 'macroL1timeslide="0" macrotrigtime="'+str(TimeBeingSearched)+''
 
         offlineDir = "/Users/Vajpeyi/Documents/Ligo Summer Research /2016LIGOProjectProposal/dataResults/pycbcTrigs_gps_times/lalinference_1126074549-1129348536.dag"
-        onlineDir  = "/home/avi.vajpeyi/pycbcBackgroundTriggers/lalinferencenest/IMRPhenomPv2pseudoFourPN/8s/lalinference_1126074549-1129348536.dag"
+        onlineDir  = dagToEdit
         replace(dagToEdit, textToSearch,textToReplace)
 ####################################
 
-
-
-applyTimeSlideToDagFile(fileName)
-addArgumentForReadingNewASD(fileName)
+for i, path in enumerate(fileName):
+    print("Editing the " + path + " dag file \n")
+    applyTimeSlideToDagFile(path)
+    addArgumentForReadingNewASD(path)
