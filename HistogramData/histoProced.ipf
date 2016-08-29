@@ -22,6 +22,15 @@ Duplicate/O  L_freq_real_5,  Lreal_histo_5; Lreal_histo_5 = Lreal_histo_5 /  L_s
 
 
 
+//
+//Duplicate/O  H1_img,  Himg_histo; Himg_histo = Himg_histo /  H1_ASD
+//Duplicate/O  H1_real,  Hreal_histo; Hreal_histo = Hreal_histo /  H1_ASD
+//
+//Duplicate/O  L1_img,  Limg_histo; Limg_histo = Limg_histo /  L1_ASD
+//Duplicate/O  L1_real,  Lreal_histo; Lreal_histo = Lreal_histo /  L1_ASD
+
+
+
 End
 
 	
