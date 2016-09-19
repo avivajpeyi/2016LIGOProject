@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: FinalLIGO.aux
+The style file: plain.bst
+Database file #1: ProjectProposalRefrences.bib
+Warning--entry type for "hardwareInj" isn't style-file defined
+--line 12 of file ProjectProposalRefrences.bib
+You've used 9 entries,
+            2118 wiz_defined-function locations,
+            553 strings with 5799 characters,
+and the built_in function-call counts, 3558 in all, are:
+= -- 306
+> -- 285
+< -- 0
++ -- 113
+- -- 104
+* -- 310
+:= -- 652
+add.period$ -- 26
+call.type$ -- 9
+change.case$ -- 74
+chr.to.int$ -- 0
+cite$ -- 9
+duplicate$ -- 91
+empty$ -- 202
+format.name$ -- 104
+if$ -- 679
+int.to.chr$ -- 0
+int.to.str$ -- 9
+missing$ -- 7
+newline$ -- 47
+num.names$ -- 18
+pop$ -- 66
+preamble$ -- 1
+purify$ -- 66
+quote$ -- 0
+skip$ -- 71
+stack$ -- 0
+substring$ -- 135
+swap$ -- 9
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 36
+warning$ -- 0
+while$ -- 23
+width$ -- 10
+write$ -- 96
+(There was 1 warning)
