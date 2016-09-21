@@ -3,54 +3,51 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: FinalLIGO.aux
 The style file: plain.bst
 Database file #1: ProjectProposalRefrences.bib
-Warning--entry type for "pyCBCdata" isn't style-file defined
+Warning--entry type for "GSTlal" isn't style-file defined
 --line 12 of file ProjectProposalRefrences.bib
-I was expecting a `,' or a `}'---line 20 of file ProjectProposalRefrences.bib
- : 
- : @url{hardwareInj,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for ""
+Warning--entry type for "pyCBCdata" isn't style-file defined
+--line 19 of file ProjectProposalRefrences.bib
+Warning--to sort, need author or key in GSTlal
 Warning--to sort, need author or key in pyCBCdata
-You've used 9 entries,
+You've used 10 entries,
             2118 wiz_defined-function locations,
-            553 strings with 5909 characters,
-and the built_in function-call counts, 3522 in all, are:
-= -- 304
-> -- 279
+            557 strings with 6087 characters,
+and the built_in function-call counts, 3681 in all, are:
+= -- 318
+> -- 280
 < -- 0
-+ -- 111
++ -- 112
 - -- 102
-* -- 310
-:= -- 637
-add.period$ -- 26
-call.type$ -- 9
-change.case$ -- 73
+* -- 315
+:= -- 655
+add.period$ -- 28
+call.type$ -- 10
+change.case$ -- 76
 chr.to.int$ -- 0
-cite$ -- 10
-duplicate$ -- 91
-empty$ -- 203
+cite$ -- 12
+duplicate$ -- 98
+empty$ -- 226
 format.name$ -- 102
-if$ -- 676
+if$ -- 715
 int.to.chr$ -- 0
-int.to.str$ -- 9
+int.to.str$ -- 10
 missing$ -- 7
-newline$ -- 47
+newline$ -- 51
 num.names$ -- 16
-pop$ -- 69
+pop$ -- 80
 preamble$ -- 1
-purify$ -- 65
+purify$ -- 67
 quote$ -- 0
-skip$ -- 67
+skip$ -- 72
 stack$ -- 0
-substring$ -- 135
-swap$ -- 9
+substring$ -- 140
+swap$ -- 10
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 36
-warning$ -- 1
+type$ -- 40
+warning$ -- 2
 while$ -- 21
-width$ -- 10
-write$ -- 96
-(There was 1 error message)
+width$ -- 12
+write$ -- 103
+(There were 4 warnings)

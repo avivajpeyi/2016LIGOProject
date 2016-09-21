@@ -15,8 +15,8 @@
 \BOOKMARK [2][-]{subsection.6.3}{Comparing Detection Statistics}{section.6}% 15
 \BOOKMARK [3][-]{subsubsection.6.3.1}{Bayes Factors as a Detection Statistic}{subsection.6.3}% 16
 \BOOKMARK [3][-]{subsubsection.6.3.2}{Bayes Coherence Ratio as a Detection Statistic}{subsection.6.3}% 17
-\BOOKMARK [2][-]{subsection.6.4}{Studying Real Events with the Bayes Coherence Ratio}{section.6}% 18
-\BOOKMARK [3][-]{subsubsection.6.4.1}{Bayes Coherence Ratio with Optimal SNR}{subsection.6.4}% 19
+\BOOKMARK [3][-]{subsubsection.6.3.3}{ Studying SNR, BSN and BR Together}{subsection.6.3}% 18
+\BOOKMARK [2][-]{subsection.6.4}{Studying Real Events with the Bayes Coherence Ratio}{section.6}% 19
 \BOOKMARK [1][-]{section.7}{Future Work }{}% 20
 \BOOKMARK [1][-]{section.8}{Appendix}{}% 21
-\BOOKMARK [2][-]{subsection.8.1}{Outliers with the Bayes Coherence Ratio}{section.8}% 22
+\BOOKMARK [2][-]{subsection.8.1}{Removal of Outliers with the Optimal SNR}{section.8}% 22

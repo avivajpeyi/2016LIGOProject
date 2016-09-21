@@ -1,4 +1,10 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{GSTlal}
+{GST}lal {GW150914} {S}earch {R}esult {D}ata.
+\newblock Available in UWM cluster at
+  \url{/home/surabhi.sachdev/projects/rory-jonah/coincs-time-slide/back-mod-230-247/new/H1.txt
+  }.
 
 \bibitem{pyCBCdata}
 {P}y{CBC} {GW150914} {S}earch {R}esult {C}1 {D}ata.

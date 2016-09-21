@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  21 SEP 2016 02:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  21 SEP 2016 16:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -596,6 +596,121 @@ Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
 LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
 (Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen165
+\Hy@linkcounter=\count198
+\Hy@pagecounter=\count199
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count200
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count201
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen166
+\Fld@menulength=\count202
+\Field@Width=\dimen167
+\Fld@charsize=\dimen168
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count203
+\c@Item=\count204
+\c@Hfootnote=\count205
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count206
+\c@bookmark@seq@number=\count207
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip73
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
@@ -805,6 +920,8 @@ Now handling font encoding OMX ...
 ... no UTF-8 mapping file for font encoding OMX
 Now handling font encoding U ...
 ... no UTF-8 mapping file for font encoding U
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
    defining Unicode char U+00A9 (decimal 169)
    defining Unicode char U+00AA (decimal 170)
    defining Unicode char U+00AE (decimal 174)
@@ -817,23 +934,23 @@ Now handling font encoding U ...
    defining Unicode char U+2423 (decimal 9251)
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count198
+\lst@mode=\count208
 \lst@gtempboxa=\box50
 \lst@token=\toks24
-\lst@length=\count199
-\lst@currlwidth=\dimen165
-\lst@column=\count200
-\lst@pos=\count201
-\lst@lostspace=\dimen166
-\lst@width=\dimen167
-\lst@newlines=\count202
-\lst@lineno=\count203
-\lst@maxwidth=\dimen168
+\lst@length=\count209
+\lst@currlwidth=\dimen169
+\lst@column=\count210
+\lst@pos=\count211
+\lst@lostspace=\dimen170
+\lst@width=\dimen171
+\lst@newlines=\count212
+\lst@lineno=\count213
+\lst@maxwidth=\dimen172
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count204
-\lst@skipnumbers=\count205
+\c@lstnumber=\count214
+\lst@skipnumbers=\count215
 \lst@framebox=\box51
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
@@ -858,85 +975,54 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/preprint/authblk.sty
 Package: authblk 2001/02/27 1.3 (PWD)
-\affilsep=\skip73
-\@affilsep=\skip74
-\c@Maxaffil=\count206
-\c@authors=\count207
-\c@affil=\count208
+\affilsep=\skip74
+\@affilsep=\skip75
+\c@Maxaffil=\count216
+\c@authors=\count217
+\c@affil=\count218
 )
 (./FinalLIGO.aux)
 \openout1 = `FinalLIGO.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `upgreek' on line 71.
+. Activating mapping `upgreek' on line 73.
 .................................................
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count209
-\scratchdimen=\dimen169
+\scratchcounter=\count219
+\scratchdimen=\dimen173
 \scratchbox=\box52
-\nofMPsegments=\count210
-\nofMParguments=\count211
+\nofMPsegments=\count220
+\nofMParguments=\count221
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count212
-\MPscratchDim=\dimen170
-\MPnumerator=\count213
-\makeMPintoPDFobject=\count214
+\MPscratchCnt=\count222
+\MPscratchDim=\dimen174
+\MPnumerator=\count223
+\makeMPintoPDFobject=\count224
 \everyMPtoPDFconversion=\toks26
-) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
+)
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
@@ -1028,109 +1114,107 @@ Dictionary: translator-basic-dictionary, Language: English
 (/usr/local/texlive/2015/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2015/01/21 v2.6e siunitx: Abbreviated units
 )
-LaTeX Info: Redefining \celsius on input line 71.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 71.
+LaTeX Info: Redefining \celsius on input line 73.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 73.
 
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 71.
-Package gensymb Info: Using \Omega for \ohm on input line 71.
+LaTeX Info: Redefining \ohm on input line 73.
+Package gensymb Info: Using \Omega for \ohm on input line 73.
 
 Package gensymb Warning: Not defining \micro.
 
-\c@lstlisting=\count215
-\c__siunitx_mathsf_int=\count216
-\c__siunitx_mathtt_int=\count217
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 73.
+\AtBeginShipoutBox=\box53
+Package hyperref Info: Link coloring OFF on input line 73.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count225
+)
+LaTeX Info: Redefining \ref on input line 73.
+LaTeX Info: Redefining \pageref on input line 73.
+LaTeX Info: Redefining \nameref on input line 73.
+
+(./FinalLIGO.out) (./FinalLIGO.out)
+\@outlinefile=\write3
+\openout3 = `FinalLIGO.out'.
+
+\c@lstlisting=\count226
+\c__siunitx_mathsf_int=\count227
+\c__siunitx_mathtt_int=\count228
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 75.
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 73.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 73.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
 
 [2]
-<Figures/DetectionInGenericTransientSearch.png, id=19, 377.41pt x 293.095pt>
+<Figures/DetectionInGenericTransientSearch.png, id=126, 377.41pt x 293.095pt>
 File: Figures/DetectionInGenericTransientSearch.png Graphic file (type png)
 
 <use Figures/DetectionInGenericTransientSearch.png>
 Package pdftex.def Info: Figures/DetectionInGenericTransientSearch.png used on 
-input line 139.
+input line 141.
 (pdftex.def)             Requested size: 276.00105pt x 214.34218pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 183--185
+[3 <./Figures/DetectionInGenericTransientSearch.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 185--187
 
  []
 
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 190.
-[4 <./Figures/DetectionInGenericTransientSearch.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
-
- []
-
-
-Overfull \hbox (18.03635pt too wide) in paragraph at lines 208--209
-\T1/cmr/m/n/10 Eq 3In-tro-duc-tion to Bayesian In-fer-ence for Grav-i-ta-tional
- Wave Analysisequation.1.3[],
- []
-
-
-Overfull \hbox (1.21884pt too wide) in paragraph at lines 208--209
-\T1/cmr/m/n/10 con-tain no ref-er-ence to the sig-nal pa-ram-e-ters $[]$. Hence
-, the Bayes fac-tor $\OML/cmm/m/it/10 B[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 192.
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
@@ -1139,13 +1223,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
 
+[5pdfTeX warning (ext4): destination with the same identifier (name{equation.1.
+5}) has been already used, duplicate ignored
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.233 ...A} (f)  \tilde{B}^* (f) }{S_n(f)}}df. $$ 
+                                                  Additionally, the term $T$...
+]
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
@@ -1154,429 +1245,459 @@ Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 261--262
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
 
-
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--272
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
 
  []
 
-<Figures/rawData.png, id=45, 578.16pt x 433.62pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
+
+ []
+
+<Figures/rawData.png, id=187, 578.16pt x 433.62pt>
 File: Figures/rawData.png Graphic file (type png)
  <use Figures/rawData.png>
-Package pdftex.def Info: Figures/rawData.png used on input line 274.
+Package pdftex.def Info: Figures/rawData.png used on input line 276.
 (pdftex.def)             Requested size: 241.49895pt x 181.12006pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
 
  []
 
-[7] <Figures/exampleMXplot.pdf, id=50, 740.35243pt x 293.5233pt>
+[7] <Figures/exampleMXplot.pdf, id=194, 740.35243pt x 293.5233pt>
 File: Figures/exampleMXplot.pdf Graphic file (type pdf)
 
 <use Figures/exampleMXplot.pdf>
-Package pdftex.def Info: Figures/exampleMXplot.pdf used on input line 296.
+Package pdftex.def Info: Figures/exampleMXplot.pdf used on input line 298.
 (pdftex.def)             Requested size: 345.0pt x 136.77803pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (45.80734pt too wide) in paragraph at lines 301--302
-\T1/cmr/m/n/10 Equa-tion 4In-tro-duc-tion to Bayesian In-fer-ence for Grav-i-ta
--tional Wave Analysisequation.1.4[],
- []
-
-
-LaTeX Warning: Reference `eq:likelihood' on page 8 undefined on input line 307.
-
-
-[8 <./Figures/rawData.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 314--315
-
- []
-
-
+ [8 <./Figures/rawData.png> <./Figures/exampleMXplot.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--320
-
- []
-
-[9 <./Figures/exampleMXplot.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 324--325
+Underfull \hbox (badness 10000) in paragraph at lines 318--319
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--330
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 326--327
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--333
+Underfull \hbox (badness 10000) in paragraph at lines 331--332
 
  []
 
-<Figures/strainData.pdf, id=85, 830.10126pt x 351.3125pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--335
+
+ []
+
+<Figures/strainData.pdf, id=241, 830.10126pt x 351.3125pt>
 File: Figures/strainData.pdf Graphic file (type pdf)
 
 <use Figures/strainData.pdf>
-Package pdftex.def Info: Figures/strainData.pdf used on input line 341.
+Package pdftex.def Info: Figures/strainData.pdf used on input line 343.
 (pdftex.def)             Requested size: 276.00105pt x 116.80725pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--348
+Underfull \hbox (badness 10000) in paragraph at lines 349--350
 
  []
 
 [10 <./Figures/strainData.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 362--363
+Underfull \hbox (badness 10000) in paragraph at lines 364--365
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--372
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
 
  []
 
-<Figures/NoiseHistogram.pdf, id=99, 730.73pt x 365.365pt>
+<Figures/NoiseHistogram.pdf, id=264, 730.73pt x 365.365pt>
 File: Figures/NoiseHistogram.pdf Graphic file (type pdf)
 
 <use Figures/NoiseHistogram.pdf>
-Package pdftex.def Info: Figures/NoiseHistogram.pdf used on input line 376.
+Package pdftex.def Info: Figures/NoiseHistogram.pdf used on input line 378.
 (pdftex.def)             Requested size: 241.49895pt x 120.74922pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 382--383
-
- []
-
-[11] <Figures/m1m2.pdf, id=103, 922.44624pt x 562.1pt>
-File: Figures/m1m2.pdf Graphic file (type pdf)
- <use Figures/m1m2.pdf>
-Package pdftex.def Info: Figures/m1m2.pdf used on input line 390.
-(pdftex.def)             Requested size: 241.49895pt x 147.15463pt.
-
-
-LaTeX Warning: Reference `eq:likelihood' on page 12 undefined on input line 395
-.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 395--396
-
- []
-
-[12 <./Figures/NoiseHistogram.pdf> <./Figures/m1m2.pdf>]
-<Figures/MassPost.pdf, id=129, 1029.8475pt x 592.2125pt>
+<Figures/MassPost.pdf, id=265, 1029.8475pt x 592.2125pt>
 File: Figures/MassPost.pdf Graphic file (type pdf)
 
 <use Figures/MassPost.pdf>
-Package pdftex.def Info: Figures/MassPost.pdf used on input line 399.
-(pdftex.def)             Requested size: 345.0pt x 198.38564pt.
+Package pdftex.def Info: Figures/MassPost.pdf used on input line 386.
+(pdftex.def)             Requested size: 241.49895pt x 138.87175pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--393
+
+ []
+
+<Figures/m1m2.pdf, id=268, 922.44624pt x 562.1pt>
+File: Figures/m1m2.pdf Graphic file (type pdf)
+ <use Figures/m1m2.pdf>
+Package pdftex.def Info: Figures/m1m2.pdf used on input line 400.
+(pdftex.def)             Requested size: 241.49895pt x 147.15463pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 405--406
 
  []
 
-[13 <./Figures/MassPost.pdf>] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 410--411
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 411--412
 
  []
 
-<Figures/DataLH.png, id=150, 629.35126pt x 331.2375pt>
+[12 <./Figures/NoiseHistogram.pdf> <./Figures/MassPost.pdf>] [13 <./Figures/m1m
+2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
+
+ []
+
+<Figures/DataLH.png, id=326, 629.35126pt x 331.2375pt>
 File: Figures/DataLH.png Graphic file (type png)
 
 <use Figures/DataLH.png>
-Package pdftex.def Info: Figures/DataLH.png used on input line 416.
+Package pdftex.def Info: Figures/DataLH.png used on input line 425.
 (pdftex.def)             Requested size: 241.49895pt x 127.1048pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 423--424
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 426--427
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 428--429
-
- []
-
-[15 <./Figures/DataLH.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 431--432
 
  []
 
-<Figures/LALinferenceMasses.png, id=155, 1088.065pt x 648.4225pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
+
+ []
+
+[14 <./Figures/DataLH.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 439--440
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--445
+
+ []
+
+<Figures/LALinferenceMasses.png, id=337, 1088.065pt x 648.4225pt>
 File: Figures/LALinferenceMasses.png Graphic file (type png)
 
 <use Figures/LALinferenceMasses.png>
-Package pdftex.def Info: Figures/LALinferenceMasses.png used on input line 435.
+Package pdftex.def Info: Figures/LALinferenceMasses.png used on input line 450.
 
-(pdftex.def)             Requested size: 345.0pt x 205.59976pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 441--442
-
- []
-
-[16 <./Figures/LALinferenceMasses.png>] [17]
-<Figures/FAP_Count.pdf, id=163, 530.98375pt x 265.99374pt>
+(pdftex.def)             Requested size: 276.00105pt x 164.47981pt.
+ [15 <./Figures/LALinferenceMasses.png>]
+<Figures/FAP_Count.pdf, id=344, 530.98375pt x 265.99374pt>
 File: Figures/FAP_Count.pdf Graphic file (type pdf)
 
 <use Figures/FAP_Count.pdf>
-Package pdftex.def Info: Figures/FAP_Count.pdf used on input line 457.
+Package pdftex.def Info: Figures/FAP_Count.pdf used on input line 467.
 (pdftex.def)             Requested size: 345.0pt x 172.82893pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 465--466
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 475--476
 
  []
 
-[18 <./Figures/FAP_Count.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 479--480
+
+Underfull \hbox (badness 10000) in paragraph at lines 485--486
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--483
+Underfull \hbox (badness 10000) in paragraph at lines 487--488
+
+ []
+
+[16 <./Figures/FAP_Count.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 489--490
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--489
+Underfull \hbox (badness 10000) in paragraph at lines 492--493
 
  []
 
-<Figures/sampledPts.pdf, id=177, 643.40375pt x 293.095pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 495--496
+
+ []
+
+<Figures/sampledPts.pdf, id=364, 643.40375pt x 293.095pt>
 File: Figures/sampledPts.pdf Graphic file (type pdf)
 
 <use Figures/sampledPts.pdf>
-Package pdftex.def Info: Figures/sampledPts.pdf used on input line 493.
+Package pdftex.def Info: Figures/sampledPts.pdf used on input line 500.
 (pdftex.def)             Requested size: 345.0pt x 157.16428pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[19] [20 <./Figures/sampledPts.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 527--529
+ [17 <./Figures/sampledPts.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 534--536
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 531--532
+Underfull \hbox (badness 10000) in paragraph at lines 538--539
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 536--538
+Underfull \hbox (badness 10000) in paragraph at lines 543--545
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 539--540
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 546--547
 
  []
 
-<Figures/DetectionStatVSfar_bF.pdf, id=196, 1083.04625pt x 361.35pt>
+<Figures/DetectionStatVSfar_bF.pdf, id=390, 1083.04625pt x 361.35pt>
 File: Figures/DetectionStatVSfar_bF.pdf Graphic file (type pdf)
 
 <use Figures/DetectionStatVSfar_bF.pdf>
 Package pdftex.def Info: Figures/DetectionStatVSfar_bF.pdf used on input line 5
-50.
+57.
 (pdftex.def)             Requested size: 345.0pt x 115.10504pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 557--558
+Underfull \hbox (badness 10000) in paragraph at lines 564--565
 
  []
 
-[21 <./Figures/DetectionStatVSfar_bF.pdf>]
-<Figures/FARvsBayesFactor.png, id=210, 517.22647pt x 363.37437pt>
+<Figures/FARvsBayesFactor.png, id=393, 517.22647pt x 363.37437pt>
 File: Figures/FARvsBayesFactor.png Graphic file (type png)
 
 <use Figures/FARvsBayesFactor.png>
-Package pdftex.def Info: Figures/FARvsBayesFactor.png used on input line 563.
-(pdftex.def)             Requested size: 345.0pt x 242.37836pt.
+Package pdftex.def Info: Figures/FARvsBayesFactor.png used on input line 570.
+(pdftex.def)             Requested size: 276.00105pt x 193.90158pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 572--573
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 579--580
 
  []
 
-[22 <./Figures/FARvsBayesFactor.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 578--580
+[19 <./Figures/DetectionStatVSfar_bF.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 585--587
 
  []
 
 
-Overfull \hbox (33.3062pt too wide) in paragraph at lines 584--585
+Overfull \hbox (33.3062pt too wide) in paragraph at lines 591--592
 []\T1/cmr/m/n/10 We would like $\OMS/cmsy/m/n/10 B[]$ \T1/cmr/m/n/10 for back-g
 round events to be high only if both $[]\OMS/cmsy/m/n/10 B[][][]B[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 591--592
+Underfull \hbox (badness 10000) in paragraph at lines 598--599
 
  []
 
-<Figures/detectionStatVSfar8s.pdf, id=214, 1085.05376pt x 361.35pt>
+[20 <./Figures/FARvsBayesFactor.png (PNG copy)>]
+<Figures/lnBCRhistogram.png, id=418, 617.43277pt x 386.65462pt>
+File: Figures/lnBCRhistogram.png Graphic file (type png)
+
+<use Figures/lnBCRhistogram.png>
+Package pdftex.def Info: Figures/lnBCRhistogram.png used on input line 604.
+(pdftex.def)             Requested size: 241.49895pt x 151.23128pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 611--612
+
+ []
+
+<Figures/detectionStatVSfar8s.pdf, id=420, 1085.05376pt x 361.35pt>
 File: Figures/detectionStatVSfar8s.pdf Graphic file (type pdf)
 
 <use Figures/detectionStatVSfar8s.pdf>
-Package pdftex.def Info: Figures/detectionStatVSfar8s.pdf used on input line 59
-9.
+Package pdftex.def Info: Figures/detectionStatVSfar8s.pdf used on input line 61
+5.
 (pdftex.def)             Requested size: 345.0pt x 114.89551pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 605--606
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 622--623
 
  []
 
-[23 <./Figures/detectionStatVSfar8s.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 608--609
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 624.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 624.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 624.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 624.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 624.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 624.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 627--628
 
  []
 
-<Figures/DetectionStatisticComparison.pdf, id=228, 567.11874pt x 791.95876pt>
+<Figures/DetectionStatisticComparison.pdf, id=422, 567.11874pt x 791.95876pt>
 File: Figures/DetectionStatisticComparison.pdf Graphic file (type pdf)
 
 <use Figures/DetectionStatisticComparison.pdf>
 Package pdftex.def Info: Figures/DetectionStatisticComparison.pdf used on input
- line 613.
+ line 632.
 (pdftex.def)             Requested size: 207.0021pt x 289.06859pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 620--621
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 639--640
 
  []
 
-[24 <./Figures/DetectionStatisticComparison.pdf>]
-<Figures/eventsOnBackground.pdf, id=245, 565.11125pt x 537.00626pt>
+[21 <./Figures/lnBCRhistogram.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 641--642
+
+ []
+
+<Figures/eventsOnBackground.pdf, id=431, 565.11125pt x 537.00626pt>
 File: Figures/eventsOnBackground.pdf Graphic file (type pdf)
 
 <use Figures/eventsOnBackground.pdf>
-Package pdftex.def Info: Figures/eventsOnBackground.pdf used on input line 643.
+Package pdftex.def Info: Figures/eventsOnBackground.pdf used on input line 662.
 
 (pdftex.def)             Requested size: 241.49895pt x 229.48242pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/lnBCRhistogram.png, id=246, 617.43277pt x 386.65462pt>
-File: Figures/lnBCRhistogram.png Graphic file (type png)
 
-<use Figures/lnBCRhistogram.png>
-Package pdftex.def Info: Figures/lnBCRhistogram.png used on input line 652.
-(pdftex.def)             Requested size: 241.49895pt x 151.23128pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 660--661
+Underfull \hbox (badness 10000) in paragraph at lines 669--670
 
  []
 
-[25] <Figures/Outlier.png, id=251, 729.7853pt x 368.43529pt>
-File: Figures/Outlier.png Graphic file (type png)
-
-<use Figures/Outlier.png>
-Package pdftex.def Info: Figures/Outlier.png used on input line 685.
-(pdftex.def)             Requested size: 241.49895pt x 121.92133pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 691--692
-
- []
-
-[26 <./Figures/eventsOnBackground.pdf>]
+[22 <./Figures/detectionStatVSfar8s.pdf>] [23 <./Figures/DetectionStatisticComp
+arison.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 693--694
 
  []
 
+[24 <./Figures/eventsOnBackground.pdf>]
+<Figures/Outlier.png, id=485, 729.7853pt x 368.43529pt>
+File: Figures/Outlier.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 712--713
+<use Figures/Outlier.png>
+Package pdftex.def Info: Figures/Outlier.png used on input line 698.
+(pdftex.def)             Requested size: 241.49895pt x 121.92133pt.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 714--715
-
- []
-
-[27 <./Figures/lnBCRhistogram.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 716--717
+Underfull \hbox (badness 10000) in paragraph at lines 703--704
 
  []
 
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 720.
+Underfull \hbox (badness 10000) in paragraph at lines 722--723
 
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 732.
-
-(./FinalLIGO.bbl
-! Undefined control sequence.
-l.6   \url
-          {https://sugar-jobs.phy.syr.edu/~tjmassin/gw150914/gw150914-16day-...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 8056) in paragraph at lines 4--8
-[]\T1/cmr/m/n/10 PyCBC GW150914 Search Re-sult C1 Data.  Avail-able on-line
  []
 
 
-Underfull \hbox (badness 7168) in paragraph at lines 4--8
-\T1/cmr/m/n/10 at https://sugar-jobs.phy.syr.edu/ tjmassin/gw150914/gw150914-16
-day-
+Underfull \hbox (badness 10000) in paragraph at lines 724--725
+
  []
 
-[28 <./Figures/Outlier.png (PNG copy)>] [29]) [30] (./FinalLIGO.aux)
 
-LaTeX Warning: There were undefined references.
+Underfull \hbox (badness 10000) in paragraph at lines 726--727
+
+ []
+
+[25 <./Figures/Outlier.png (PNG copy)>] (./FinalLIGO.bbl
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 7.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Underfull \hbox (badness 10000) in paragraph at lines 4--8
+[]$\T1/cmtt/m/n/10 /home / surabhi . sachdev / projects / rory-[]jonah / coincs
+-[]time-[]slide /
+ []
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Underfull \hbox (badness 10000) in paragraph at lines 10--14
+[]\T1/cmr/m/n/10 PyCBC GW150914 Search Re-sult C1 Data.  Avail-able on-
+ []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--14
+\T1/cmr/m/n/10 line at []$\T1/cmtt/m/n/10 https : / / sugar-[]jobs . phy . syr 
+. edu / ~tjmassin / gw150914 /
+ []
+
+[26])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 775.
+ [27]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 775.
+ (./FinalLIGO.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 775.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 775.
+Package rerunfilecheck Info: File `FinalLIGO.out' has not changed.
+(rerunfilecheck)             Checksum: 7E3129838435CE261B270F69ABB49AFF;1755.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 775.
  ) 
 Here is how much of TeX's memory you used:
- 14973 strings out of 493089
- 304528 string characters out of 6134842
- 339351 words of memory out of 5000000
- 18272 multiletter control sequences out of 15000+600000
- 22704 words of font info for 60 fonts, out of 8000000 for 9000
+ 18520 strings out of 493089
+ 359004 string characters out of 6134842
+ 417557 words of memory out of 5000000
+ 21698 multiletter control sequences out of 15000+600000
+ 23017 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,12n,41p,10437b,504s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,12n,41p,10437b,829s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
@@ -1599,11 +1720,12 @@ mf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2015/texmf
 ist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/public/cm-super/sfti1000.pfb>
-Output written on FinalLIGO.pdf (30 pages, 5187500 bytes).
+nts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/public/cm-super/sftt1000.pfb>
+Output written on FinalLIGO.pdf (27 pages, 5219641 bytes).
 PDF statistics:
- 351 PDF objects out of 1000 (max. 8388607)
- 240 compressed objects within 3 object streams
- 0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 605 PDF objects out of 1000 (max. 8388607)
+ 492 compressed objects within 5 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 267 words of extra memory for PDF output out of 10000 (max. 10000000)
 
