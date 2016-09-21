@@ -3,38 +3,45 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: FinalLIGO.aux
 The style file: plain.bst
 Database file #1: ProjectProposalRefrences.bib
-Warning--entry type for "hardwareInj" isn't style-file defined
+Warning--entry type for "pyCBCdata" isn't style-file defined
 --line 12 of file ProjectProposalRefrences.bib
+I was expecting a `,' or a `}'---line 20 of file ProjectProposalRefrences.bib
+ : 
+ : @url{hardwareInj,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for ""
+Warning--to sort, need author or key in pyCBCdata
 You've used 9 entries,
             2118 wiz_defined-function locations,
-            553 strings with 5799 characters,
-and the built_in function-call counts, 3558 in all, are:
-= -- 306
-> -- 285
+            553 strings with 5909 characters,
+and the built_in function-call counts, 3522 in all, are:
+= -- 304
+> -- 279
 < -- 0
-+ -- 113
-- -- 104
++ -- 111
+- -- 102
 * -- 310
-:= -- 652
+:= -- 637
 add.period$ -- 26
 call.type$ -- 9
-change.case$ -- 74
+change.case$ -- 73
 chr.to.int$ -- 0
-cite$ -- 9
+cite$ -- 10
 duplicate$ -- 91
-empty$ -- 202
-format.name$ -- 104
-if$ -- 679
+empty$ -- 203
+format.name$ -- 102
+if$ -- 676
 int.to.chr$ -- 0
 int.to.str$ -- 9
 missing$ -- 7
 newline$ -- 47
-num.names$ -- 18
-pop$ -- 66
+num.names$ -- 16
+pop$ -- 69
 preamble$ -- 1
-purify$ -- 66
+purify$ -- 65
 quote$ -- 0
-skip$ -- 71
+skip$ -- 67
 stack$ -- 0
 substring$ -- 135
 swap$ -- 9
@@ -42,8 +49,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 36
-warning$ -- 0
-while$ -- 23
+warning$ -- 1
+while$ -- 21
 width$ -- 10
 write$ -- 96
-(There was 1 warning)
+(There was 1 error message)

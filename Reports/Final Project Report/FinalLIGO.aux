@@ -9,20 +9,21 @@
 \citation{DetectionPaper}
 \citation{Enia}
 \citation{RSmith}
+\citation{DetectionPaper}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Introduction to the physics of LIGO}{2}}
 \newlabel{section:intro}{{1.1}{2}}
 \citation{DetectionPaper}
 \citation{DetectionPaper}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Search results of the generic transit search in which the first gravitational wave signal, marked GW150914, was detected. The wave strain of GW150914 stands out as the strongest strain in the entire search. SNR was used in this search to calculate the background noise and the events. Figure taken from \cite  {DetectionPaper}}}{3}}
-\newlabel{Fig:Detection}{{1}{3}}
 \citation{BaeStats}
 \citation{BaeStats}
 \citation{BaeStats}
 \citation{BaeStats}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Introduction to Bayesian Inference for Gravitational Wave Analysis}{3}}
+\newlabel{section:introToBayes}{{1.2}{3}}
 \citation{BaeStats}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Introduction to Bayesian Inference for Gravitational Wave Analysis}{4}}
-\newlabel{section:introToBayes}{{1.2}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Search results of the generic transit search in which the first gravitational wave signal, marked GW150914, was detected. The wave strain of GW150914 stands out as the strongest strain in the entire search. SNR was used in this search to calculate the background noise and the events. Figure taken from \cite  {DetectionPaper}}}{4}}
+\newlabel{Fig:Detection}{{1}{4}}
 \newlabel{eq:noise}{{1}{4}}
 \citation{BaeStats}
 \citation{RSmith}
@@ -33,85 +34,90 @@
 \newlabel{eq:PDF}{{4}{5}}
 \newlabel{eq:englishTheorem}{{5}{5}}
 \newlabel{eq:likelihood}{{5}{5}}
+\citation{DetectionPaper}
 \newlabel{eq:evidence}{{6}{6}}
 \newlabel{eq:evidenceEnglish}{{7}{6}}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Approach}{6}}
+\citation{DetectionPaper}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Approach}{7}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}A Simple Bayesian Statistics Calculation}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Plots of the raw data used in this example.}}{7}}
-\newlabel{Fig:origData}{{2}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Plots of the raw data used in this example.}}{8}}
+\newlabel{Fig:origData}{{2}{8}}
 \newlabel{eq:noiseMX}{{8}{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Plots of the Posteriors}}{8}}
-\newlabel{Fig:exampleMXplot}{{3}{8}}
 \newlabel{eq:PDFforMX}{{9}{8}}
 \newlabel{eq:PDFforMXnoise}{{10}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Plots of the Posteriors}}{9}}
+\newlabel{Fig:exampleMXplot}{{3}{9}}
 \citation{ligo2016properties}
 \citation{abbott2016observing}
-\@writefile{toc}{\contentsline {section}{\numberline {4}An Example of Bayesian Inference for Binary In-Spirals}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}An Example of Bayesian Inference for Binary In-Spirals}{10}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Model Selection}{10}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Whitened strain data's imaginary (red) and real (blue) parts of the frequency from one observatory. The data is from the first observing run in 2015, and is supposed to contain a candidate event.}}{10}}
 \newlabel{Fig:strainData}{{4}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces A histogram of strain data that does not have any strain due to a gravitational wave. This displays that noise in the data is Gaussian with a zero mean.}}{11}}
-\newlabel{Fig:NoiseHist}{{5}{11}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Parameter Estimation}{11}}
-\citation{ligo2016properties}
-\citation{ligo2016properties}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces A histogram of strain data that does not have any strain due to a gravitational wave. This displays that noise in the data is Gaussian with a zero mean.}}{12}}
+\newlabel{Fig:NoiseHist}{{5}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Parameter Estimation}{12}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces 2D plot of the log of the posterior distribution for the masses of the black holes before the merger. We can see a high posterior region near the 30-38 solar mass range. The data for this was generated from an injected gravitational wave strain.}}{12}}
 \newlabel{Fig:2Dmasses}{{6}{12}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Running LALinference to Analyse A Candidate Event}{12}}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Posteriors for the masses of the black holes before the merger. This was created with data from an injected gravitational wave strain. The masses of the black holes are $29.5\pm 0.1 \text  { and } 36.4\pm 0.2$ solar masses in size.}}{13}}
 \newlabel{Fig:1Dmasses}{{7}{13}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces The filtered instrumental strain data in the Livingston detector (blue) and Hanford detector (red). The Hanford strain has been shifted back in time by 6.9 ms and inverted. This figure was taken from Ref\nobreakspace  {}\cite  {ligo2016properties}. }}{14}}
-\newlabel{Fig:DataLH}{{8}{14}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Posteriors for the black hole masses before the merger, created with the LALinference script. The masses are $39.5\pm 3.2 \text  { and } 32.4\pm 2.7$ solar masses in size. The data used for this was the same as the data from the $GW150914$ detection.}}{15}}
-\newlabel{Fig:LALinferenceMasses}{{9}{15}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Determining a New Detection Statistic}{15}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Background Distribution}{15}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.1}Preparing Sample Points}{15}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces The False Alarm Rate (FAR) for background events from the GSTlal search plotted against the number of prior False Alarm Rates. The lowest FAR value in this graph is $10^{-7}$. We see that there is a larger spread of the FAR values between each data point for the first thousand data points.}}{16}}
-\newlabel{Fig:FAR_Count}{{10}{16}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.2}The Different forms of the Bayes Factor}{16}}
-\newlabel{eq:logBayesFactor}{{11}{16}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces The False Alarm Rate plotted against the log Likelihood for the GSTlal background events. The green data points are those which we are using to generate the background distribution with the Bayes Factor. We see that for lower log Likelihood values, the FAR does not appear to be changing much. However, at higher values for the log Likelihood ($\sim 3$), smaller changes cause a large variation in the value for the FAR. Additionally, we see that at higher log Likelihood values, the FAR is lower. This means that there is a smaller chance of having a background event of high log Likelihoods.}}{17}}
-\newlabel{Fig:sampledPts}{{11}{17}}
-\newlabel{eq:BCR}{{12}{17}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.3}Bayes Factors as a Detection Statistic}{17}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces The SNR (yellow diamonds) and Log Bayes factor (cyan squares) plotted against FAR. The Data points are coloured and sized according to their Ln Likelihoods (dark end $\sim 4.6 $ to the white end $\sim 10.3$).}}{18}}
-\newlabel{Fig:BayesVSFAR}{{12}{18}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces The Bayes Factor as a Detection Statistic, using only Coalescing Binary Back Hole Templates. We can see that there are some background events that have higher Bayes Factors than the gravitational wave events.}}{19}}
-\newlabel{Fig:FARvsBayesFactor}{{13}{19}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.4}Bayes Coherence Ratio as a Detection Statistic}{19}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces The SNR (yellow diamonds) and Log Bayes factor (cyan squares) plotted against FAR. The data points are coloured and sized according to their Ln Likelihoods (dark end $\sim 4.6$ to the white end $\sim 10.3$). }}{20}}
-\newlabel{Fig:BcrVSFAR}{{14}{20}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Studying Real Events with the Bayes Coherence Ratio}{20}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.1}Outliers with the Bayes Coherence Ratio}{20}}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Plots of the various detection statistics against the Log Likelihood of the background events. There appears to be a correlation between the SNR and the log Likelihood, as seen by the slope of the fitted line equal to $0.25\pm 0.02$. The correlation between the log Bayes Coherent Ratio and log Likelihood appears to be less, given that the slope of the fitted line for this is equal $0.05\pm 0.04$. The plot of the Log Bayes Factor demonstrates that it may not be useful as a detection statistic.}}{21}}
-\newlabel{Fig:SeparateDetectionStatisticVSlnL}{{15}{21}}
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces outlier }}{22}}
-\newlabel{Fig:outlier}{{16}{22}}
-\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces (A) is a plot of $sin(x/2)$, (B) is plot of $sin(5x)$ and (C) is a plot of $sin(5x)+sin(x/2)$. }}{23}}
-\newlabel{Fig:trigGraphs}{{17}{23}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces The optimal SNRs for the 8s mass bin's outlier, at the GPS time = $128443202.05$. We can see that the Livingston data's coherent optimal SNR is greater than its incoherent optimal SNR.}}{23}}
-\newlabel{table:8s}{{1}{23}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces The optimal SNRs for the 64s mass bin's outlier, at the GPS time = $1127737863.12$. We can see that the Hanford data's coherent optimal SNR is greater than its incoherent optimal SNR.}}{24}}
-\newlabel{table:64s}{{2}{24}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.2}Bayes Coherence Ratio with Optimal SNR}{24}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Future Work }{24}}
-\@writefile{toc}{\contentsline {section}{\numberline {8}Appendix}{24}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}GSTlal and pyCBC}{24}}
-\newlabel{appendixGstlalandPycbc}{{8.1}{24}}
+\citation{ligo2016properties}
+\citation{ligo2016properties}
+\citation{ligo2016properties}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Running LALinference to Analyse A Candidate Event}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces The filtered instrumental strain data in the Livingston detector (blue) and Hanford detector (red). The Hanford strain has been shifted back in time by 6.9 ms and inverted. This figure was taken from Ref\nobreakspace  {}\cite  {ligo2016properties}. }}{15}}
+\newlabel{Fig:DataLH}{{8}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Posteriors for the black hole masses before the merger, created with the LALinference script. The masses are $39.5\pm 3.2 \text  { and } 32.4\pm 2.7$ solar masses in size. The data used for this was the same as the data from the $GW150914$ detection.}}{16}}
+\newlabel{Fig:LALinferenceMasses}{{9}{16}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Determining a New Detection Statistic}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Preparing Sample Points}{18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces The False Alarm Rate (FAR) for background events from the GSTlal search plotted against the number of prior False Alarm Rates. The lowest FAR value in this graph is $10^{-7}$. We see that there is a larger spread of the FAR values between each data point for the first thousand data points.}}{18}}
+\newlabel{Fig:FAR_Count}{{10}{18}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.1}Sampled points from GSTlal Searches}{18}}
+\newlabel{appendixGstlalandPycbc}{{6.1.1}{18}}
+\citation{}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.2}Sampled Events from pyCBC searches}{19}}
+\citation{pyCBCdata}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces The False Alarm Rate plotted against the log Likelihood for the GSTlal background events. The green data points are those which we are using to generate the background distribution with the Bayes Factor. We see that for lower log Likelihood values, the FAR does not appear to be changing much. However, at higher values for the log Likelihood ($\sim 3$), smaller changes cause a large variation in the value for the FAR. Additionally, we see that at higher log Likelihood values, the FAR is lower. This means that there is a smaller chance of having a background event of high log Likelihoods.}}{20}}
+\newlabel{Fig:sampledPts}{{11}{20}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}The Different forms of the Bayes Factor}{20}}
+\newlabel{eq:logBayesFactor}{{11}{21}}
+\newlabel{eq:BCR}{{12}{21}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Comparing Detection Statistics}{21}}
+\newlabel{section:Comparing Detection Statistics}{{6.3}{21}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}Bayes Factors as a Detection Statistic}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces The SNR (yellow diamonds) and Log Bayes factor (cyan squares) plotted against FAR. The Data points are coloured and sized according to their Ln Likelihoods (dark end $\sim 4.6 $ to the white end $\sim 10.3$).}}{21}}
+\newlabel{Fig:BayesVSFAR}{{12}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces The Bayes Factor as a Detection Statistic, using only Coalescing Binary Back Hole Templates. We can see that there are some background events that have higher Bayes Factors than the gravitational wave events.}}{22}}
+\newlabel{Fig:FARvsBayesFactor}{{13}{22}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.2}Bayes Coherence Ratio as a Detection Statistic}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces The SNR (yellow diamonds) and Log Bayes factor (cyan squares) plotted against FAR. The data points are coloured and sized according to their Ln Likelihoods (dark end $\sim 4.6$ to the white end $\sim 10.3$). }}{23}}
+\newlabel{Fig:BcrVSFAR}{{14}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Plots of the various detection statistics against the Log Likelihood of the background events. There appears to be a correlation between the SNR and the log Likelihood, as seen by the slope of the fitted line equal to $0.25\pm 0.02$. The correlation between the log Bayes Coherent Ratio and log Likelihood appears to be less, given that the slope of the fitted line for this is equal $0.05\pm 0.04$. The plot of the Log Bayes Factor demonstrates that it may not be useful as a detection statistic.}}{24}}
+\newlabel{Fig:SeparateDetectionStatisticVSlnL}{{15}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Studying Real Events with the Bayes Coherence Ratio}{25}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.1}Bayes Coherence Ratio with Optimal SNR}{25}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Plots of the FAR against the log $\mathcal  {B}_{R}$, and the SNR. Background Events set 1 is from the GSTlal data, and Background Events set 2 is from the pyCBC data. The $\mathcal  {M}$ bins for the data are in the range of $(6.6 \text  { to } 45.9) M_{\odot }$. The GW events are the three events in the O1 aLIGO run.}}{26}}
+\newlabel{Fig:eventsOnBackgroundFINAL}{{16}{26}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Future Work }{26}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Appendix}{26}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Outliers with the Bayes Coherence Ratio}{26}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces A histogram of the pyCBC data for the different mass bins. We can see that most of the background events yeilded a $\mathcal  {B_R}$ value \nobreakspace  {}0.}}{27}}
+\newlabel{Fig:histogramBCR}{{17}{27}}
 \bibstyle{plain}
 \bibdata{ProjectProposalRefrences}
-\bibcite{NumDetections}{{1}{}{{}}{{}}}
-\bibcite{DetectionPaper}{{2}{}{{}}{{}}}
-\bibcite{abbott2016observing}{{3}{}{{}}{{}}}
-\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Plots of the FAR against the log $\mathcal  {B}_{R}$, and the SNR. Background Events set 1 is from GSTlal data, and consists of the $\mathcal  {M}$ bins in the range of $(24.5 \text  { to } 45.9) M_{\odot }$. Background Events set 2 is from pyCBC data, and consists of the $\mathcal  {M}$ bins in the range of $(6.6 \text  { to } 45.9) M_{\odot }$. The GW events are the three events in the O1 aLIGO run. The bins used were in the range of and .}}{25}}
-\newlabel{Fig:und}{{18}{25}}
-\bibcite{hardwareInj}{{4}{}{{}}{{}}}
+\bibcite{pyCBCdata}{{1}{}{{}}{{}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Plots of the FAR against the log $\mathcal  {B}_{R}$. Background Events set 1 is from the GSTlal data, and Background Events set 2 is from the pyCBC data. The $\mathcal  {M}$ bins for the data are in the range of $(6.6 \text  { to } 45.9) M_{\odot }$. The GW events are the three events in the O1 aLIGO run, and are represented by the black diamonds. We can see that some background events have a higher $\mathcal  {B}_{R}$ than the GW wave. }}{28}}
+\newlabel{Fig:outlier}{{18}{28}}
+\bibcite{NumDetections}{{2}{}{{}}{{}}}
+\bibcite{DetectionPaper}{{3}{}{{}}{{}}}
+\bibcite{abbott2016observing}{{4}{}{{}}{{}}}
 \bibcite{ligo2016properties}{{5}{}{{}}{{}}}
 \bibcite{Enia}{{6}{}{{}}{{}}}
 \bibcite{lindblom2008model}{{7}{}{{}}{{}}}
 \bibcite{RSmith}{{8}{}{{}}{{}}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces The optimal SNRs for the 8s mass bin's outlier, at the GPS time = $128443202.05$. We can see that the Livingston data's coherent optimal SNR is greater than its incoherent optimal SNR.}}{29}}
+\newlabel{table:8s}{{1}{29}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces The optimal SNRs for the 64s mass bin's outlier, at the GPS time = $1127737863.12$. We can see that the Hanford data's coherent optimal SNR is greater than its incoherent optimal SNR.}}{29}}
+\newlabel{table:64s}{{2}{29}}
 \bibcite{BaeStats}{{9}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces }}{26}}
-\newlabel{Fig:histogramBCR}{{19}{26}}

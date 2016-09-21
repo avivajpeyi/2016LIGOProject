@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  19 SEP 2016 14:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  21 SEP 2016 02:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -867,22 +867,22 @@ Package: authblk 2001/02/27 1.3 (PWD)
 (./FinalLIGO.aux)
 \openout1 = `FinalLIGO.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `upgreek' on line 69.
+. Activating mapping `upgreek' on line 71.
 .................................................
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -1028,63 +1028,63 @@ Dictionary: translator-basic-dictionary, Language: English
 (/usr/local/texlive/2015/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2015/01/21 v2.6e siunitx: Abbreviated units
 )
-LaTeX Info: Redefining \celsius on input line 69.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 69.
+LaTeX Info: Redefining \celsius on input line 71.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 71.
 
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 69.
-Package gensymb Info: Using \Omega for \ohm on input line 69.
+LaTeX Info: Redefining \ohm on input line 71.
+Package gensymb Info: Using \Omega for \ohm on input line 71.
 
 Package gensymb Warning: Not defining \micro.
 
 \c@lstlisting=\count215
 \c__siunitx_mathsf_int=\count216
 \c__siunitx_mathtt_int=\count217
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 71.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 73.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 73.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 73.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
@@ -1094,28 +1094,39 @@ File: Figures/DetectionInGenericTransientSearch.png Graphic file (type png)
 
 <use Figures/DetectionInGenericTransientSearch.png>
 Package pdftex.def Info: Figures/DetectionInGenericTransientSearch.png used on 
-input line 137.
+input line 139.
 (pdftex.def)             Requested size: 276.00105pt x 214.34218pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
-[3 <./Figures/DetectionInGenericTransientSearch.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 181--183
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 183--185
 
  []
 
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 188.
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 190.
+[4 <./Figures/DetectionInGenericTransientSearch.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
+Overfull \hbox (18.03635pt too wide) in paragraph at lines 208--209
+\T1/cmr/m/n/10 Eq 3In-tro-duc-tion to Bayesian In-fer-ence for Grav-i-ta-tional
+ Wave Analysisequation.1.3[],
+ []
 
+
+Overfull \hbox (1.21884pt too wide) in paragraph at lines 208--209
+\T1/cmr/m/n/10 con-tain no ref-er-ence to the sig-nal pa-ram-e-ters $[]$. Hence
+, the Bayes fac-tor $\OML/cmm/m/it/10 B[]$
  []
 
 
@@ -1123,13 +1134,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
  []
 
@@ -1139,421 +1150,430 @@ Underfull \hbox (badness 10000) in paragraph at lines 248--249
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--258
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 267--268
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
 <Figures/rawData.png, id=45, 578.16pt x 433.62pt>
 File: Figures/rawData.png Graphic file (type png)
  <use Figures/rawData.png>
-Package pdftex.def Info: Figures/rawData.png used on input line 270.
+Package pdftex.def Info: Figures/rawData.png used on input line 274.
 (pdftex.def)             Requested size: 241.49895pt x 181.12006pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
 
  []
 
-[7 <./Figures/rawData.png>]
-<Figures/exampleMXplot.pdf, id=51, 740.35243pt x 293.5233pt>
+[7] <Figures/exampleMXplot.pdf, id=50, 740.35243pt x 293.5233pt>
 File: Figures/exampleMXplot.pdf Graphic file (type pdf)
 
 <use Figures/exampleMXplot.pdf>
-Package pdftex.def Info: Figures/exampleMXplot.pdf used on input line 292.
+Package pdftex.def Info: Figures/exampleMXplot.pdf used on input line 296.
 (pdftex.def)             Requested size: 345.0pt x 136.77803pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (45.80734pt too wide) in paragraph at lines 301--302
+\T1/cmr/m/n/10 Equa-tion 4In-tro-duc-tion to Bayesian In-fer-ence for Grav-i-ta
+-tional Wave Analysisequation.1.4[],
+ []
+
+
+LaTeX Warning: Reference `eq:likelihood' on page 8 undefined on input line 307.
+
+
+[8 <./Figures/rawData.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 314--315
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--313
-
- []
-
-[8 <./Figures/exampleMXplot.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--321
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
+
+ []
+
+[9 <./Figures/exampleMXplot.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 324--325
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--326
+Underfull \hbox (badness 10000) in paragraph at lines 329--330
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
 
  []
 
-<Figures/strainData.pdf, id=81, 830.10126pt x 351.3125pt>
+<Figures/strainData.pdf, id=85, 830.10126pt x 351.3125pt>
 File: Figures/strainData.pdf Graphic file (type pdf)
 
 <use Figures/strainData.pdf>
-Package pdftex.def Info: Figures/strainData.pdf used on input line 337.
+Package pdftex.def Info: Figures/strainData.pdf used on input line 341.
 (pdftex.def)             Requested size: 276.00105pt x 116.80725pt.
- [9]
-Underfull \hbox (badness 10000) in paragraph at lines 343--344
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 358--359
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
 
  []
 
 [10 <./Figures/strainData.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 367--368
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
 
  []
 
-<Figures/NoiseHistogram.pdf, id=98, 730.73pt x 365.365pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
+
+ []
+
+<Figures/NoiseHistogram.pdf, id=99, 730.73pt x 365.365pt>
 File: Figures/NoiseHistogram.pdf Graphic file (type pdf)
 
 <use Figures/NoiseHistogram.pdf>
-Package pdftex.def Info: Figures/NoiseHistogram.pdf used on input line 372.
+Package pdftex.def Info: Figures/NoiseHistogram.pdf used on input line 376.
 (pdftex.def)             Requested size: 241.49895pt x 120.74922pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 378--379
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
 
  []
 
-<Figures/m1m2.pdf, id=99, 922.44624pt x 562.1pt>
+[11] <Figures/m1m2.pdf, id=103, 922.44624pt x 562.1pt>
 File: Figures/m1m2.pdf Graphic file (type pdf)
  <use Figures/m1m2.pdf>
-Package pdftex.def Info: Figures/m1m2.pdf used on input line 386.
+Package pdftex.def Info: Figures/m1m2.pdf used on input line 390.
 (pdftex.def)             Requested size: 241.49895pt x 147.15463pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `eq:likelihood' on page 12 undefined on input line 395
+.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 391--392
+Underfull \hbox (badness 10000) in paragraph at lines 395--396
 
  []
 
-<Figures/MassPost.pdf, id=100, 1029.8475pt x 592.2125pt>
+[12 <./Figures/NoiseHistogram.pdf> <./Figures/m1m2.pdf>]
+<Figures/MassPost.pdf, id=129, 1029.8475pt x 592.2125pt>
 File: Figures/MassPost.pdf Graphic file (type pdf)
 
 <use Figures/MassPost.pdf>
-Package pdftex.def Info: Figures/MassPost.pdf used on input line 395.
+Package pdftex.def Info: Figures/MassPost.pdf used on input line 399.
 (pdftex.def)             Requested size: 345.0pt x 198.38564pt.
- [11 <./Figures/NoiseHistogram.pdf>]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 401--402
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 406--407
+[13 <./Figures/MassPost.pdf>] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
 
  []
 
-<Figures/DataLH.png, id=114, 629.35126pt x 331.2375pt>
+<Figures/DataLH.png, id=150, 629.35126pt x 331.2375pt>
 File: Figures/DataLH.png Graphic file (type png)
 
 <use Figures/DataLH.png>
-Package pdftex.def Info: Figures/DataLH.png used on input line 412.
+Package pdftex.def Info: Figures/DataLH.png used on input line 416.
 (pdftex.def)             Requested size: 241.49895pt x 127.1048pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 419--420
-
- []
-
-[12 <./Figures/m1m2.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 422--423
+Underfull \hbox (badness 10000) in paragraph at lines 423--424
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 424--425
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
 
  []
 
-[13 <./Figures/MassPost.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 427--428
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--429
 
  []
 
-<Figures/LALinferenceMasses.png, id=147, 1088.065pt x 648.4225pt>
+[15 <./Figures/DataLH.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 431--432
+
+ []
+
+<Figures/LALinferenceMasses.png, id=155, 1088.065pt x 648.4225pt>
 File: Figures/LALinferenceMasses.png Graphic file (type png)
 
 <use Figures/LALinferenceMasses.png>
-Package pdftex.def Info: Figures/LALinferenceMasses.png used on input line 431.
+Package pdftex.def Info: Figures/LALinferenceMasses.png used on input line 435.
 
 (pdftex.def)             Requested size: 345.0pt x 205.59976pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 437--438
+Underfull \hbox (badness 10000) in paragraph at lines 441--442
 
  []
 
-[14 <./Figures/DataLH.png>]
-<Figures/FAP_Count.pdf, id=152, 530.98375pt x 265.99374pt>
+[16 <./Figures/LALinferenceMasses.png>] [17]
+<Figures/FAP_Count.pdf, id=163, 530.98375pt x 265.99374pt>
 File: Figures/FAP_Count.pdf Graphic file (type pdf)
 
 <use Figures/FAP_Count.pdf>
-Package pdftex.def Info: Figures/FAP_Count.pdf used on input line 455.
+Package pdftex.def Info: Figures/FAP_Count.pdf used on input line 457.
 (pdftex.def)             Requested size: 345.0pt x 172.82893pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 463--464
+Underfull \hbox (badness 10000) in paragraph at lines 465--466
 
  []
 
-<Figures/sampledPts.pdf, id=153, 643.40375pt x 293.095pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 475--476
+
+ []
+
+[18 <./Figures/FAP_Count.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 479--480
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 482--483
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 488--489
+
+ []
+
+<Figures/sampledPts.pdf, id=177, 643.40375pt x 293.095pt>
 File: Figures/sampledPts.pdf Graphic file (type pdf)
 
 <use Figures/sampledPts.pdf>
-Package pdftex.def Info: Figures/sampledPts.pdf used on input line 470.
+Package pdftex.def Info: Figures/sampledPts.pdf used on input line 493.
 (pdftex.def)             Requested size: 345.0pt x 157.16428pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 477--478
-
- []
-
-[15 <./Figures/LALinferenceMasses.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 493--495
+[19] [20 <./Figures/sampledPts.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 527--529
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--498
-
- []
-
-[16 <./Figures/FAP_Count.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 502--504
+Underfull \hbox (badness 10000) in paragraph at lines 531--532
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 505--506
+Underfull \hbox (badness 10000) in paragraph at lines 536--538
 
  []
 
-<Figures/DetectionStatVSfar_bF.pdf, id=172, 1083.04625pt x 361.35pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--540
+
+ []
+
+<Figures/DetectionStatVSfar_bF.pdf, id=196, 1083.04625pt x 361.35pt>
 File: Figures/DetectionStatVSfar_bF.pdf Graphic file (type pdf)
 
 <use Figures/DetectionStatVSfar_bF.pdf>
 Package pdftex.def Info: Figures/DetectionStatVSfar_bF.pdf used on input line 5
-14.
+50.
 (pdftex.def)             Requested size: 345.0pt x 115.10504pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 521--522
+Underfull \hbox (badness 10000) in paragraph at lines 557--558
 
  []
 
-[17 <./Figures/sampledPts.pdf>]
-<Figures/FARvsBayesFactor.png, id=187, 517.22647pt x 363.37437pt>
+[21 <./Figures/DetectionStatVSfar_bF.pdf>]
+<Figures/FARvsBayesFactor.png, id=210, 517.22647pt x 363.37437pt>
 File: Figures/FARvsBayesFactor.png Graphic file (type png)
 
 <use Figures/FARvsBayesFactor.png>
-Package pdftex.def Info: Figures/FARvsBayesFactor.png used on input line 527.
+Package pdftex.def Info: Figures/FARvsBayesFactor.png used on input line 563.
 (pdftex.def)             Requested size: 345.0pt x 242.37836pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 536--537
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 542--544
-
- []
-
-
-Overfull \hbox (33.3062pt too wide) in paragraph at lines 548--549
-[]\T1/cmr/m/n/10 We would like $\OMS/cmsy/m/n/10 B[]$ \T1/cmr/m/n/10 for back-g
-round events to be high only if both $[]\OMS/cmsy/m/n/10 B[][][]B[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 555--556
-
- []
-
-[18 <./Figures/DetectionStatVSfar_bF.pdf>]
-<Figures/detectionStatVSfar8s.pdf, id=201, 1085.05376pt x 361.35pt>
-File: Figures/detectionStatVSfar8s.pdf Graphic file (type pdf)
-
-<use Figures/detectionStatVSfar8s.pdf>
-Package pdftex.def Info: Figures/detectionStatVSfar8s.pdf used on input line 56
-3.
-(pdftex.def)             Requested size: 345.0pt x 114.89551pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 569--570
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 572--573
 
  []
 
-[19 <./Figures/FARvsBayesFactor.png (PNG copy)>]
-<Figures/DetectionStatisticComparison.pdf, id=206, 567.11874pt x 791.95876pt>
+[22 <./Figures/FARvsBayesFactor.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 578--580
+
+ []
+
+
+Overfull \hbox (33.3062pt too wide) in paragraph at lines 584--585
+[]\T1/cmr/m/n/10 We would like $\OMS/cmsy/m/n/10 B[]$ \T1/cmr/m/n/10 for back-g
+round events to be high only if both $[]\OMS/cmsy/m/n/10 B[][][]B[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 591--592
+
+ []
+
+<Figures/detectionStatVSfar8s.pdf, id=214, 1085.05376pt x 361.35pt>
+File: Figures/detectionStatVSfar8s.pdf Graphic file (type pdf)
+
+<use Figures/detectionStatVSfar8s.pdf>
+Package pdftex.def Info: Figures/detectionStatVSfar8s.pdf used on input line 59
+9.
+(pdftex.def)             Requested size: 345.0pt x 114.89551pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 605--606
+
+ []
+
+[23 <./Figures/detectionStatVSfar8s.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 608--609
+
+ []
+
+<Figures/DetectionStatisticComparison.pdf, id=228, 567.11874pt x 791.95876pt>
 File: Figures/DetectionStatisticComparison.pdf Graphic file (type pdf)
 
 <use Figures/DetectionStatisticComparison.pdf>
 Package pdftex.def Info: Figures/DetectionStatisticComparison.pdf used on input
- line 577.
+ line 613.
 (pdftex.def)             Requested size: 207.0021pt x 289.06859pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 584--585
+Underfull \hbox (badness 10000) in paragraph at lines 620--621
 
  []
 
-<Figures/Outlier.png, id=207, 729.7853pt x 368.43529pt>
-File: Figures/Outlier.png Graphic file (type png)
-
-<use Figures/Outlier.png>
-Package pdftex.def Info: Figures/Outlier.png used on input line 601.
-(pdftex.def)             Requested size: 241.49895pt x 121.92133pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[20 <./Figures/detectionStatVSfar8s.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 615--616
-
- []
-
-[21 <./Figures/DetectionStatisticComparison.pdf>]
-<Figures/Graphs.pdf, id=237, 614.295pt x 794.97pt>
-File: Figures/Graphs.pdf Graphic file (type pdf)
- <use Figures/Graphs.pdf>
-Package pdftex.def Info: Figures/Graphs.pdf used on input line 623.
-(pdftex.def)             Requested size: 207.0021pt x 267.88443pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 628--629
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 632--633
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 634--635
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 636--637
-
- []
-
-[22 <./Figures/Outlier.png (PNG copy)>]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 640.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 652.
-
-<Figures/eventsOnBackground.pdf, id=241, 565.11125pt x 537.00626pt>
+[24 <./Figures/DetectionStatisticComparison.pdf>]
+<Figures/eventsOnBackground.pdf, id=245, 565.11125pt x 537.00626pt>
 File: Figures/eventsOnBackground.pdf Graphic file (type pdf)
 
 <use Figures/eventsOnBackground.pdf>
-Package pdftex.def Info: Figures/eventsOnBackground.pdf used on input line 674.
+Package pdftex.def Info: Figures/eventsOnBackground.pdf used on input line 643.
 
 (pdftex.def)             Requested size: 241.49895pt x 229.48242pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/lnBCRhistogram.png, id=242, 617.43277pt x 386.65462pt>
+<Figures/lnBCRhistogram.png, id=246, 617.43277pt x 386.65462pt>
 File: Figures/lnBCRhistogram.png Graphic file (type png)
 
 <use Figures/lnBCRhistogram.png>
-Package pdftex.def Info: Figures/lnBCRhistogram.png used on input line 683.
+Package pdftex.def Info: Figures/lnBCRhistogram.png used on input line 652.
 (pdftex.def)             Requested size: 241.49895pt x 151.23128pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `Fig:eventsOnBackground' on page 23 undefined on input
- line 691.
+Underfull \hbox (badness 10000) in paragraph at lines 660--661
+
+ []
+
+[25] <Figures/Outlier.png, id=251, 729.7853pt x 368.43529pt>
+File: Figures/Outlier.png Graphic file (type png)
+
+<use Figures/Outlier.png>
+Package pdftex.def Info: Figures/Outlier.png used on input line 685.
+(pdftex.def)             Requested size: 241.49895pt x 121.92133pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 691--692
 
  []
 
-[23 <./Figures/Graphs.pdf>]
-
-LaTeX Warning: Reference `Fig:' on page 24 undefined on input line 693.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 713--714
+[26 <./Figures/eventsOnBackground.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 693--694
 
  []
 
-[24] (./FinalLIGO.bbl [25 <./Figures/eventsOnBackground.pdf>]) [26 <./Figures/l
-nBCRhistogram.png (PNG copy)>] (./FinalLIGO.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 712--713
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 714--715
+
+ []
+
+[27 <./Figures/lnBCRhistogram.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 716--717
+
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 720.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 732.
+
+(./FinalLIGO.bbl
+! Undefined control sequence.
+l.6   \url
+          {https://sugar-jobs.phy.syr.edu/~tjmassin/gw150914/gw150914-16day-...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 8056) in paragraph at lines 4--8
+[]\T1/cmr/m/n/10 PyCBC GW150914 Search Re-sult C1 Data.  Avail-able on-line
+ []
+
+
+Underfull \hbox (badness 7168) in paragraph at lines 4--8
+\T1/cmr/m/n/10 at https://sugar-jobs.phy.syr.edu/ tjmassin/gw150914/gw150914-16
+day-
+ []
+
+[28 <./Figures/Outlier.png (PNG copy)>] [29]) [30] (./FinalLIGO.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 14971 strings out of 493089
- 304474 string characters out of 6134842
- 333228 words of memory out of 5000000
- 18269 multiletter control sequences out of 15000+600000
+ 14973 strings out of 493089
+ 304528 string characters out of 6134842
+ 339351 words of memory out of 5000000
+ 18272 multiletter control sequences out of 15000+600000
  22704 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,12n,41p,10437b,504s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1580,10 +1600,10 @@ ist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2015/texmf-dist/fo
 nts/type1/public/cm-super/sfti1000.pfb>
-Output written on FinalLIGO.pdf (26 pages, 5433009 bytes).
+Output written on FinalLIGO.pdf (30 pages, 5187500 bytes).
 PDF statistics:
- 399 PDF objects out of 1000 (max. 8388607)
- 269 compressed objects within 3 object streams
+ 351 PDF objects out of 1000 (max. 8388607)
+ 240 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

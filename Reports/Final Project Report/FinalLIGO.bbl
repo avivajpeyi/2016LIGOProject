@@ -1,5 +1,11 @@
 \begin{thebibliography}{1}
 
+\bibitem{pyCBCdata}
+{P}y{CBC} {GW150914} {S}earch {R}esult {C}1 {D}ata.
+\newblock Available online at
+  \url{https://sugar-jobs.phy.syr.edu/~tjmassin/gw150914/gw150914-16day-c01-v1.3.4/}
+  , verion 1.0.
+
 \bibitem{NumDetections}
 Jea Abadie, BP~Abbott, Richard Abbott, Matthew Abernathy, Timothee Accadia,
   Fausto Acernese, Carl Adams, Rana Adhikari, Parameswaran Ajith, Bruce Allen,
@@ -20,10 +26,6 @@ BP~Abbott, R~Abbott, TD~Abbott, MR~Abernathy, F~Acernese, K~Ackley, C~Adams,
 \newblock Observing gravitational-wave transient gw150914 with minimal
   assumptions.
 \newblock {\em Physical Review D}, 93(12):122004, 2016.
-
-\bibitem{hardwareInj}
-LIGO~Scientific Collaboration.
-\newblock O1 hardware injections.
 
 \bibitem{ligo2016properties}
 LIGO~Scientific Collaboration, Virgo Collaboration, et~al.
