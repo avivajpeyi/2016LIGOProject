@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  22 SEP 2016 21:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  25 JAN 2017 21:13
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **FinalLIGO.tex
 (./FinalLIGO.tex
@@ -982,6 +983,14 @@ Package: authblk 2001/02/27 1.3 (PWD)
 \c@affil=\count218
 )
 (./FinalLIGO.aux)
+Runaway argument?
+{ 
+./FinalLIGO.tex:73: File ended while scanning use of \@newl@bel.
+<inserted text> 
+                \par 
+l.73 \begin{document}
+                     
+? 
 \openout1 = `FinalLIGO.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
@@ -1003,7 +1012,6 @@ LaTeX Font Info:    ... okay on input line 73.
 . 
 . Activating mapping `upgreek' on line 73.
 .................................................
-
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count219
@@ -1159,6 +1167,15 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package natbib Warning: Citation `DetectionPaper' on page 2 undefined on input 
+line 103.
+
+
+Package natbib Warning: Citation `NumDetections' on page 2 undefined on input l
+ine 103.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
@@ -1169,9 +1186,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--106
  []
 
 
+Package natbib Warning: Citation `DetectionPaper' on page 2 undefined on input 
+line 113.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
+
+
+Package natbib Warning: Citation `Enia' on page 2 undefined on input line 116.
+
+
+Package natbib Warning: Citation `Enia' on page 2 undefined on input line 116.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 116--117
@@ -1179,9 +1206,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--117
  []
 
 
+Package natbib Warning: Citation `RSmith' on page 2 undefined on input line 122
+.
+
+
+Package natbib Warning: Citation `DetectionPaper' on page 2 undefined on input 
+line 122.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
+
+
+Package natbib Warning: Citation `DetectionPaper' on page 2 undefined on input 
+line 126.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 126--127
@@ -1189,12 +1228,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--127
  []
 
 
+Package natbib Warning: Citation `Enia' on page 2 undefined on input line 131.
+
+
+Package natbib Warning: Citation `RSmith' on page 2 undefined on input line 131
+.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
 
 [2]
-<Figures/DetectionInGenericTransientSearch.png, id=126, 377.41pt x 293.095pt>
+<Figures/DetectionInGenericTransientSearch.png, id=27, 377.41pt x 293.095pt>
 File: Figures/DetectionInGenericTransientSearch.png Graphic file (type png)
 
 <use Figures/DetectionInGenericTransientSearch.png>
@@ -1202,29 +1248,80 @@ Package pdftex.def Info: Figures/DetectionInGenericTransientSearch.png used on
 input line 141.
 (pdftex.def)             Requested size: 276.00105pt x 214.34218pt.
 
+
+Package natbib Warning: Citation `DetectionPaper' on page 3 undefined on input 
+line 142.
+
+
+Package natbib Warning: Citation `DetectionPaper' on page 3 undefined on input 
+line 142.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
 [3 <./Figures/DetectionInGenericTransientSearch.png>]
+
+Package natbib Warning: Citation `BaeStats' on page 4 undefined on input line 1
+79.
+
+
+Package natbib Warning: Citation `BaeStats' on page 4 undefined on input line 1
+79.
+
+
+Package natbib Warning: Citation `BaeStats' on page 4 undefined on input line 1
+79.
+
+
+Package natbib Warning: Citation `BaeStats' on page 4 undefined on input line 1
+82.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 185--187
 
  []
 
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 192.
-[4]
+
+Package natbib Warning: Citation `BaeStats' on page 4 undefined on input line 1
+98.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
-
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
 
+Package natbib Warning: Citation `BaeStats' on page 5 undefined on input line 2
+12.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 212--213
+
+ []
+
+
+Package natbib Warning: Citation `RSmith' on page 5 undefined on input line 215
+.
+
+
+Package natbib Warning: Citation `BaeStats' on page 5 undefined on input line 2
+33.
+
+
+Package natbib Warning: Citation `lindblom2008model' on page 5 undefined on inp
+ut line 233.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
@@ -1233,14 +1330,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.233 ...A} (f)  \tilde{B}^* (f) }{S_n(f)}}df. $$ 
-                                                  Additionally, the term $T$...
-]
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
-
- []
-
-
+l.241 \begin{equation}
+                       \label{eq:evidence}]
 Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
@@ -1265,7 +1356,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 273--274
 
  []
 
-<Figures/rawData.png, id=187, 578.16pt x 433.62pt>
+<Figures/rawData.png, id=75, 578.16pt x 433.62pt>
 File: Figures/rawData.png Graphic file (type png)
  <use Figures/rawData.png>
 Package pdftex.def Info: Figures/rawData.png used on input line 276.
@@ -1279,7 +1370,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 282--283
 
  []
 
-[7] <Figures/exampleMXplot.pdf, id=194, 740.35243pt x 293.5233pt>
+[7] <Figures/exampleMXplot.pdf, id=84, 740.35243pt x 293.5233pt>
 File: Figures/exampleMXplot.pdf Graphic file (type pdf)
 
 <use Figures/exampleMXplot.pdf>
@@ -1306,27 +1397,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 326--327
  []
 
 
+Package natbib Warning: Citation `ligo2016properties' on page 10 undefined on i
+nput line 331.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 331--332
 
  []
+
+
+Package natbib Warning: Citation `abbott2016observing' on page 10 undefined on 
+input line 334.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 334--335
 
  []
 
-<Figures/strainData.pdf, id=241, 830.10126pt x 351.3125pt>
+<Figures/strainData.pdf, id=129, 830.10126pt x 351.3125pt>
 File: Figures/strainData.pdf Graphic file (type pdf)
 
 <use Figures/strainData.pdf>
 Package pdftex.def Info: Figures/strainData.pdf used on input line 343.
 (pdftex.def)             Requested size: 276.00105pt x 116.80725pt.
 
+
+LaTeX Warning: Reference `Fig:strainData' on page 10 undefined on input line 34
+9.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 349--350
 
  []
 
 [10 <./Figures/strainData.pdf>]
+
+LaTeX Warning: Reference `Fig:strainData' on page 11 undefined on input line 35
+1.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 364--365
 
  []
@@ -1336,7 +1445,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 373--374
 
  []
 
-<Figures/NoiseHistogram.pdf, id=264, 730.73pt x 365.365pt>
+<Figures/NoiseHistogram.pdf, id=150, 730.73pt x 365.365pt>
 File: Figures/NoiseHistogram.pdf Graphic file (type pdf)
 
 <use Figures/NoiseHistogram.pdf>
@@ -1346,7 +1455,7 @@ Package pdftex.def Info: Figures/NoiseHistogram.pdf used on input line 378.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/MassPost.pdf, id=265, 1029.8475pt x 592.2125pt>
+<Figures/MassPost.pdf, id=151, 1029.8475pt x 592.2125pt>
 File: Figures/MassPost.pdf Graphic file (type pdf)
 
 <use Figures/MassPost.pdf>
@@ -1357,11 +1466,15 @@ Package pdftex.def Info: Figures/MassPost.pdf used on input line 386.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+LaTeX Warning: Reference `Fig:NoiseHist' on page 11 undefined on input line 392
+.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 392--393
 
  []
 
-<Figures/m1m2.pdf, id=268, 922.44624pt x 562.1pt>
+<Figures/m1m2.pdf, id=153, 922.44624pt x 562.1pt>
 File: Figures/m1m2.pdf Graphic file (type pdf)
  <use Figures/m1m2.pdf>
 Package pdftex.def Info: Figures/m1m2.pdf used on input line 400.
@@ -1371,27 +1484,49 @@ Package pdftex.def Info: Figures/m1m2.pdf used on input line 400.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+LaTeX Warning: Reference `Fig:2Dmasses' on page 11 undefined on input line 405.
+
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 405--406
 
  []
 
 [11]
+
+LaTeX Warning: Reference `Fig:1Dmasses' on page 12 undefined on input line 411.
+
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 411--412
 
  []
 
 [12 <./Figures/NoiseHistogram.pdf> <./Figures/MassPost.pdf>] [13 <./Figures/m1m
 2.pdf>]
+
+LaTeX Warning: Reference `Fig:DataLH' on page 14 undefined on input line 419.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 419--420
 
  []
 
-<Figures/DataLH.png, id=326, 629.35126pt x 331.2375pt>
+<Figures/DataLH.png, id=209, 629.35126pt x 331.2375pt>
 File: Figures/DataLH.png Graphic file (type png)
 
 <use Figures/DataLH.png>
 Package pdftex.def Info: Figures/DataLH.png used on input line 425.
 (pdftex.def)             Requested size: 241.49895pt x 127.1048pt.
+
+
+Package natbib Warning: Citation `ligo2016properties' on page 14 undefined on i
+nput line 427.
+
+
+Package natbib Warning: Citation `ligo2016properties' on page 14 undefined on i
+nput line 427.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 431--432
 
@@ -1413,11 +1548,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 439--440
  []
 
 
+LaTeX Warning: Reference `Fig:LALinferenceMasses' on page 15 undefined on input
+ line 444.
+
+
+LaTeX Warning: Reference `Fig:LALinferenceMasses' on page 15 undefined on input
+ line 444.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 444--445
 
  []
 
-<Figures/LALinferenceMasses.png, id=337, 1088.065pt x 648.4225pt>
+<Figures/LALinferenceMasses.png, id=217, 1088.065pt x 648.4225pt>
 File: Figures/LALinferenceMasses.png Graphic file (type png)
 
 <use Figures/LALinferenceMasses.png>
@@ -1425,7 +1568,7 @@ Package pdftex.def Info: Figures/LALinferenceMasses.png used on input line 450.
 
 (pdftex.def)             Requested size: 276.00105pt x 164.47981pt.
  [15 <./Figures/LALinferenceMasses.png>]
-<Figures/FAP_Count.pdf, id=344, 530.98375pt x 265.99374pt>
+<Figures/FAP_Count.pdf, id=224, 530.98375pt x 265.99374pt>
 File: Figures/FAP_Count.pdf Graphic file (type pdf)
 
 <use Figures/FAP_Count.pdf>
@@ -1447,6 +1590,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 487--488
  []
 
 [16 <./Figures/FAP_Count.pdf>]
+
+Package natbib Warning: Citation `GSTlal' on page 17 undefined on input line 48
+9.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 489--490
 
  []
@@ -1457,17 +1605,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 492--493
  []
 
 
+LaTeX Warning: Reference `Fig:FAR_Count' on page 17 undefined on input line 495
+.
+
+
+LaTeX Warning: Reference `Fig:sampledPts' on page 17 undefined on input line 49
+5.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 495--496
 
  []
 
-<Figures/sampledPts.pdf, id=364, 643.40375pt x 293.095pt>
+<Figures/sampledPts.pdf, id=243, 643.40375pt x 293.095pt>
 File: Figures/sampledPts.pdf Graphic file (type pdf)
 
 <use Figures/sampledPts.pdf>
 Package pdftex.def Info: Figures/sampledPts.pdf used on input line 500.
 (pdftex.def)             Requested size: 345.0pt x 157.16428pt.
- [17 <./Figures/sampledPts.pdf>]
+
+
+LaTeX Warning: Reference `section:Comparing Detection Statistics' on page 17 un
+defined on input line 505.
+
+[17 <./Figures/sampledPts.pdf>]
+
+Package natbib Warning: Citation `pyCBCdata' on page 18 undefined on input line
+ 513.
+
+
+LaTeX Warning: Reference `section:Comparing Detection Statistics' on page 18 un
+defined on input line 513.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 534--536
 
  []
@@ -1487,7 +1657,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 546--547
 
  []
 
-<Figures/DetectionStatVSfar_bF.pdf, id=390, 1083.04625pt x 361.35pt>
+<Figures/DetectionStatVSfar_bF.pdf, id=266, 1083.04625pt x 361.35pt>
 File: Figures/DetectionStatVSfar_bF.pdf Graphic file (type pdf)
 
 <use Figures/DetectionStatVSfar_bF.pdf>
@@ -1495,11 +1665,20 @@ Package pdftex.def Info: Figures/DetectionStatVSfar_bF.pdf used on input line 5
 57.
 (pdftex.def)             Requested size: 345.0pt x 115.10504pt.
 
+
+LaTeX Warning: Reference `Fig:BayesVSFAR' on page 19 undefined on input line 56
+4.
+
+
+LaTeX Warning: Reference `Fig:FARvsBayesFactor' on page 19 undefined on input l
+ine 564.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 564--565
 
  []
 
-<Figures/FARvsBayesFactor.png, id=393, 517.22647pt x 363.37437pt>
+<Figures/FARvsBayesFactor.png, id=267, 517.22647pt x 363.37437pt>
 File: Figures/FARvsBayesFactor.png Graphic file (type png)
 
 <use Figures/FARvsBayesFactor.png>
@@ -1526,23 +1705,36 @@ round events to be high only if both $[]\OMS/cmsy/m/n/10 B[][][]B[]$
  []
 
 
+LaTeX Warning: Reference `Appendix:Outliers' on page 20 undefined on input line
+ 598.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 598--599
 
  []
 
 [20 <./Figures/FARvsBayesFactor.png (PNG copy)>]
-<Figures/lnBCRhistogram.png, id=418, 617.43277pt x 386.65462pt>
+
+LaTeX Warning: Reference `Fig:histogramBCR' on page 21 undefined on input line 
+600.
+
+<Figures/lnBCRhistogram.png, id=294, 617.43277pt x 386.65462pt>
 File: Figures/lnBCRhistogram.png Graphic file (type png)
 
 <use Figures/lnBCRhistogram.png>
 Package pdftex.def Info: Figures/lnBCRhistogram.png used on input line 604.
 (pdftex.def)             Requested size: 241.49895pt x 151.23128pt.
 
+
+LaTeX Warning: Reference `Fig:BcrVSFAR' on page 21 undefined on input line 611.
+
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 611--612
 
  []
 
-<Figures/detectionStatVSfar8s.pdf, id=420, 1085.05376pt x 361.35pt>
+<Figures/detectionStatVSfar8s.pdf, id=295, 1085.05376pt x 361.35pt>
 File: Figures/detectionStatVSfar8s.pdf Graphic file (type pdf)
 
 <use Figures/detectionStatVSfar8s.pdf>
@@ -1583,11 +1775,15 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 624.
 
 
+LaTeX Warning: Reference `Fig:SeparateDetectionStatisticVSlnL' on page 21 undef
+ined on input line 627.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 627--628
 
  []
 
-<Figures/DetectionStatisticComparison.pdf, id=422, 567.11874pt x 791.95876pt>
+<Figures/DetectionStatisticComparison.pdf, id=296, 567.11874pt x 791.95876pt>
 File: Figures/DetectionStatisticComparison.pdf Graphic file (type pdf)
 
 <use Figures/DetectionStatisticComparison.pdf>
@@ -1599,6 +1795,10 @@ Package pdftex.def Info: Figures/DetectionStatisticComparison.pdf used on input
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+LaTeX Warning: Reference `Fig:SeparateDetectionStatisticVSlnL' on page 21 undef
+ined on input line 639.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 639--640
 
  []
@@ -1608,7 +1808,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 641--642
 
  []
 
-<Figures/eventsOnBackground.pdf, id=431, 565.11125pt x 537.00626pt>
+<Figures/eventsOnBackground.pdf, id=303, 565.11125pt x 537.00626pt>
 File: Figures/eventsOnBackground.pdf Graphic file (type pdf)
 
 <use Figures/eventsOnBackground.pdf>
@@ -1620,18 +1820,26 @@ Package pdftex.def Info: Figures/eventsOnBackground.pdf used on input line 662.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+LaTeX Warning: Reference `Fig:eventsOnBackgroundFINAL' on page 22 undefined on 
+input line 669.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 669--670
 
  []
 
 [22 <./Figures/detectionStatVSfar8s.pdf>] [23 <./Figures/DetectionStatisticComp
 arison.pdf>]
+
+LaTeX Warning: Reference `Fig:outlier' on page 24 undefined on input line 693.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 693--694
 
  []
 
 [24 <./Figures/eventsOnBackground.pdf>]
-<Figures/Outlier.png, id=485, 729.7853pt x 368.43529pt>
+<Figures/Outlier.png, id=359, 729.7853pt x 368.43529pt>
 File: Figures/Outlier.png Graphic file (type png)
 
 <use Figures/Outlier.png>
@@ -1653,6 +1861,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 724--725
  []
 
 
+LaTeX Warning: Reference `table:8s' on page 25 undefined on input line 726.
+
+
+LaTeX Warning: Reference `table:64s' on page 25 undefined on input line 726.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 726--727
 
  []
@@ -1663,41 +1877,81 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 7.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 4--8
-[]$\T1/cmtt/m/n/10 /home / surabhi . sachdev / projects / rory-[]jonah / coincs
--[]time-[]slide /
+Underfull \hbox (badness 3302) in paragraph at lines 4--8
+[]\T1/cmr/m/n/10 GSTlal GW150914 Search Re-sult Data.  Avail-able in UWM clus-t
+er
+ []
+
+
+Underfull \hbox (badness 5548) in paragraph at lines 4--8
+\T1/cmr/m/n/10 at []$\T1/cmtt/m/n/10 /home / surabhi . sachdev / projects / ror
+y-[]jonah / coincs-[]time-[]slide /
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 10--14
-[]\T1/cmr/m/n/10 PyCBC GW150914 Search Re-sult C1 Data.  Avail-able on-
+[]\T1/cmr/m/n/10 PyCBC GW150914 Search Re-sult C1 Data.  Avail-able on-line
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 10--14
-\T1/cmr/m/n/10 line at []$\T1/cmtt/m/n/10 https : / / sugar-[]jobs . phy . syr 
-. edu / ~tjmassin / gw150914 /
+\T1/cmr/m/n/10 at []$\T1/cmtt/m/n/10 https : / / sugar-[]jobs . phy . syr . edu
+ / ~tjmassin / gw150914 /
  []
 
 [26])
+
+Package natbib Warning: There were undefined citations.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 775.
- [27]
+[27]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 775.
- (./FinalLIGO.aux)
+ (./FinalLIGO.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+
+./FinalLIGO.aux:138: Package natbib Error: Bibliography not compatible with aut
+hor-year citations.
+(natbib)                Press <return> to continue in numerical citation style.
+
+
+See the natbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138 ...and\NAT@force@numbers{}\NAT@force@numbers
+                                                  
+? 
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 775.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 775.
-Package rerunfilecheck Info: File `FinalLIGO.out' has not changed.
-(rerunfilecheck)             Checksum: 7E3129838435CE261B270F69ABB49AFF;1755.
+
+
+Package rerunfilecheck Warning: File `FinalLIGO.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `FinalLIGO.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  7E3129838435CE261B270F69ABB49AFF;1755.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 775.
  ) 
 Here is how much of TeX's memory you used:
- 18520 strings out of 493089
- 359004 string characters out of 6134842
- 417557 words of memory out of 5000000
- 21698 multiletter control sequences out of 15000+600000
+ 18497 strings out of 493089
+ 358665 string characters out of 6134842
+ 412069 words of memory out of 5000000
+ 21675 multiletter control sequences out of 15000+600000
  23017 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,12n,41p,10437b,829s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,12n,41p,10437b,822s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
@@ -1722,10 +1976,10 @@ t/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2015/texmf-dist/fo
 nts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2015/texmf-dist/font
 s/type1/public/cm-super/sftt1000.pfb>
-Output written on FinalLIGO.pdf (27 pages, 5219641 bytes).
+Output written on FinalLIGO.pdf (27 pages, 5216669 bytes).
 PDF statistics:
- 605 PDF objects out of 1000 (max. 8388607)
- 492 compressed objects within 5 object streams
+ 487 PDF objects out of 1000 (max. 8388607)
+ 377 compressed objects within 4 object streams
  93 named destinations out of 1000 (max. 500000)
- 267 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
